@@ -11,7 +11,7 @@ title:  Publications
 
 {% bibliography --query @inproceedings --file publications %}
 
-### PhD Theses
+### Theses
 
 {% bibliography --query @phdthesis,@mastersthesis,@bachelorsthesis --file publications %}
 
