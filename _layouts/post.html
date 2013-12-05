@@ -1,9 +1,13 @@
 ---
 layout: default
 ---
-<h2>{{ page.title }}</h2>
-<p class="meta">{{ page.date | date_to_string }}</p>
+<!-- TODO http://www.lostdecadegames.com/blog-author-attribution-using-jekyll/ -->
 
-<div class="post">
-{{ content }}
-</div>
+<article>
+	<div class="row">
+		<h3><a href="#">{{ page.title }}</a></h3>
+		<h6>{{ page.date | date_to_string }}</h6>
+		{{ content }}
+	</div>
+
+</article>
