@@ -1,0 +1,125 @@
+---
+layout: content
+title: ADDIS Release 1.2
+---
+
+<div class="download">
+<a href="/files/addis-1.2.1.zip"
+	title="Get ADDIS 1.2.1">Download ADDIS v1.2.1</a>
+</div>
+
+<h3>Release history</h3>
+
+<h4>Release 1.2.1</h4>
+
+<p>Release Date: 2010-10-21</p>
+
+<p>
+ADDIS v1.2.1 is a bugfix release. There was an issue with the newly introduced single-study benefit-risk analysis that prevented any domain object from being deleted or edited. This has been fixed.
+</p>
+
+<h4>Release 1.2</h4>
+
+<p>Release Date: 2010-09-27</p>
+
+<p>
+We are happy to announce the release of ADDIS (Aggregate Data Drug Information System) version 1.2.
+We deviate from our normal 3-monthly schedule to introduce an important feature: benefit-risk analysis based on a single study.
+</p>
+
+<p>
+In single-study benefit-risk models, measurements are based on a Beta approximation of the binomial success probability (dichotomous outcomes) or on a Normal approximation of a continuous outcome.
+The single-study models are created using the same benefit-risk wizard that is used to construct benefit-risk models based on (network) meta-analyses.
+The advantage of single-study benefit-risk models is that all measurements are absolute, and thus that the measurement scales are easily interpreted.
+It is also not necessary to run any sub-analyses to inform the benefit-risk model. 
+However, the SMAA simulation itself is a lot slower when Beta distributions are used.
+</p>
+
+<p>
+This release also fixes an annoying bug that surfaced on Windows: switching the preferences from MISSING to ORDINAL didn't always work.
+</p>
+
+<h3>Getting ADDIS</h3>
+
+<div class="download">
+<a href="/files/addis-1.2.1.zip"
+	title="Get ADDIS 1.2.1">Download ADDIS v1.2.1</a>
+</div>
+
+<p>
+Source code is also available:
+<a href="http://github.com/drugis/addis/zipball/1.2.1"
+	title="GET ADDIS 1.2.1 source">ADDIS v1.2.1 source tag</a>
+</p>
+
+<h3>Running ADDIS</h3>
+
+<p>
+Extract the addis-1.2.1.zip ZIP archive to a local directory. Then double-click the 'addis-1.2.1.jar' file.
+Now you should see the ADDIS welcome screen, where you can choose to load an example data set, load a file, or create a new data set.
+If you've never used ADDIS, we recommend that you take a look at the example data set.
+</p>
+
+<p>
+If double-clicking the JAR file did not launch ADDIS, you are most likely
+lacking the Java run-time environment. You can get this from
+<a href="http://java.com/" title="Dowload Java">java.com</a>.
+</p>
+
+<h3>Screenshots</h3>
+
+<table>
+<tr>
+<td>
+<div class="figure">
+<img id="screen1" src="images/1.2/screen1-thumb.png"
+	pbsrc="images/1.2/screen1.png"
+	onclick="Pop(this,50,'PopBoxImageLarge');"
+	class="PopBoxImageSmall"
+	pbcaption="The Benefit-Risk wizard allows you to choose between using a single study or evidence synthesis as the evidence source."
+	/>
+<div class="caption">Single-study benefit-risk</div>
+</div>
+</td><td>
+<div class="figure">
+<img id="screen2" src="images/1.2/screen2-thumb.png"
+	pbsrc="images/1.2/screen2.png"
+	onclick="Pop(this,50,'PopBoxImageLarge');"
+	class="PopBoxImageSmall"
+	pbcaption="All studies for the chosen indication can be chosen as the evidence source."
+	/>
+<div class="caption">Choose a study</div>
+</div>
+</td></tr><tr><td>
+<div class="figure">
+<img id="screen3" src="images/1.2/screen3-thumb.png"
+	pbsrc="images/1.2/screen3.png"
+	onclick="Pop(this,50,'PopBoxImageLarge');"
+	class="PopBoxImageSmall"
+	pbcaption="Choose among the outcome measures (endpoints and adverse events) and arms which ones should be included in the analysis."
+	/>
+<div class="caption">Select criteria &amp; alternatives</div>
+</div>
+</td><td>
+<div class="figure">
+<img id="screen4" src="images/1.2/screen4-thumb.png"
+	pbsrc="images/1.2/screen4.png"
+	onclick="Pop(this,50,'PopBoxImageLarge');"
+	class="PopBoxImageSmall"
+	pbcaption="SMAA results are based on Beta distributions derived from the event rates in the original study. In this case, confidence factors are low, indicating that more precise measurements are needed to reach solid conclusions."
+	/>
+<div class="caption">Central weights &amp; confidence factors</div>
+</div>
+</td></tr>
+</table>
+
+<h3>Older versions</h3>
+
+<ul>
+	<li>ADDIS 1.2, release 2010-09-27
+		<ul>
+			<li><a href="/files/addis-1.2.zip" title="Get ADDIS 1.2">ADDIS v1.2</a></li>
+			<li><a href="http://github.com/drugis/addis/zipball/1.2" title="GET ADDIS 1.2 source">ADDIS v1.2 source</a></li>
+		</ul>
+	</li>
+</ul>

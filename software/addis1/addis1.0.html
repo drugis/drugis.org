@@ -1,0 +1,111 @@
+---
+layout: content
+title: ADDIS Release 1.0
+---
+
+<div class="download">
+<a href="/files/addis-1.0.zip"
+	title="Get ADDIS 1.0">Download ADDIS v1.0</a>
+</div>
+
+<h3>Release history</h3>
+
+<h4>Release 1.0</h4>
+
+<p>Release Date: 2010-09-09</p>
+
+<p>
+We are happy to announce the release of ADDIS (Aggregate Data Drug Information System) version 1.0.
+ADDIS offers meta-analysis (since <a href="/addis0.4" title="ADDIS v0.4">ADDIS v0.4</a>), network meta-analysis (since <a href="/addis0.8" title="ADDIS v0.8">ADDIS v0.8</a>) and multi-criteria benefit-risk analysis of alternative treatment options (since <a href="/addis0.10" title="ADDIS v0.10">ADDIS v0.10</a>).
+</p>
+
+<p>
+During the past few months, we have worked to improve the usability, reliability and look and feel of ADDIS to be able to offer a product that is "ready".
+In addition, ADDIS v1.0 offers the following new features:
+<ul>
+	<li>Edit a study after creating it (as long as it is not used in any analyses)</li>
+	<li>Search for drug information in an <a href="http://www.medicines.org.uk/emc/" title="medicines.org.uk Medicines Compendium">SPC/PIL database</a></li>
+	<li>Link ATC codes to the <a href="http://www.whocc.no/atc_ddd_index/" title="WHO ATC/DDD Index">WHO ATC database</a></li>
+	<li>Link studies to publications using <a href="http://pubmed.com/" title="PubMed">PubMed</a></li>
+	<li>A new welcome screen (that replaces the "default data")</li>
+	<li>Save plots and figures to file (PNG or SVG formats) for use in your documents</li>
+	<li>Save network meta-analyses for stand-alone analysis in <a href="http://drugis.org/mtc" title="drugis.org MTC">drugis.org MTC</a></li>
+	<li>Save benefit-risk models for stand-alone analysis in <a href="http://smaa.fi/jsmaa" title="JSMAA">JSMAA</a></li>
+	<li>Limited number of simultaneous computations to improve performance</li>
+	<li>Full example data-set based on the <a href="http://pubmed.com/16172440" title="Hansen RA, Gartlehner G, Lohr KN, Gaynes BN, Carey TS (2005). Efficacy and safety of second-generation antidepressants in the treatment of major depressive disorder. Ann Intern Med. 143(6):415-26.">Hansen et al. (2005)</a> review of antidepressants</li>
+</ul>
+</p>
+
+<h3>Getting ADDIS</h3>
+
+<div class="download">
+<a href="/files/addis-1.0.zip"
+	title="Get ADDIS 1.0">Download ADDIS v1.0</a>
+</div>
+
+<p>
+Source code is also available:
+<a href="http://github.com/drugis/addis/zipball/1.0"
+	title="GET ADDIS 1.0 source">ADDIS v1.0 source tag</a>
+</p>
+
+<h3>Running ADDIS</h3>
+
+<p>
+Extract the addis-1.0.zip ZIP archive to a local directory. Then double-click the 'addis-1.0.jar' file.
+Now you should see the ADDIS welcome screen, where you can choose to load an example data set, load a file, or create a new data set.
+If you've never used ADDIS, we recommend that you take a look at the example data set.
+</p>
+
+<p>
+If double-clicking the JAR file did not launch ADDIS, you are most likely
+lacking the Java run-time environment. You can get this from
+<a href="http://java.com/" title="Dowload Java">java.com</a>.
+</p>
+
+<h3>Screenshots</h3>
+
+<table>
+<tr>
+<td>
+<div class="figure">
+<img id="screen1" src="images/1.0/screen1-thumb.png"
+	pbsrc="images/1.0/screen1.png"
+	onclick="Pop(this,50,'PopBoxImageLarge');"
+	class="PopBoxImageSmall"
+	pbcaption="The new welcome screen allows you to load an example data file to get familiar with the software."
+	/>
+<div class="caption">Welcome Screen</div>
+</div>
+</td><td>
+<div class="figure">
+<img id="screen2" src="images/1.0/screen2-thumb.png"
+	pbsrc="images/1.0/screen2.png"
+	onclick="Pop(this,50,'PopBoxImageLarge');"
+	class="PopBoxImageSmall"
+	pbcaption="The example data contains 55 studies of second-generation antidepressants with links to the literature on PubMed."
+	/>
+<div class="caption">Example Data Set</div>
+</div>
+</td></tr><tr><td>
+<div class="figure">
+<img id="screen3" src="images/1.0/screen3-thumb.png"
+	pbsrc="images/1.0/screen3.png"
+	onclick="Pop(this,50,'PopBoxImageLarge');"
+	class="PopBoxImageSmall"
+	pbcaption="The number of simultaneous computations is now limited, and the analysis you're looking at gets done first."
+	/>
+<div class="caption">Running Analyses</div>
+</div>
+</td><td>
+<div class="figure">
+<img id="screen4" src="images/1.0/screen4-thumb.png"
+	pbsrc="images/1.0/screen4.png"
+	onclick="Pop(this,50,'PopBoxImageLarge');"
+	class="PopBoxImageSmall"
+	pbcaption="ADDIS supports stochastic benefit-risk analysis based on (network) meta-analyses."
+	/>
+<div class="caption">Benefit-Risk Analysis</div>
+</div>
+</td></tr>
+</table>
