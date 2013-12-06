@@ -4,10 +4,20 @@ layout: default
 <!-- TODO http://www.lostdecadegames.com/blog-author-attribution-using-jekyll/ -->
 
 <article>
-	<div class="row">
-		<h3><a href="#">{{ page.title }}</a></h3>
-		<h6>{{ page.date | date_to_string }}</h6>
-		{{ content }}
-	</div>
-
+	<header>
+		<div class="row">
+			<div class="large-12 columns">
+				<h2>News</h2>
+				<h4>{{page.title}}</h4>
+			</div>
+		</div>
+	</header>
+	<section class="content">
+		<div class="row">
+			<div class="large-12 columns">
+				<h6>{{ page.date | date_to_string }}</h6>
+				{{content}}
+			</div>
+		</div>
+	</section>
 </article>

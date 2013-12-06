@@ -35,6 +35,10 @@ header h2 {
 	line-height: 100%;
 }
 
+header h4 {
+	color: white;
+}
+
 section.content {
 	padding-top: 20px;
 }
