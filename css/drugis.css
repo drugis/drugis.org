@@ -1,3 +1,49 @@
-.content-container {
-	padding-top: 10px;
+#hero {
+	background: #cc3333;
+	height: 420px;
+	text-align: left;
+	position: relative;
+	padding: 100px 20px 0 20px;
+}
+
+#hero h1 {
+	font-size: 4em;
+	color: white;
+	font-weight: 500;
+	margin-bottom: 0;
+	line-height: 100%;
+}
+
+#hero h4 {
+	font-size: 1.35em;
+	color: white;
+	font-weight: 300;
+}
+
+header {
+	background: #cc3333;
+	text-align: left;
+	position: relative;
+	padding: 25px 20px 35px 0px;
+}
+
+header h2 {
+	font-size: 3.5em;
+	color: white;
+	font-weight: 500;
+	margin-bottom: 0;
+	line-height: 100%;
+}
+
+section.content {
+	padding-top: 20px;
+}
+
+section {
+	margin-bottom: 20px;
+}
+
+img.wordblob {
+	left: -100px;
+	opacity: .7;
 }
