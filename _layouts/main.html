@@ -1,160 +1,91 @@
 ---
 layout: default
 ---
+<section id="hero">
   <div class="row">
-    <div class="large-12 columns">
+    <div class="small-12 medium-6 large-6 columns">
+      <h1>drugis.org</h1><br>
+      <h4>drug information systems</h4>
+    </div>
+    <div class="medium-6 large-6 columns hide-for-small">
+      <img class="wordblob" src="/images/banner.png" style="width: 737px;">
+    </div>
+  </div>
+</section>
 
-      <!-- Content Slider -->
+<div class="row">
+  <div class="large-12 columns">
+    <div class="row">
+      <!-- Shows -->
+      <div class="large-4 small-6 columns">
+        <h2>Mission</h2>
+        <p class="">At drugis.org (Drug Information Systems), we are developing prototype software, to discover how ICT may assist or change the way in which pharmaceutical research and regulation is done. We work in an agile way, which means that we aim to deliver valuable, working software early on in the development process. It also means that we do not expect to know now what our software will be able to do in a year's time, but rather that we continuously work with the users of our software to discover their current, and changing, understanding of what is important and valuable.</p>
+        <p><a href="/about" class="right secondary button">About us →</a></p>
+      </div>
+      <!-- End Shows -->
 
-      <div class="row">
-        <div class="large-12 hide-for-small">
 
-          <div id="featured" data-orbit>
-            <img src="http://placehold.it/1200x500&text=Slide Image 1" alt="slide image">
-            <img src="http://placehold.it/1200x500&text=Slide Image 2" alt="slide image">
-            <img src="http://placehold.it/1200x500&text=Slide Image 3" alt="slide image">
-          </div>
+      <!-- Image -->
 
-        </div>
+      <div class="large-4 small-6 columns">
+        <img src="/images/network.png">
       </div>
 
-      <!-- End Content Slider -->
-
-      <!-- Mobile Header -->
-
-      <div class="row">
-        <div class="large-12 columns show-for-small">
-
-          <img src="http://placehold.it/1200x700&text=Mobile Header">
-
-        </div>
-      </div><br>
-
-      <!-- End Mobile Header -->
+      <!-- End Image -->
 
 
-      <div class="row">
-        <div class="large-12 columns">
-          <div class="row">
-            <!-- Shows -->
-            <div class="large-4 small-6 columns">
+      <!-- Feed -->
 
-              <h4>Upcoming Shows</h4><hr>
+      <div class="large-4 small-12 columns">
 
-              <div class="row">
-                <div class="large-1 column">
-                  <img src="http://placehold.it/50x50&text=[img]">
-                </div>
+        <h2>News</h2>
 
-                <div class="large-9 columns">
-                  <h5><a href="#">Venue Name</a></h5>
-                  <h6 class="subheader show-for-small">Doors at 00:00pm</h6>
-                </div>
-              </div><hr>
-
-              <div class="hide-for-small">
-                <div class="row">
-                  <div class="large-1 column">
-                    <img src="http://placehold.it/50x50&text=[img]">
-                  </div>
-
-                  <div class="large-9 columns">
-                    <h5 class="subheader"><a href="#">Venue Name</a></h5>
-                  </div>
-                </div><hr>
-
-                <div class="row">
-                  <div class="large-1 column">
-                    <img src="http://placehold.it/50x50&text=[img]">
-                  </div>
-
-                  <div class="large-9 columns">
-                    <h5 class="subheader"><a href="#">Venue Name</a></h5>
-                  </div>
-                </div><hr>
-
-                <div class="row">
-                  <div class="large-1 column">
-                    <img src="http://placehold.it/50x50&text=[img]">
-                  </div>
-
-                  <div class="large-9 columns">
-                    <h5 class="subheader"><a href="#">Venue Name</a></h5>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- End Shows -->
-
-
-            <!-- Image -->
-
-            <div class="large-4 small-6 columns">
-              <img src="http://placehold.it/300x465&text=Image">
-            </div>
-
-            <!-- End Image -->
-
-
-            <!-- Feed -->
-
-            <div class="large-4 small-12 columns">
-
-              <h4>Blog</h4><hr>
-              <div class="panel">
-                <h5><a href="#">Post Title 1</a></h5>
-
-                <h6 class="subheader">
-                  Risus ligula, aliquam nec fermentum vitae, sollicitudin eget urna. Suspendisse ultrices ornare tempor...
-                </h6>
-
-                <h6><a href="#">Read More &gt;</a></h6>
-              </div>
-
-              <div class="panel hide-for-small">
-                <h5><a href="#">Post Title 2 &gt;</a></h5>
-              </div>
-
-              <div class="panel hide-for-small">
-                <h5><a href="#">Post Title 3 &gt;</a></h5>
-              </div>
-
-
-            </div>
-
-            <!-- End Feed -->
-
+        <ul class="no-bullet">
+          {% for post in site.posts limit:1 %}
+          <li>
+           <div class="panel">
+            <h4><small>{{ post.date | date_to_string }}</small></h4>
+            <h5 class="subheader"><a href="{{ post.url }}">{{ post.title }}</a></h5>
+            <h6 class="subheader"><p>{{ post.excerpt }}</p></h6> 
+            <h6><a href="{{ post.url }}">Read More &gt;</a></h6>
           </div>
-        </div>
-      </div>
+        </li>
+        {% endfor %}
+      </ul>
 
-      <!-- End Content -->
-
-
-      <!-- Footer -->
-
-      <footer class="row">
-        <div class="large-12 columns"><hr>
-          <div class="row">
-
-            <div class="large-6 columns">
-              <p>© Copyright no one at all. Go to town.</p>
-            </div>
-
-            <div class="large-6 small-12 columns">
-              <ul class="inline-list right">
-                <li><a href="#">Link 1</a></li>
-                <li><a href="#">Link 2</a></li>
-                <li><a href="#">Link 3</a></li>
-                <li><a href="#">Link 4</a></li>
-              </ul>
-            </div>
-
-          </div>
-        </div>
-      </footer>
-
-      <!-- End Footer -->
+      <!-- End Feed -->
 
     </div>
   </div>
+</div>
+
+<!-- End Content -->
+
+
+<!-- Footer -->
+
+<footer class="row">
+  <div class="large-12 columns"><hr>
+    <div class="row">
+
+      <div class="large-6 columns">
+        <p>© Copyright no one at all. Go to town.</p>
+      </div>
+
+      <div class="large-6 small-12 columns">
+        <ul class="inline-list right">
+          <li><a href="#">Link 1</a></li>
+          <li><a href="#">Link 2</a></li>
+          <li><a href="#">Link 3</a></li>
+          <li><a href="#">Link 4</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+<!-- End Footer -->
+
+</div>
+</div>
