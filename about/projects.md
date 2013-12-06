@@ -3,21 +3,44 @@ layout: content
 title: Projects
 ---
 
-We are curently part of the [IMI GetReal](http://www.imi.europa.eu/content/7th-call-2012) project.
+Our current work on [ADDIS 2](/software/addis2) is part of the [IMI GetReal](http://www.imi.europa.eu/content/7th-call-2012) project.
+We're collaborating with [BioShaRe](https://www.bioshare.eu/) in a joint PhD project on automatic verification of claims made in full-text scientific articles.
+The [ADDIS 1](/software/addis1) project was funded by TI Pharma's [Escher](http://escher-projects.org/) project.
 
-We previously operated within TI Pharma's [Escher](http://escher-projects.org/) project.
+### GetReal (IMI, 2013 - 2016) ![GetReal](/images/projects/getreal.png)
 
-We collaborate with [BioShaRe](https://www.bioshare.eu/)
+_Incorporating real-life clinical data into drug development_
 
-etc
+When a new medicine reaches the market, it is accompanied by an extensive data package that provides
+information about the safety and efficacy of the medicine in a clinical trial setting. However, assessing the
+expected future value of the medicines when used in "real world" clinical practice requires additional
+information next to traditional (pre-authorisation) clinical trials. Regulatory, HTA agencies and other
+healthcare decision makers have to make decisions on authorisation and access under conditions of
+uncertainty. Currently, data packages which aim to minimise uncertainty on safety and efficacy may leave
+significant uncertainty in assessments of real world effectiveness of new medicines. This results in further
+research commitments required post-authorisation, and wide variability in access to medicines between countries.
 
-### GetReal (IMI, 2013 - 2016)
+The GetReal consortium aims to improve the efficiency of the medicine development process by better
+incorporating real-life clinical data into drug development and to enrich decision-making by regulatory
+authorities and HTA bodies.
+GetReal is a public-private partnership between key European stakeholders and leading research groups.
+These include the EMA, the Dutch
+reimbursement body CvZ that is a member of the EUnetHTA network in which the various reimbursement
+bodies throughout Europe are bundling their expertise on Health Technology Assessment, and the
+International Alliance of Patients' Organizations (IAPO) that covers patient organizations all over the world.
+GetReal creates impact by developing a set of tools, decision frameworks, methods and insights to include
+real clinical data in drug development.
 
-![GetReal](/images/projects/getreal.png)
+The [ADDIS 2](/software/addis2) project is part of work package 4, _promoting best practice in evidence synthesis and predictive modelling of relative effectiveness_.
+Methodological issues to be addressed focus on the combination of data from the mix of
+randomised and observational studies that are typically available at the launch of a new
+medicine.
+We will develop and promote user-friendly software to support evidence synthesis and
+predictive modelling of pharmaceutical therapies.
 
-### Escher Project (TI Pharma, 2008 - 2013)
+### Escher Project (TI Pharma, 2008 - 2013) ![Escher](/images/projects/escher.png)
 
-![Escher](/images/projects/escher.png)
+_Science-driven drug regulation_
 
 Our work on [ADDIS 1.x](/software/addis1) was funded by the Dutch Top Institute Pharma, specifically through the Escher Project workpackage 3.2. The goal of the Escher project was to "engergize pharmaceutical R&D by identifying, evaluating and removing regulatory barriers to bring effacious and safe medicines to patients in an efficient and timely fashion."
 
