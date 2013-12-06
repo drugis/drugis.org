@@ -51,3 +51,44 @@ h3 img {
 	float: right;
 	margin-right: 10px;
 }
+
+.footer {
+	background: #333333;
+	padding: 24px 0 10px;	
+}
+
+.footer a,
+.footer h4,
+.footer p  {
+	color: #666666
+}
+
+.footer a:hover {
+	color: #777777
+}
+
+/* ---------sticky footer --------------*/
+* {
+	margin: 0;
+}
+
+html, body {
+	height: 100%;
+}
+
+.wrapper {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -4em;
+}
+
+.footer, .push {
+	height: 4em;
+}
+
+.footer, .push {
+	clear: both;
+}
+
+/* -------- end sticky footer---------*/
