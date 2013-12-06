@@ -1,0 +1,130 @@
+---
+layout: content
+title: ADDIS Release 0.8
+---
+
+<div class="download">
+<a href="/files/addis-0.8.1.zip"
+	title="Get ADDIS 0.8.1">Download ADDIS v0.8.1</a>
+</div>
+
+<h3>Release history</h3>
+
+<h4>Release 0.8.1</h4>
+
+<p>Release Date: 2010-05-07</p>
+
+<p>
+ADDIS v0.8.1 is based on the new <a href="mtc" title="drugis.org MTC">MTC library</a> version 0.2, also released today.
+The new version of the MTC library is significantly faster, uses much less memory, adds the newest insights from our research and correctly implements multi-variate normal distributions (in ADDIS v0.8, a disclaimer was added warning about imprecision of results from multi-arm studies).
+In addition, several improvements were made to the user interface.
+</p>
+
+<h4>Release 0.8</h4>
+
+<p>Release Date: 2010-04-27</p>
+
+<p>
+We are happy to announce the release of ADDIS (Aggregate Data Drug Information System) version 0.8.
+In this release, we now offer you the ability to perform a network meta-analysis (or: mixed treatment comparison) on the data in ADDIS.
+We believe ADDIS is the first software to offer this capability, and we have created our own model-generation algorithm for this.
+The model generation is also available stand-alone, in the <a href="/mtc" title="MTC model generation library">MTC library</a>.
+</p>
+
+<p>
+As we believe ADDIS is now genuinely useful, with network meta-analysis being beyond the capabilities of any other software available, starting from this release we will ensure that the data you enter into ADDIS will remain usable in future versions.
+For this, we have created XML import/export functionality, so that you will be able to take your data with you in the next version and beyond.
+</p>
+
+<p>
+To show off these new features, we now include a data file with the ADDIS distribution.
+To try this out, after unpacking ADDIS v0.8, load the included file <code>data/hansen.xml</code>. 
+This file contains data we extracted from studies that were included in the Hansen et al., Annals of internal medicine, 143(6): 415-426, 2005 systematic review of second-generation antidepressants. 
+We also included several example analyses, both pair-wise and network meta-analysis.
+</p>
+
+<h3>Getting ADDIS</h3>
+
+<div class="download">
+<a href="/files/addis-0.8.1.zip"
+	title="Get ADDIS 0.8.1">Download ADDIS v0.8.1</a>
+</div>
+
+<p>
+Source code is also available:
+<a href="http://github.com/drugis/addis/zipball/0.8.1"
+	title="GET ADDIS 0.8.1 source">ADDIS v0.8.1 source tag</a>
+</p>
+
+<h3>Running ADDIS</h3>
+
+<p>
+Extract the addis-0.8.zip ZIP archive to a local directory. Then double-click
+the 'addis-0.8.1.jar' file. Now you should already have ADDIS 0.8.1 running
+with some provided example data. Verify this by comparing your screen with the
+screenshots below.
+</p>
+
+<p>
+If double-clicking the JAR file did not launch ADDIS, you are most likely
+lacking the Java run-time environment. You can get this from
+<a href="http://java.com/" title="Dowload Java">java.com</a>.
+</p>
+
+<h3>Screenshots</h3>
+
+<table>
+<tr>
+<td>
+<div class="figure">
+<img id="screen1" src="images/0.8/screen1-thumb.png"
+	pbsrc="images/0.8/screen1.png"
+	onclick="Pop(this,50,'PopBoxImageLarge');"
+	class="PopBoxImageSmall"
+	pbcaption="The Network Meta-Analysis Wizard allows you to construct a network meta-analysis in a straightforward manner."
+	/>
+<div class="caption">Network meta-analysis wizard.</div>
+</div>
+</td><td>
+<div class="figure">
+<img id="screen2" src="images/0.8/screen2-thumb.png"
+	pbsrc="images/0.8/screen2.png"
+	onclick="Pop(this,50,'PopBoxImageLarge');"
+	class="PopBoxImageSmall"
+	pbcaption="After creating a network meta-analysis, the Bayesian model is estimated using MCMC simulation. This will take a while."
+	/>
+<div class="caption">MCMC simulation running.</div>
+</div>
+</td></tr><tr><td>
+<div class="figure">
+<img id="screen3" src="images/0.8/screen3-thumb.png"
+	pbsrc="images/0.8/screen3.png"
+	onclick="Pop(this,50,'PopBoxImageLarge');"
+	class="PopBoxImageSmall"
+	pbcaption="For network meta-analysis, two models are run: consistency and inconsistency. Here, the results of an inconsistency model are shown. This allows you to assess the validity of a consistency model."
+	/>
+<div class="caption">Network meta-analysis results (1).</div>
+</div>
+</td><td>
+<div class="figure">
+<img id="screen4" src="images/0.8/screen4-thumb.png"
+	pbsrc="images/0.8/screen4.png"
+	onclick="Pop(this,50,'PopBoxImageLarge');"
+	class="PopBoxImageSmall"
+	pbcaption="For network meta-analysis, two models are run: consistency and inconsistency. Here, the results of a consistency model are shown. This allows you to draw conclusions about the included drugs, e.g. by assessing their rank probabilities."
+	/>
+<div class="caption">Network meta-analysis results (2).</div>
+</div>
+</td></tr>
+</table>
+
+<h3>Older versions</h3>
+
+<ul>
+	<li>ADDIS 0.8, release 2010-04-27
+		<ul>
+			<li><a href="/files/addis-0.8.zip" title="Get ADDIS 0.8">ADDIS v0.8</a></li>
+			<li><a href="http://github.com/drugis/addis/zipball/0.8" title="GET ADDIS 0.8 source">ADDIS v0.8 source</a></li>
+		</ul>
+	</li>
+</ul>

@@ -1,0 +1,141 @@
+---
+layout: content
+title: ADDIS Release 1.10
+---
+
+<div class="download">
+<a href="/files/addis-1.10.1-installer.jar"
+	title="Get ADDIS 1.10.1">Download ADDIS v1.10.1 installer</a>
+</div>
+
+	<h3>Release history</h3>
+
+		<h4>Release 1.10.1</h4>
+
+	<p>Release Date: 2011-11-28</p>
+
+	<p>
+ADDIS 1.10.1 is a bugfix release.
+There was a nasty bug in the "edit study" functionality where deleting arms would make the study invalid.
+The error also propagates into the XML file, making it corrupt.
+These files are recoverable, but recovery requires manual editing of the XML.
+Please <a href="/about">contact us</a> if you need help.
+</p>
+
+		<h4>Release 1.10</h4>
+
+	<p>Release Date: 2011-11-04</p>
+
+	<p>
+We are happy to announce the release of ADDIS (Aggregate Data Drug Information System) version 1.10. This release focuses on additional data modeling to represent study design. New features include:
+</p>
+
+<ul>
+	<li>Add installer and double-click loading of .addis data files on Windows.</li>
+	<li>Enable combination treatment, i.e. multiple drugs in one treatment activity.</li>
+	<li>Allow multiple moments of measurement for each outcome (see warning below). </li>
+	<li>Add "free text" ('Other') activity.</li>
+</ul>
+
+<p>
+<b>Warning</b>: note that measurements are only used in analyses if they are taken at the default moment, which is 0 days before the end of the first treatment epoch. This will be improved in a future release.
+</p>
+
+	
+<h3>Getting ADDIS</h3>
+
+<div class="download">
+<a href="/files/addis-1.10.1-installer.jar"
+	title="Get ADDIS 1.10.1">Download ADDIS v1.10.1 installer</a>
+</div>
+
+<p>
+Or get ADDIS in a ZIP archive: <a href="/files/addis-1.10.1.zip" title="Get ADDIS 1.10.1">Download ADDIS v1.10.1 .ZIP</a>
+</p>
+
+<p>
+Source code is also available:
+<a href="http://github.com/drugis/addis/zipball/1.10.1"
+	title="GET ADDIS 1.10.1 source">ADDIS v1.10.1 source tag</a>
+</p>
+
+<p>
+The data model is here:
+<a href="/files/addis-3.xsd"
+	title="ADDIS XML Schema v3">ADDIS XML Schema v3</a>
+</p>
+
+<h3>Running ADDIS</h3>
+
+<p>
+Open the addis-1.10.1-installer.jar file and follow the installation instructions.
+Now you can run ADDIS by double-clicking the shortcut created on your desktop and/or start menu.
+When you do this, you should see the ADDIS welcome screen, where you can choose to load an example data set, load a file, or create a new data set.
+If you've never used ADDIS, we recommend that you take a look at the example data set.
+</p>
+
+<p>
+If double-clicking the JAR file did not launch ADDIS, you are most likely
+lacking the Java run-time environment. You can get this from
+<a href="http://java.com/" title="Dowload Java">java.com</a>.
+</p>
+
+
+	<h3>Screenshots</h3>
+
+	<table>
+								<tr>
+		<td >
+	<div class="figure">
+	<img id="screen1" src="images/1.10/screen1-thumb.png"
+		pbsrc="images/1.10/screen1.png"
+		onclick="Pop(this,50,'PopBoxImageLarge');"
+		class="PopBoxImageSmall"
+		pbcaption="The installer extracts ADDIS to a directory of choice, optionally creates start menu and desktop shortcuts, and makes .addis files double-clickable (Windows only)." />
+	<div class="caption">Installer</div>
+	</div>
+	</td>
+					<td >
+	<div class="figure">
+	<img id="screen2" src="images/1.10/screen2-thumb.png"
+		pbsrc="images/1.10/screen2.png"
+		onclick="Pop(this,50,'PopBoxImageLarge');"
+		class="PopBoxImageSmall"
+		pbcaption="Treatments can now comprise multiple drugs." />
+	<div class="caption">Study design: combination treatment</div>
+	</div>
+	</td>
+								</tr>
+				<tr>
+		<td >
+	<div class="figure">
+	<img id="screen3" src="images/1.10/screen3-thumb.png"
+		pbsrc="images/1.10/screen3.png"
+		onclick="Pop(this,50,'PopBoxImageLarge');"
+		class="PopBoxImageSmall"
+		pbcaption="When selecting outcome measures, multiple measurement moments can be defined." />
+	<div class="caption">Multiple Measurement moments: definition</div>
+	</div>
+	</td>
+					<td >
+	<div class="figure">
+	<img id="screen4" src="images/1.10/screen4-thumb.png"
+		pbsrc="images/1.10/screen4.png"
+		onclick="Pop(this,50,'PopBoxImageLarge');"
+		class="PopBoxImageSmall"
+		pbcaption="Each combination of outcome measure and measurement moment creates its own row in the table where data are filled in." />
+	<div class="caption">Multiple Measurement moments: data input</div>
+	</div>
+	</td>
+		</tr>
+	</table>
+
+<h3>Older versions</h3>
+<ul>
+			<li>ADDIS 1.10, released 2011-11-04 
+		<ul>
+			<li><a href="/files/addis-1.10.zip" title="Get ADDIS 1.10">ADDIS v1.10</a></li>
+			<li><a href="http://github.com/drugis/addis/zipball/1.10" title="Get ADDIS 1.10 source">ADDIS v1.10 source</a></li>
+		</ul>
+	</li>
+				</ul>

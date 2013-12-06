@@ -1,0 +1,108 @@
+---
+layout: content
+title: ADDIS Release 1.4
+---
+
+<div class="download">
+<a href="/files/addis-1.4.zip"
+	title="Get ADDIS 1.4">Download ADDIS v1.4</a>
+</div>
+
+<!--
+<h3>Release history</h3>
+
+<h4>Release 1.4</h4>
+-->
+
+<p>Release Date: 2010-12-20</p>
+
+<p>
+We are happy to announce the release of ADDIS (Aggregate Data Drug Information System) version 1.4. New features include:
+</p>
+
+<ul>
+	<li>Lynd &amp; O'Brien benefit-risk analysis (see <a href="http://dx.doi.org/10.1016/j.jclinepi.2003.12.012" title="Advances in risk-benefit evaluation using probabilistic simulation methods: an application to the prophylaxis of deep vein thrombosis">doi:10.1016/j.jclinepi.2003.12.012</a>).</li>
+	<li>Network meta-analysis: assessment of convergence (see <a href="http://www.jstor.org/stable/1390675" title="General methods for monitoring convergence of iterative simulations">jstor:1390675</a>).</li>
+	<li>Network meta-analysis: variance parameters.</li>
+	<li>Network meta-analysis: node-splitting models (see <a href="http://dx.doi.org/10.1002/sim.3767" title="Checking consistency in mixed treatment comparison meta-analysis">doi:10.1002/sim.3767</a>).</li>
+	<li>Corrected meta-analysis: for datasets with zeroes.</li>
+	<li>User interface: tabs for large panels.</li>
+</ul>
+
+<p>
+The enhancements to network meta-analysis mean that in most cases, ADDIS will allow you to do everything that is needed to perform a full analysis.
+</p>
+
+<h3>Getting ADDIS</h3>
+
+<div class="download">
+<a href="/files/addis-1.4.zip"
+	title="Get ADDIS 1.4">Download ADDIS v1.4</a>
+</div>
+
+<p>
+Source code is also available:
+<a href="http://github.com/drugis/addis/zipball/1.4"
+	title="GET ADDIS 1.4 source">ADDIS v1.4 source tag</a>
+</p>
+
+<h3>Running ADDIS</h3>
+
+<p>
+Extract the addis-1.4.zip ZIP archive to a local directory. Then double-click the 'addis-1.4.jar' file.
+Now you should see the ADDIS welcome screen, where you can choose to load an example data set, load a file, or create a new data set.
+If you've never used ADDIS, we recommend that you take a look at the example data set.
+</p>
+
+<p>
+If double-clicking the JAR file did not launch ADDIS, you are most likely
+lacking the Java run-time environment. You can get this from
+<a href="http://java.com/" title="Dowload Java">java.com</a>.
+</p>
+
+<h3>Screenshots</h3>
+
+<table>
+<tr>
+<td>
+<div class="figure">
+<img id="screen1" src="images/1.4/screen1-thumb.png"
+	pbsrc="images/1.4/screen1.png"
+	onclick="Pop(this,50,'PopBoxImageLarge');"
+	class="PopBoxImageSmall"
+	pbcaption="The Benefit/Risk plane visually shows the trade-offs between two alternative drugs."
+	/>
+<div class="caption">Lynd &amp; O'Brien benefit-risk</div>
+</div>
+</td><td>
+<div class="figure">
+<img id="screen2" src="images/1.4/screen2-thumb.png"
+	pbsrc="images/1.4/screen2.png"
+	onclick="Pop(this,50,'PopBoxImageLarge');"
+	class="PopBoxImageSmall"
+	pbcaption="Potential scale reduction factor (PSRF) plots allow visual inspection of convergence (a value near 1 is desired)."
+	/>
+<div class="caption">Assessing convergence</div>
+</div>
+</td></tr><tr><td>
+<div class="figure">
+<img id="screen3" src="images/1.4/screen3-thumb.png"
+	pbsrc="images/1.4/screen3.png"
+	onclick="Pop(this,50,'PopBoxImageLarge');"
+	class="PopBoxImageSmall"
+		pbcaption="Node-splitting models are used in network meta-analysis to assess whether direct and indirect evidence are consistent with each other."
+	/>
+<div class="caption">Node-splitting models</div>
+</div>
+</td><td>
+<div class="figure">
+<img id="screen4" src="images/1.4/screen4-thumb.png"
+	pbsrc="images/1.4/screen4.png"
+	onclick="Pop(this,50,'PopBoxImageLarge');"
+	class="PopBoxImageSmall"
+	pbcaption="Pair-wise meta-analyses can (optionally) be corrected for zero values, allowing analysis of more studies."
+	/>
+<div class="caption">Corrected meta-analysis</div>
+</div>
+</td></tr>
+</table>

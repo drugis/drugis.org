@@ -1,0 +1,103 @@
+---
+layout: content
+title: ADDIS Release 0.10
+---
+
+<div class="download">
+<a href="/files/addis-0.10.zip"
+	title="Get ADDIS 0.10">Download ADDIS v0.10</a>
+</div>
+
+<h3>Release history</h3>
+
+<h4>Release 0.10</h4>
+
+<p>Release Date: 2010-06-21</p>
+
+<p>
+We are happy to announce the release of ADDIS (Aggregate Data Drug Information System) version 0.10.
+In this release, we build upon meta-analysis (included since <a href="/addis0.4" title="ADDIS v0.4">ADDIS v0.4</a>) and network meta-analysis (included since <a href="/addis0.8" title="ADDIS v0.8">ADDIS v0.8</a>), to perform multi-criteria benefit-risk analysis of alternative treatment options.
+The benefit-risk method is based on <a href="http://smaa.fi" title="Stochastic Multicriteria Acceptability Analysis">SMAA</a>, and implemented using the <a href="http://smaa.fi/jsmaa" title="JSMAA">JSMAA</a> software.
+It is being developed specifically for medical and regulatory decision making by our research group, see our <a href="/publications" title="Publications">publications</a> for more information.
+</p>
+
+<p>
+We include an example case (benefit-risk assessment of anti-depressants) with ADDIS v0.10.
+To try out benefit-risk analysis, load the included file <code>data/hansen-analyses.xml</code>. 
+This file contains data we extracted from studies that were included in the Hansen et al., Annals of internal medicine, 143(6): 415-426, 2005 systematic review of second-generation antidepressants. 
+We also included several example analyses, including a benefit-risk model, "Hansen BR".
+</p>
+
+<h3>Getting ADDIS</h3>
+
+<div class="download">
+<a href="/files/addis-0.10.zip"
+	title="Get ADDIS 0.10">Download ADDIS v0.10</a>
+</div>
+
+<p>
+Source code is also available:
+<a href="http://github.com/drugis/addis/zipball/0.10"
+	title="GET ADDIS 0.10 source">ADDIS v0.10 source tag</a>
+</p>
+
+<h3>Running ADDIS</h3>
+
+<p>
+Extract the addis-0.10.zip ZIP archive to a local directory. Then double-click
+the 'addis-0.10.jar' file. Now you should already have ADDIS 0.10 running
+with some provided example data.
+</p>
+
+<p>
+If double-clicking the JAR file did not launch ADDIS, you are most likely
+lacking the Java run-time environment. You can get this from
+<a href="http://java.com/" title="Dowload Java">java.com</a>.
+</p>
+
+<h3>Screenshots</h3>
+
+<table>
+<tr>
+<td>
+<div class="figure">
+<img id="screen1" src="images/0.10/screen1-thumb.png"
+	pbsrc="images/0.10/screen1.png"
+	onclick="Pop(this,50,'PopBoxImageLarge');"
+	class="PopBoxImageSmall"
+	pbcaption="The Benefit-Risk Wizard allows you to construct a benefit-risk analysis based on (network) meta-analyses."
+	/>
+<div class="caption">Benefit-risk wizard.</div>
+</div>
+</td><td>
+<div class="figure">
+<img id="screen2" src="images/0.10/screen2-thumb.png"
+	pbsrc="images/0.10/screen2.png"
+	onclick="Pop(this,50,'PopBoxImageLarge');"
+	class="PopBoxImageSmall"
+	pbcaption="The benefit-risk analysis is based on measurements derived using the included (network) meta-analyses. The user may decide on trade-offs between the criteria by ranking them."
+	/>
+<div class="caption">Measurements and preferences.</div>
+</div>
+</td></tr><tr><td>
+<div class="figure">
+<img id="screen3" src="images/0.10/screen3-thumb.png"
+	pbsrc="images/0.10/screen3.png"
+	onclick="Pop(this,50,'PopBoxImageLarge');"
+	class="PopBoxImageSmall"
+	pbcaption="The central weights vector may help to identify the strengths and weaknesses of alternative treatments. Here, we show the central weights for four anti-depressants without specifying any preferences for the criteria."
+	/>
+<div class="caption">Central weights (no preferences).</div>
+</div>
+</td><td>
+<div class="figure">
+<img id="screen4" src="images/0.10/screen4-thumb.png"
+	pbsrc="images/0.10/screen4.png"
+	onclick="Pop(this,50,'PopBoxImageLarge');"
+	class="PopBoxImageSmall"
+	pbcaption="Rank acceptabilities indicate how likely each alternative is to be the best treatment given the specified preferences. Here, we show rank-acceptabilities of the different anti-depressants for severe depression (ranking: HAM-D, Diarrhea, Nausea, Dizziness, Insomnia, Headache)."
+	/>
+<div class="caption">Rank acceptabilities (severe depression).</div>
+</div>
+</td></tr>
+</table>
