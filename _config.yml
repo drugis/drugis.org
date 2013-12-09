@@ -1,3 +1,7 @@
 name: drugis.org - home of the ADDIS project
 markdown: redcarpet
 pygments: true
+url: http://drugis.org
+rss_path: /news
+rss_name: rss.xml
+rss_post_limit: 10
