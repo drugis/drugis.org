@@ -20,7 +20,9 @@ See the [ADDIS 1.x retrospective](/software/addis1/retrospective) for a technica
 
 ### Citing ADDIS 1.x
 
-If you use ADDIS in your work and you would to cite us, please cite the following reference: [@addis-dss]
+If you use ADDIS in your work and you would to cite us, please cite the following reference:
+
+ - {% reference addis-dss %}
 
 ### Documentation
 
@@ -28,8 +30,8 @@ Unfortunately documentation for ADDIS is currently a bit sparse.
 We are working on providing more information.
 The following is already available:
 
- - [@addis-dss]
- - [@addis-mtc-tutorial]
+ - {% reference addis-dss %}
+ - {% reference addis-mtc-tutorial %}
  - Gert van Valkenhoef, ["Add study in ADDIS 1.8"](http://vimeo.com/25770968), 2011.
 
 Our [publications page](/research/publications) lists additional journal papers that explain the methodology and algorithms implemented in ADDIS.

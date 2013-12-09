@@ -3,9 +3,9 @@ layout: content
 title:  Our Research
 ---
 
-[List of publications](/research/publications)
+This page outlines our general research agenda. See our [publications](/research/publications) and [software](/software) pages to get a grasp of our progress so far.
 
-[List of MSc projects](/research/msc-projects): check here if you're interested in doing your master's thesis with the ADDIS team!
+[List of MSc projects](/research/msc-projects): check here if you're interested in doing your master's thesis with us!
 
 ### Supporting health care policy decisions
 
