@@ -5,3 +5,7 @@ url: http://drugis.org
 rss_path: /news
 rss_name: rss.xml
 rss_post_limit: 10
+
+scholar:
+  style: ./_bibliography/apa.csl
+  bibliography: publications
