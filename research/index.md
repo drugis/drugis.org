@@ -9,7 +9,18 @@ title:  Our Research
 
 ### Supporting health care policy decisions
 
-FIXME
+At drugis.org, we develop methods and software to support evidence-based health care policy decision making that concerns alternative treatment options.
+As we see it, such decisions require the following steps to be taken:
+
+ 1. Data acquisition: identification of the relevant evidence, e.g. through a systematic review of the scientific literature.
+
+ 2. Evidence synthesis: statistical modeling of the evidence to arrive at consistent estimates of treatment effects, e.g. meta-analysis.
+
+ 3. Decision analysis: incorporating the decision maker's (or patients') subjective preferences on the relative importance of different outcomes.
+
+All three steps are challenging, and are typically performed by different domain experts using an ad-hoc series of disconnected software tools.
+Although this is often a viable option, there are several problems with this approach.
+FIXME: reproducibility, transparency, efficiency. Steal from somewhere.
 
 ### Example: ADDIS 1.x for drug regulation
 
