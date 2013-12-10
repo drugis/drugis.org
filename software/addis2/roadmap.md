@@ -36,8 +36,24 @@ In this phase we aim to duplicate the core analysis features of ADDIS 1.x in the
     - Construction of MCDA problems given several network meta-analyses
     - Construction of MCDA problems given a single trial
 
-Phase 3: ???
-------------
+Phase 3: TrialVerse
+-------------------
+- Study management
+  - View study
+  - manual input study
+  - create mappings (conceptmapper)
+  - edit study
+  - clinicaltrials.gov compelte import
+- Versioning
+  - needs exploration
+  - branching? 
+  - applies to both studies and mappings
+  - DAtomic (suggestion Joel)
+  - ontological versioning **out of scope**
+- Review/Search
+  - query/search dataset
+  - deduplication and annotations for review
+  - versioning from review process
 
 Phase 4: profit!
 ----------------
