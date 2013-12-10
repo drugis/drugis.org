@@ -8,7 +8,7 @@ This page outlines the development plan for ADDIS 2. See the [requirements](requ
 Phase 1: component prototyping
 ------------------------------
 
-#### Status: in progress
+#### Status: in progress (deliverable: dec 2013)
 
 In this phase we aim to develop prototypes of several 'high risk' components, i.e. those with significant technical questions remaining to be answered.
 These include:
@@ -25,7 +25,7 @@ These include:
 Phase 2: analysis feature parity 
 --------------------------------
 
-#### Status: planning
+#### Status: planning (deliverable: mar 2014)
 
 In this phase we aim to duplicate the core analysis features of ADDIS 1.x in the web-based framework. The main deliverables include:
 
@@ -38,22 +38,37 @@ In this phase we aim to duplicate the core analysis features of ADDIS 1.x in the
 
 Phase 3: TrialVerse
 -------------------
-- Study management
-  - View study
-  - manual input study
-  - create mappings (conceptmapper)
-  - edit study
-  - clinicaltrials.gov compelte import
-- Versioning
-  - needs exploration
-  - branching? 
-  - applies to both studies and mappings
-  - DAtomic (suggestion Joel)
-  - ontological versioning **out of scope**
-- Review/Search
-  - query/search dataset
-  - deduplication and annotations for review
-  - versioning from review process
 
-Phase 4: profit!
-----------------
+#### Status: scoping (deliverable: dec 2014)
+
+ - Study management
+   - View study
+   - manual input study
+   - create mappings (conceptmapper)
+   - edit study
+  - clinicaltrials.gov import
+ - Versioning
+   - needs exploration
+   - applies to both studies and mappings
+   - DAtomic (suggestion Joel)
+   - ontological (i.e. between-study concepts) versioning **out of scope**
+ - Review/Search
+   - query/search dataset
+   - deduplication and annotations for review
+   - output: set of (trials + versions) for analysis in 'ADDIS 2' component
+
+Open questions are:
+
+ - How do we manage versions across the TrialVerse/ConceptMapper boundary?
+ - How do we support "branching", i.e. multiple different extractions of the same study? This will inevitably happen when the number of users increases.
+ - Do we aim to import all studies from ClinicalTrials.gov? This is not a requirement, but would probably generate considerable interest within GetReal and provide sufficient data to properly test the review/search functionality.
+
+Phase 4: GetReal analyses 
+-------------------------
+
+#### Status: awaiting input from other teams (deliverable: mar 2016)
+
+Phase 5: GetReal finalization
+-----------------------------
+
+#### Status: awaiting evaluation (deliverable: dec 2016)
