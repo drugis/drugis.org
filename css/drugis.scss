@@ -1,5 +1,6 @@
 @import "settings";
 @import "foundation";
+@import "syntax.css";
 
 #hero {
 	background: $drugis-color; 
@@ -99,3 +100,29 @@ html, body {
 }
 
 /* -------- end sticky footer---------*/
+#map_canvas {
+	width: 400px;
+	height: 280px;
+}
+
+/* standard */
+pre {
+  margin-bottom: $paragraph-margin-bottom;
+  border: 1px solid darken($secondary-color, 20%);
+  background-color: $secondary-color;
+  padding: 0.8em;
+  font-size: $paragraph-font-size;
+  overflow-x: auto;
+}
+
+pre code {
+  border: none;
+  background: none;
+  padding: 0px;
+}
+
+code {
+  border: 1px solid darken($secondary-color, 20%);
+  background-color: $secondary-color;
+  padding: 0 0.2em 0 0.2em;
+}

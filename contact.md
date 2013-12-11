@@ -1,6 +1,10 @@
 ---
-layout: content
-title: Contact us
+layout: contact
+title: Contact
 ---
-Meme us on your tweetphone!
-form form idk
+
+_Gert van Valkenhoef is the primary contact for drugis.org._
+
+E-mail: g.h.m.van.valkenhoef [at] rug.nl
+
+Phone: +31 (0)50 3614522
