@@ -2,12 +2,13 @@
 title: News
 layout: content
 ---
+<div class="large-12 columns" role="content">
 <a href="/news/rss.xml"><img src="/images/rss-small.png"></a>
 {% for post in site.posts %}
-<div>
-	<h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
-	<p><em>{{ post.date | date_to_string }}</em> &raquo; {{ post.excerpt }}
-	<br/><a href="{{ post.url }}">→ Read more</a>
-	</p>
-</div>
+<article>
+  <h3><a href="{{post.url}}">{{ post.title }}</a></h3>
+  <h6>{{ post.date | date_to_string }}</em></h6>
+  {{post.content}}
+  <hr/>
+</article>
 {% endfor %}
