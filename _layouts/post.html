@@ -2,27 +2,25 @@
 layout: default
 ---
 <!-- TODO http://www.lostdecadegames.com/blog-author-attribution-using-jekyll/ -->
+<article>
+  <header>
+    <div class="row">
+      <div class="large-12 columns">
+	<h2>News</h2>
+      </div>
+    </div>
+  </header>
 <ol class="breadcrumbs">
-  {% for p in page.ancestors %}
-  <li><a href="{{ p.url }}">{{ p.title }}</a>
-  {% endfor %}
+  <li><a href="/">Home</a></li>
+  <li><a href="/news">News</a></li>
   <li class="active">{{ page.title }}</li>
 </ol>
-<article>
-	<header>
-		<div class="row">
-			<div class="large-12 columns">
-				<h2>News</h2>
-				<h4>{{page.title}}</h4>
-			</div>
-		</div>
-	</header>
-	<section class="content">
-		<div class="row">
-			<div class="large-12 columns">
-				<h6>{{ page.date | date_to_string }}</h6>
-				{{content}}
-			</div>
-		</div>
-	</section>
+<section class="content">
+    <div class="row">
+      <div class="large-12 columns">
+	<h6>{{ page.date | date_to_string }}</h6>
+	{{content}}
+      </div>
+    </div>
+  </section>
 </article>
