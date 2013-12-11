@@ -36,8 +36,8 @@ In this phase we aim to duplicate the core analysis features of ADDIS 1.x in the
     - Construction of MCDA problems given several network meta-analyses
     - Construction of MCDA problems given a single trial
 
-Phase 3: TrialVerse
--------------------
+Phase 3: data management and search 
+-----------------------------------
 
 #### Status: scoping (deliverable: dec 2014)
 

@@ -1,5 +1,8 @@
+@import "settings";
+@import "foundation";
+
 #hero {
-	background: #cc3333;
+	background: $drugis-color; 
 	height: 420px;
 	text-align: left;
 	position: relative;
@@ -21,7 +24,7 @@
 }
 
 header {
-	background: #cc3333;
+	background: $drugis-color;
 	text-align: left;
 	position: relative;
 	padding: 25px 20px 35px 0px;
