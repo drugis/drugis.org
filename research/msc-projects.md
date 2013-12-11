@@ -156,7 +156,7 @@ authorities.
 
 ADDIS currently supports regulatory decision making by first synthesizing the available evidence using network meta-analysis, and then feeding this data into a multi-criteria decision model for benefit-risk assessment. Typically, the regulatory setting treats the data "as is". By contrast, in the health technology assesment setting, it is standard practice to extrapolate the short-term effects observed in clinical trials to more long term health (benefit/harm) and cost outcomes. Thus, HTA often involves additional modeling and assumptions to assess the long-term effects of the intervention. The goal of this project is to incorporate such modelling in the ADDIS framework.
 
-The TIDI software (see links below) is a tool for cost-effectiveness analysis based on network meta-analysis. However, using this tool requires reprogramming their Excel spread sheet for the specific problem. The methods developed for TIDI could be implemented in ADDIS to eliminate the need for programming. This will require:
+The (TIDI)[http://dx.doi.org/10.1016/j.jval.2010.12.002] software (see links below) is a tool for cost-effectiveness analysis based on network meta-analysis. However, using this tool requires reprogramming their Excel spread sheet for the specific problem. The methods developed for TIDI could be implemented in ADDIS to eliminate the need for programming. This will require:
 
  * Analysis of the [TIDI](http://dx.doi.org/10.1016/j.jval.2010.12.002) software to identify requirements, key functionality, and potential shortcomings. Especially watch out for implicit assumptions that may not generalize.
 

@@ -14,14 +14,12 @@ title: The team
 
  - Hans Hillege; medical supervisor & EMA liaison
  - Bert de Brock, advisor
- - ...
 
 ### Students
 
  - Joël Kuiper; PhD student, BioSHaRe liaison; member since 2012-04
  - Bob Goeree
  - Lourens Elzinga
- - ...
 
 ### Previous contributors
 

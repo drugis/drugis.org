@@ -9,6 +9,12 @@ layout: default
 		</div>
 	</div>
 </header>
+  <ol class="breadcrumbs">
+    {% for p in page.ancestors %}
+    <li><a href="{{ p.url }}">{{ p.title }}</a>
+    {% endfor %}
+    <li class="active">{{ page.title }}</li>
+  </ol>
 <section class="content">
 	<div class="row">
 		<div class="large-12 columns">

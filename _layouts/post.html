@@ -2,7 +2,12 @@
 layout: default
 ---
 <!-- TODO http://www.lostdecadegames.com/blog-author-attribution-using-jekyll/ -->
-
+<ol class="breadcrumbs">
+  {% for p in page.ancestors %}
+  <li><a href="{{ p.url }}">{{ p.title }}</a>
+  {% endfor %}
+  <li class="active">{{ page.title }}</li>
+</ol>
 <article>
 	<header>
 		<div class="row">
