@@ -2,14 +2,63 @@
 layout: content
 title: About DRUGIS
 ---
+<div class="row">
 
-Our Commitment: Open Development
---------------------------------
+  <div class="large-12 columns">
+    <h3>Goals</h3>
+    <p>Our main goal is to solve several of the problems in the systematic review process, and from this in the clinical and regulatory decisions that are based on analyses of such reviews. Our solutions will greatly improve both the efficiency and the transparency of these decisions.
 
-We are committed to develop our system 'in the open.' This means that we publish our software as early as possible and as often as possible, enabling others to use and critique our software and development process. On this website, we will keep you up to date on the current status of our software and new releases. Furthermore, all source code is made publicly available, under an Open Source license, allowing deep peer-review of our software. Our liberal software licensing also allows others to create spin-off programs from our source code, as long as they likewise make their source code available. 
+    <h3>Problems</h3>
+    <p>Typically only the end product of systematic reviewing (a report summarizing the evidence), is made widely available. However, access to the intermediate results of literature searching, publication screening, and data extraction could greatly enhance the efficiency of future reviews. Given the increasing scope of systematic reviews, this uneccessary duplication of effort must be eliminated. This requires a change in the current culture of data protectionism, and suitable software that enables convenient and useful sharing of the intermediate results.</p>
+  </div>
 
-Our main [objective](/about/objective) is to introduce evidence into medical decision making.
-We are a [team](/about/team.html).
-We are and have been part of several [projects](/about/projects)
+  <h3>Approaches</h3>
+  <p>By integrating the entire systematic review process within our system, we aim to capture the intermediate data-enriching steps that a reviewer takes. This improves not only transparency, but also the efficiency of any further systematic review on similar subjects.
+  </p>
 
-TODO: add poster-like about
+  <div class="large-6 columns">
+    <h3>The Problem</h3>
+    <img src="/images/problem.png">
+  </div>
+  <div class="large-6 columns">
+    <h3>Legend</h3>
+    <ol>
+    <li>Query of multiple databases, yielding results in different formats</li>
+    <li>Title/abstract screening; enter results in spreadsheet or database</li>
+    <li>De-duplication of included abstracts, retrieve full texts</li>
+    <li>Full text screening, identify duplicate publications of same trial</li>
+    <li>Manual data extraction; enter results in meta-analysis software</li>
+    <li>Statistical analysis / evidence synthesis</li>
+    <li>Reporting of evidence synthesis results; potential publication</li>
+    <li>Enter relevant evidence into cost-effectiveness model</li>
+    <li>Cost-effectiveness analysis</li>
+    <li>Reporting of cost-effectiveness analysis for decision maker or publication</li>
+    </ol>
+  </div>
+</div>
+<div class="row">
+  <div class="large-6 columns">
+    <h3>The Solution</h3>
+    <img src="/images/solution.png">
+  </div>
+  <div class="large-6 columns">
+    <h3>Legend</h3>
+    <ol>
+      <li>Automatic query of multiple databases returning linked data</li>
+      <li>Assisted title/abstract screening</li>
+      <li>N/A (abstracts are automatically de-duplicated)</li>
+      <li>Assisted full text screening, identify duplicate publications of same trial</li>
+      <li>Assisted data extraction</li>
+      <li>Statistical analysis / evidence synthesis</li>
+      <li>Reporting of evidence synthesis results; potential publication</li>
+      <li>Automatic transfer of evidence to cost-effectiveness model</li>
+      <li>Cost-effectiveness analysis</li>
+      <li>Reporting of cost-effectiveness analysis; potential publication</li>
+    </ol>
+  </div>
+  <div class="large-12 columns">
+    <h3>Our Commitment: Open Development</h3>
+    <p>We are committed to develop our system 'in the open.' This means that we publish our software as early as possible and as often as possible, enabling others to use and critique our software and development process. On this website, we will keep you up to date on the current status of our software and new releases. Furthermore, all source code is made publicly available, under an Open Source license, allowing deep peer-review of our software. Our liberal software licensing also allows others to create spin-off programs from our source code, as long as they likewise make their source code available. </p>
+  </div>
+</div>
+
