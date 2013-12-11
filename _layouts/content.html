@@ -3,16 +3,22 @@ layout: default
 ---
 
 <header>
-	<div class="row">
-		<div class="large-12 columns">
-			<h2>{{page.title}}</h2>
-		</div>
-	</div>
+  <div class="row">
+    <div class="large-12 columns">
+      <h2>{{page.title}}</h2>
+    </div>
+  </div>
 </header>
+<ol class="breadcrumbs">
+  {% for p in page.ancestors %}
+  <li><a href="{{ p.url }}">{{ p.title }}</a>
+    {% endfor %}
+  <li class="active">{{ page.title }}</li>
+</ol>
 <section class="content">
-	<div class="row">
-		<div class="large-12 columns">
-			{{content}}
-		</div>
-	</div>
+  <div class="row">
+    <div class="large-12 columns">
+      {{content}}
+    </div>
+  </div>
 </section>
