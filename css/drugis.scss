@@ -42,6 +42,10 @@ header h4 {
 	color: white;
 }
 
+header small {
+	color: white;
+}
+
 section.content {
 	padding-top: 20px;
 }
@@ -95,3 +99,7 @@ html, body {
 }
 
 /* -------- end sticky footer---------*/
+#map_canvas {
+	width: 400px;
+	height: 280px;
+}
