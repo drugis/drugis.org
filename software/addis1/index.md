@@ -3,6 +3,8 @@ layout: content
 title: ADDIS 1.x
 ---
 
+<img src="/images/addis1/addis.png" class="screen-shot right">
+
 Aggregate Data Drug Information System (ADDIS) 1.x is a proof-of-concept system that allowed us to simultaneously discover the possibilities of and the requirements on a database of structured clinical trials data.
 We support the automated discovery and (meta-)analysis of trial data, as well as benefit-risk assessment.
 
