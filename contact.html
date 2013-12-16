@@ -1,5 +1,6 @@
 ---
 layout: content
+title: Contact
 ---
 <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
 <script>
@@ -8,7 +9,7 @@ function initialize() {
   var position = new google.maps.LatLng(53.22389858782632, 6.575734401168924);
   var map_options = {
     center: position,
-    zoom: 13,
+    zoom: 4,
     mapTypeId: google.maps.MapTypeId.ROADMAP
   }
   var map = new google.maps.Map(map_canvas, map_options)
@@ -29,7 +30,11 @@ google.maps.event.addDomListener(window, 'load', initialize);
   <div class="large-8 columns">
 
     <div class="panel radius">
-      <p>{{ content }}</p>
+      <p><em>Gert van Valkenhoef is the primary contact for drugis.org.</em></p>
+
+      <p>E-mail: g.h.m.van.valkenhoef [at] rug.nl</p>
+
+      <p>Phone: +31 (0)50 3614522</p>
     </div>
   </div>
 
@@ -40,8 +45,10 @@ google.maps.event.addDomListener(window, 'load', initialize);
       <div id="map_canvas"></div>
     <h3>Visiting address</h3>
     <p>
-      Hanzeplein 1,<br />
-      9713 GZ, Groningen<br />
+      Department of Epidemiology<br />
+      University Medical Center Groningen<br />
+      Hanzeplein 1<br />
+      9713 GZ Groningen<br />
       The Netherlands  
     </p>
   </div>
