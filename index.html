@@ -1,11 +1,75 @@
 ---
-layout: main
-title: Home
+layout: default
+title: Home 
 ---
 
-<div id="home">
+<section id="hero">
+  <div class="row">
+    <div class="small-12 medium-6 large-6 columns">
+      <h1>drugis.org</h1><br>
+      <h4>drug information systems</h4>
+    </div>
+    <div class="medium-6 large-6 columns hide-for-small">
+      <img class="wordblob" src="/images/banner.png" style="width: 737px;">
+    </div>
+  </div>
+</section>
 
-  <h1>Home Page</h1>
+<div class="row">
+  <div class="large-12 columns">
+    <div class="row">
+      <!-- Shows -->
+      <div class="large-4 small-12 columns">
+        <h2>Mission</h2>
+        <p class="">The mission of drugis.org (Drug Information Systems) is to assist and, where necessary, change how pharmaceutical research and regulation is done. We are currently developing prototype software, in an agile way. This means that we aim to deliver valuable, working software early on in the development process. It also means that we do not expect to know now what our software will be able to do in a year's time, but rather that we continuously work with our users to always focus on what is important and valuable to them.</p>
+        <p><a href="/about" class="right secondary button">About us →</a></p>
+      </div>
+      <!-- End Shows -->
 
 
+      <!-- Image -->
+
+      <div class="large-4 hide-for-small-only columns">
+        <img src="/images/network.png">
+      </div>
+
+      <!-- End Image -->
+
+
+      <!-- Feed -->
+
+      <div class="large-4 small-12 columns">
+
+        <h2>News
+          <a href="/news/rss.xml"><img class="rss-icon" src="/images/rss-small.png"></a></h2>
+
+        <ul class="no-bullet">
+          {% for post in site.posts limit:3 %}
+          <li>
+           <div class="panel">
+             <h4> <small>{{ post.date | date_to_string }} </small> </h4>
+            <h5 class="subheader">
+              <a href="{{ post.url }}">
+                {{ post.title }}{% if forloop.index0 != 0 %} &raquo;{% endif %}
+              </a>
+            </h5>
+            {% if forloop.index0 == 0 %}
+            <h6 class="subheader"><p>{{ post.excerpt }}</p></h6> 
+            <h6><a href="{{ post.url }}">Read More &raquo;</a></h6>
+            {% endif %}
+          </div>
+        </li>
+        {% endfor %}
+
+      </ul>
+
+      <!-- End Feed -->
+
+    </div>
+  </div>
+</div>
+
+<!-- End Content -->
+
+</div>
 </div>
