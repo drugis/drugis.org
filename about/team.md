@@ -1,30 +1,6 @@
 ---
 layout: content
 title: The team
-members:
-  - name: "Gert van Valkenhoef"
-    role: "ADDIS project lead"
-    bio: "Gert received his PhD (University of Groningen, 2012) for his methodological work on evidence-based decision support for drug benefit-risk assessment. During his PhD he also led the software development team that implemented those methods in ADDIS 1. He now oversees the development of ADDIS 2 for the IMI GetReal project. Gert holds an MSc in Artificial Intelligence (University of Groningen, 2009)."
-    picture-url: "gert.jpg"
-    homepage-url: "https://gertvv.nl/"
-  - name: "Douwe Postmus"
-    role: "Lead MCDA and HTA"
-    picture-url: "douwe.jpg"
-    homepage-url: "http://www.rug.nl/research/epidemiology/postmus"
-  - name: "Daan Reid"
-    role: "Developer"
-    bio: "Daan first joined the ADDIS team in September 2010. After working on several other software development projects within the UMCG he rejoined the team on October 2013 to work on ADDIS 2. Daan has a PhD in theoretical biology (University of Groningen, 2010) and an MSc in Artificial Intelligence."
-    picture-url: "daan.jpg"
-    homepage-url: "http://steamcommunity.com/id/osmosis"
-  - name: "Connor Stroomberg"
-    role: "Developer"
-    picture-url: "connor.jpg"
-    since: "2013-12"
-  - name: "Joël Kuiper"
-    role: "PhD student"
-    picture-url: "joel.jpg"
-    since: "2012-04"
-   
 ---
 
 <div class="row">
@@ -33,13 +9,13 @@ members:
 	</div>
 </div>
 
-	{% for member in page.members %}
+	{% for member in site.data.members %}
 <div class="row">
 	<hr>
 	<div class="large-8 columns">
 		<h4>{{member.name}}</h4>
 		<h5>{{member.role}}</h5>
-		<p>{{member.bio}}</p>
+		<p>{{member.bio | markdownify}}</p>
 		<p>Find out more on his <a href="{{member.homepage-url}}" title="{{member.name}}">personal page</a>.
 	</div>
 	<div class="large-3 columns">
