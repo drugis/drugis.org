@@ -10,6 +10,7 @@ members:
   - name: "Douwe Postmus"
     role: "Lead MCDA and HTA"
     picture-url: "douwe.jpg"
+    homepage-url: "http://www.rug.nl/research/epidemiology/postmus"
   - name: "Daan Reid"
     role: "Developer"
     bio: "Daan first joined the ADDIS team in September 2010. After working on several other software development projects within the UMCG he rejoined the team on October 2013 to work on ADDIS 2. Daan has a PhD in theoretical biology (University of Groningen, 2010) and an MSc in Artificial Intelligence."
