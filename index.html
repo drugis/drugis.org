@@ -30,8 +30,8 @@ title: Home
         <ul class="no-bullet">
           {% for post in site.posts limit:3 %}
           <li>
-            <h4><small>{{ post.date | date_to_string }}</small></h4>
             <h5>
+              <small>{{ post.date | date_to_string }}</small><br/>
               <a href="{{ post.url }}">
                 {{ post.title }}{% if forloop.index0 != 0 %} &raquo;{% endif %}
               </a>
