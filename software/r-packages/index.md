@@ -14,3 +14,5 @@ The R packages are the foundation for the web-based analysis tools we are develo
  - [Hit-and-Run](hitandrun) for sampling uniformly from convex shapes
 
 All of these packages are free and open source software, available under the [GNU General Public License, version 3](http://www.gnu.org/licenses/gpl-3.0.html).
+
+{% include github.html %}
