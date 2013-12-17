@@ -39,8 +39,10 @@ $code-color: #333;
 // We use these to control various global styles
 // $body-bg: #fff;
 // $body-font-color: #222;
-// $body-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-// $body-font-weight: normal;
+$body-font-family: "Droid Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+$body-font-weight: normal;
+//$header-font-family: $body-font-family;
+$header-font-weight: 500;
 // $body-font-style: normal;
 
 // We use this to control font-smoothing
