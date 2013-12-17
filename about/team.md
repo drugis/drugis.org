@@ -8,9 +8,16 @@ members:
     since: "2009-04"
   - name: "Douwe Postmus"
     role: "lead MCDA and HTA"
-    picture-url: "dauwe.jpg"
+    picture-url: "douwe.jpg"
     since: "2013-09"
-   
+  - name: "Daan Reid"
+    role: "Developer"
+    picture-url: "daan.jpg"
+    since: 2010-09
+  - name: "Connor Stroomberg"
+    role: "Developer"
+    picture-url: "connor.jpg"
+    since: 2013-12
 ---
 
 <div class="row">
@@ -33,14 +40,6 @@ members:
 </div>
 <hr>
 	{% endfor %}
-
-
-
-
-- Gert van Valkenhoef; ADDIS project lead; team member since 2009-04
-- Douwe Postmus; lead MCDA and HTA; team member since 2013-09
-- Connor Stroomberg; developer; team member since 2013-12
-- Daan Reid; developer; team member since 2010-09
 
 ### Evangelists
 
