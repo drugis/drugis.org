@@ -1,29 +1,42 @@
 ---
 layout: content
-title: About DRUGIS
+title: About us 
 ---
-<div class="row">
 
-  <div class="large-12 columns">
-    <h3>Goal</h3>
-    <p>Our main goal is to improve the **drug regulation process**, making it more transparent and efficient. 
+<h3>Mission</h3>
 
-    <h3>Problems</h3>
-    <p>Current decision making in drug regulation relies entirely on the expert judgment of the assessors. This often doesn't take into account all available evidence to systematically assess the benefit-risk profile. Reliance on subjective assessment hides the reasoning supporting the decision and causes the regulatory process to be insufficiently transparent and traceable. Furthermore, the trade-offs between benefits and risks are seldom made explicit, least quantified. Our project aims to supply a support system that combining proven statistical methods for quantitative benefit-risk assessment with a structured database of evidence from clinical research.</p>
+{% include mission.html %}
 
-<p>Much of the data used to compare drugs comes from systematic reviews of clinical trials. Typically only the end product of systematic reviewing (a report summarizing the evidence), is made widely available. However, access to the intermediate results of literature searching, publication screening, and data extraction could greatly enhance the efficiency of future reviews. Given the increasing scope of systematic reviews, this uneccessary duplication of effort must be eliminated. This requires a change in the current culture of data protectionism, and suitable software that enables convenient and useful sharing of the intermediate results.</p>
+<h3>Motivation</h3>
+<p>
+Decision making regarding the favourable and unfavourable effects of medicines often relies entirely on the expert judgment of the decision makers.
+Reliance on subjective assessment hides the reasoning supporting the decision and causes the process to be insufficiently transparent and traceable.
+We aim to build a decision support system that combines proven statistical methods and quantitative decision modeling with a structured database of evidence from clinical research.
+Such a system enhances the transparency of decisions by clearly separating the (objective) evidence from the (subjective) trade-off judgments inherent in the decision.
+</p>
 
-  <h3>Approaches</h3>
-  <p>Our <a href="/software/addis1">previous prototype</a> showed the usefulness of a benefit-risk evaluation support system for local use. We now aim to implement the system as a web platform to ease collaboration. Further, by integrating the entire systematic review process within our system, we aim to capture the intermediate data-enriching steps that a reviewer takes. This improves not only transparency, but also the efficiency of any further systematic review on similar subjects.
-  </p>
-  </div>
+<p>
+Health policy decisions regarding alternative treatment options are often informed by systematic reviews of clinical trials.
+Typically only the end product of systematic reviewing (a report summarizing the evidence), is made widely available.
+However, access to the intermediate results of literature searching, publication screening, and data extraction could greatly enhance the efficiency of future reviews.
+Given the increasing scope of systematic reviews, this uneccessary duplication of effort must be eliminated.
+This requires a change in the current culture of data protectionism, and suitable software that enables convenient and useful sharing of the intermediate results.
+</p>
 
+<h3>Approach</h3>
+<p>Our <a href="/software/addis1">previous prototype</a> showed the usefulness of a benefit-risk evaluation support system for local use.
+We now aim to implement the system as a web platform to ease collaboration.
+Further, by integrating the entire systematic review process within our system, we aim to capture the intermediate data-enriching steps that a reviewer takes.
+This improves not only transparency, but also the efficiency of any further systematic review on similar subjects.
+</p>
+
+<h3>The Problem</h3>
+<div class="row panel" style="margin-bottom: 1rem;">
   <div class="large-6 columns">
-    <h3>The Problem</h3>
-    <img src="/images/problem.png">
+    <img class="screen-shot" style="background: white; padding:5px;" src="/images/problem.png">
   </div>
   <div class="large-6 columns">
-    <h3>Legend</h3>
+    <h4 style="margin-top: 1rem">Legend</h4>
     <ol>
     <li>Query of multiple databases, yielding results in different formats</li>
     <li>Title/abstract screening; enter results in spreadsheet or database</li>
@@ -38,13 +51,21 @@ title: About DRUGIS
     </ol>
   </div>
 </div>
-<div class="row">
+
+<p>Health policy decision making is often informed by a systematic review, followed by a statistical analysis and decision modeling.
+Each of these steps is performed using an ad-hoc series of disconnected software tools.
+The rapidly expanding scope of health policy decision increases the costs of systematic reviews, which had already reached the thousands of person-hours over a decade ago.</p>
+<p>Systematic reviews are thus costly to perform, there is very little return on investment for sharing data and meta-data collected in the process, and sharing data early on has the associated risks of scooping and perhaps unwanted scrutiny.
+Moreover, sharing is difficult because the data and meta-data are fragmented between a number of different tools that use different and incompatible formats.
+This has led to a culture where researchers are reluctant to share their intermediate results, and work is often duplicated between different systematic reviews.</p>
+
+<h3>The Solution</h3>
+<div class="row panel" style="margin-bottom: 1rem;">
   <div class="large-6 columns">
-    <h3>The Solution</h3>
-    <img src="/images/solution.png">
+    <img class="screen-shot" style="background: white; padding:5px;" src="/images/solution.png">
   </div>
   <div class="large-6 columns">
-    <h3>Legend</h3>
+    <h4 style="margin-top: 1rem">Legend</h4>
     <ol>
       <li>Automatic query of multiple databases returning linked data</li>
       <li>Assisted title/abstract screening</li>
@@ -58,11 +79,33 @@ title: About DRUGIS
       <li>Reporting of cost-effectiveness analysis; potential publication</li>
     </ol>
   </div>
-  <div class="large-12 columns">
-    <h3>Our Commitment: Open Development</h3>
-    <p>We are committed to develop our system 'in the open.' This means that we publish our software as early as possible and as often as possible, enabling others to use and critique our software and development process. On this website, we will keep you up to date on the current status of our software and new releases. Furthermore, all source code is made publicly available, under an Open Source license, allowing deep peer-review of our software. Our liberal software licensing also allows others to create spin-off programs from our source code, as long as they likewise make their source code available. </p>
-
-    <p><a href="https://github.com/drugis"><img src="/images/octocat.png"> Our github page</a></p>
-  </div>
 </div>
 
+<p>
+The process can be made more efficient and reproducible by an integrated software toolchain that captures the entire workflow.
+Such a system would provide several incentives that make sharing of intermediate results more attractive.
+First, it would remove the technical barriers to sharing data by capturing all intermediate results in a single repository, and sharing of data could be the default setting.
+Second, it would simply provide a better tool chain for systematic review and decision support by automating the transfer of data between steps and assisting labour intensive steps such as literature screening.
+Finally, the investment of performing a systematic review can be reduced by re-using what others have shared.
+This would decrease the time-to-publication or time-to-decision and enhance the cost-effectiveness of evidence-based decision making.
+</p>
+
+<h3>Conclusion</h3>
+
+<p>
+Systematic reviewing is currently a laborious process that is mainly performed "offline" using an ad-hoc collection of disconnected tools.
+This makes the sharing and re-use of intermediate results nearly impossible, leading to duplication of effort and an adversarial research environment.
+Existing information technologies could be leveraged to build a more integrated system to support systematic reviewing and preserve intermediate results.
+Such a system can create a virtuous cycle in which previously shared results make sharing an ever more attractive option.
+</p>
+
+<h3>Our Commitment: Open Development</h3>
+<p>
+We are committed to develop our software 'in the open'.
+This means that we publish our software as early as possible and as often as possible, enabling others to use and critique our software and development process.
+On this website, we will keep you up to date on the current status of our software and new releases.
+Furthermore, all source code is made publicly available, under an Open Source license, allowing deep peer-review of our software.
+Our liberal software licensing also allows others to create spin-off programs from our source code, as long as they likewise make their source code available.
+</p>
+
+<a href="https://github.com/drugis" class="button secondary right"><img src="/images/octocat.png" width="32" height="32" style="margin-right: 5px;"> drugis.org on GitHub</a>
