@@ -12,3 +12,5 @@ Efficiency can be improved by facilitating easier and more meaningful sharing of
 ADDIS 2 is a web-based redevelopment of the [ADDIS 1](/software/addis1) prototype desktop application.
 
 A demo of the multiple criteria decision analysis (MCDA) user interface for ADDIS 2 is available now: [ADDIS 2 MCDA-WEB demo](http://mcda.clinici.co).
+
+<p><a href="https://github.com/drugis"><img src="/images/octocat.png"> Our github page</a></p>
