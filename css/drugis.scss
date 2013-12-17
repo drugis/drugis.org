@@ -60,6 +60,16 @@ h3 img {
 	margin-right: 10px;
 }
 
+.row-divider {
+	margin: 2rem 0;
+}
+
+.screen-shot {
+	border: 1px solid #dddddd;
+	padding: 4px;
+	margin: 0.5rem;
+}
+
 .footer {
 	background: #333333;
 	padding: 24px 0 10px;	
@@ -88,11 +98,11 @@ html, body {
 	min-height: 100%;
 	height: auto !important;
 	height: 100%;
-	margin: 0 auto -4em;
+	margin: 0 auto -4rem;
 }
 
 .footer, .push {
-	height: 4em;
+	height: 4rem;
 }
 
 .footer, .push {

@@ -1,0 +1,26 @@
+---
+layout: content
+title: "Supplementary material: network-br"
+---
+
+<h3>Multi-criteria benefit-risk assessment using network meta-analysis</h3>
+
+<p>
+{% reference network-br %}
+</p>
+
+<ul>
+	<li><a href="/files/network-br.jsmaa" title="Benefit-Risk model (JSMAA)">Benefit-Risk model (JSMAA)</a>
+<p>This model enables the interactive graphical exploration of the benefit-risk trade offs. <b>Warning:</b> it does not take into account the correlations between the relative effects, as JSMAA does not currently support multivariate normal distributions. The correlations are small, and the results are similar but not identical to those of the model with full correlations.</p>
+<p>To download the JSMAA model, right-click and "save as" the link above. To open it, use the JSMAA software, version 0.8.4, from <a href="http://smaa.fi/jsmaa" title="JSMAA">smaa.fi</a>.</p>
+	</li>
+	<li><a href="/files/network-br.addis" title="Full dataset (ADDIS)">Full dataset (ADDIS)</a>
+<p>This file contains the complete dataset that was used to construct the benefit-risk model.</p>
+<p>To download the ADDIS dataset, right-click and "save as" the link above.
+To open it, use the <a href="/addis1.6" title="ADDIS 1.6">ADDIS software, version 1.6.2</a>.
+<p><b>Update 2012-05-14: </b>As of <a href="/addis1.12" title="ADDIS 1.12">ADDIS 1.12.4</a>, the ADDIS model fully takes into account the covariance information and the results in ADDIS should be identical to those presented in the paper (to within numerical accuracy of the network meta-analysis and SMAA results).</p>
+	</li>
+	<li><a href="/files/network-br-analysis.zip" title="Analysis files">Analysis files</a> (14MB ZIP)
+<p>This ZIP archive contains the MTC datasets, the consistency models (JAGS format) and their results (CODA format).
+It also contains the R scripts that were used to derive the criteria measurement distributions, and the SMAA implementation.</p>
+</ul>
