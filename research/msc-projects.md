@@ -3,9 +3,23 @@ layout: content
 title: MSc projects
 ---
 
-### Potential MSc projects
+### Open MSc projects
 
-#### User interfaces for detecting heterogeneity in meta-analysis
+ - [User interfaces for detecting heterogeneity in meta-analysis](#heterogeneity)
+ - [Data import](#import)
+ - [User interfaces for exploration and visualization of trials](#ui-trials)
+ - [Low-level serialization of Bayesian Hierarchical Models](#bhm-dsl)
+
+### In progress MSc projects
+
+ - [Clinicians' understanding of preference elicitation questions](#preferences)
+ - [Cost-effectiveness analysis](#cea)
+ - [Convergence diagnostics for MCDA / SMAA](#smaa-convergence)
+
+## MSc projects
+
+<a name="heterogeneity"></a>
+### User interfaces for detecting heterogeneity in meta-analysis
 
 Combining evidence from multiple trials is a key step in many evidence based
 decisions. While the statistical models to do this are relatively simple,
@@ -34,7 +48,8 @@ are known to exhibit one or more forms of bias and confounding, and assess
 whether or not these are identified by users in the current system. Then,
 proposals to improve the situation should be generated and tested.
 
-#### Data import
+<a name="import"></a>
+### Data import
 
 (Multiple MSc projects possible.)
 
@@ -54,7 +69,8 @@ However, quite often one starts out with some semi-structured data (such as an e
 
 Note that for most of the above there is relevant previous work in the scientific literature, which will need to be evaluated prior to implementation.
 
-#### User interfaces for exploration and visualization of trials
+<a name="ui-trials"></a>
+### User interfaces for exploration and visualization of trials
 
 ADDIS aims to let users quickly build datasets to answer specific clinical or policy questions. For example, a clinician might want to identify an effective drug that lacks a certain side effect (e.g. sleepiness is not acceptable for a truck driver) and a market regulator may want to compare the efficacy / safety balance of a new drug to a that of a drug authorized last year.
 
@@ -62,19 +78,8 @@ Often, building such a dataset starts with a broad query, returning many trials.
 
 The project will be based on a heterogeneous set of loosely related trials. Several potential research questions will be formulated. Based on an analysis of the current system and initial usability testing, you will develop several proposals for user interfaces that assist the user in reducing the result set. You will discuss these proposals with the team and with potential users to identify the most promising ones. You will implement prototypes for the top proposals in ADDIS 2 and evaluate them in usability studies.
 
-#### Convergence diagnostics for MCDA / SMAA
-
-Stochastic multi-criteria acceptability analysis (SMAA) is a method for multiple criteria decision analysis under uncertainty and/or incomplete information. Monte Carlo integration is used to aggregate results over any number of uncertain inputs. Theoretical results on SMAA are based on the assumption that independent samples can be drawn from the input probability distributions. However, this is often not the case, as modern statistical tools often rely on methods that generate a Markov chain, i.e. a "time series" in which each generated sample depends on the previous sample.
-
-It is well known that for general statistical inference the number of iterations required to obtain a representative sample from the posterior distribution can not be determined in advance. Therefore, in Markov chain Monte Carlo (MCMC) methods, convergence is usually assessed based on the actual sample obtained. This thesis project will address the convergence of SMAA when some or all of the inputs are Markov chains. Specifically, the following questions will be addressed:
-
- * Which outputs of the SMAA analysis should be monitored for convergence? Can the assessment of one output predict the convergence of the others?
-
- * Which methods are most appropriate for the convergence assessment?
-
- * When the input is provided by several independent Markov chains, these chains may have wildly varying convergence properties. One chain may have a low per-iteration cost but also slow convergence, while another may have a high per-iteration cost but also quick convergence. In this case, it would be a waste of computational resources to draw an equal number of samples from both. Can heuristics be developed to limit this type of inefficiency?
-
-#### Low-level serialization of Bayesian Hierarchical Models
+<a name="bhm-dsl"></a>
+### Low-level serialization of Bayesian Hierarchical Models
 
 Markov Chain Monte Carlo (MCMC) methods enable the general purpose estimation of Bayesian Hierarchical Models. Their implementation in widely available software has revolutionized the practice of statistics, and popularized the Bayesian approach to statistics. Many alternative implementations of MCMC are available, such as WinBUGS, OpenBUGS, JAGS, STAN, Scythe, PyMCMC, YADAS, etc. All of them have specific strengths and weaknesses, with some being much more efficient at estimating certain models than others. Moreover, in some cases Approximate Bayesian Computation (ABC) offers a powerful and more computationally efficient alternative to MCMC methods. 
 
@@ -106,9 +111,10 @@ The project should result in:
 
  5. Implementation of an interpreter for the low-level format using an ABC implementation of your choice
 
-### In progress MSc projects
+<a name="preferences"></a>
+### Clinicians' understanding of preference elicitation questions
 
-#### Clinicians' understanding of preference elicitation questions
+**In progress**
 
 Decisions in health care policy are often based on uncertain evidence that
 covers multiple criteria, such as efficacy, side effects, and costs. Multiple
@@ -151,8 +157,10 @@ medical students at the UMCG. A later set of experiments would ideally be
 performed with actual decision makers, e.g. from regulatory or reimbursement
 authorities.
 
+<a name="cea"></a>
+### Cost-effectiveness analysis
 
-#### Cost-effectiveness analysis
+**In progress**
 
 ADDIS currently supports regulatory decision making by first synthesizing the available evidence using network meta-analysis, and then feeding this data into a multi-criteria decision model for benefit-risk assessment. Typically, the regulatory setting treats the data "as is". By contrast, in the health technology assesment setting, it is standard practice to extrapolate the short-term effects observed in clinical trials to more long term health (benefit/harm) and cost outcomes. Thus, HTA often involves additional modeling and assumptions to assess the long-term effects of the intervention. The goal of this project is to incorporate such modelling in the ADDIS framework.
 
@@ -167,3 +175,18 @@ The [TIDI](http://dx.doi.org/10.1016/j.jval.2010.12.002) software (see links bel
  * Implementation of a HTML/CSS/JavaScript user interface that communicates with the web service.
 
 Any network meta-analysis functionality is explicitly out of scope of this project, it may be assumed that the outputs of any requisite meta-analyses are provided as-is. The existing "ADDIS 2" module for benefit-risk analysis can be used as a rough guide to implementation of all of the above.
+
+<a name="smaa-convergence"></a>
+### Convergence diagnostics for MCDA / SMAA
+
+**In progress**
+
+Stochastic multi-criteria acceptability analysis (SMAA) is a method for multiple criteria decision analysis under uncertainty and/or incomplete information. Monte Carlo integration is used to aggregate results over any number of uncertain inputs. Theoretical results on SMAA are based on the assumption that independent samples can be drawn from the input probability distributions. However, this is often not the case, as modern statistical tools often rely on methods that generate a Markov chain, i.e. a "time series" in which each generated sample depends on the previous sample.
+
+It is well known that for general statistical inference the number of iterations required to obtain a representative sample from the posterior distribution can not be determined in advance. Therefore, in Markov chain Monte Carlo (MCMC) methods, convergence is usually assessed based on the actual sample obtained. This thesis project will address the convergence of SMAA when some or all of the inputs are Markov chains. Specifically, the following questions will be addressed:
+
+ * Which outputs of the SMAA analysis should be monitored for convergence? Can the assessment of one output predict the convergence of the others?
+
+ * Which methods are most appropriate for the convergence assessment?
+
+ * When the input is provided by several independent Markov chains, these chains may have wildly varying convergence properties. One chain may have a low per-iteration cost but also slow convergence, while another may have a high per-iteration cost but also quick convergence. In this case, it would be a waste of computational resources to draw an equal number of samples from both. Can heuristics be developed to limit this type of inefficiency?
