@@ -3,6 +3,8 @@ layout: content
 title: ADDIS 2 roadmap
 ---
 
+{% include addis2-sidenav.html class="left" %}
+
 This page outlines the development plan for ADDIS 2. See the [requirements](requirements) and [architecture](architecture) pages for some context.
 
 Phase 1: component prototyping

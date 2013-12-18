@@ -3,6 +3,8 @@ layout: content
 title: ADDIS 2 nonfunctional requirements
 ---
 
+{% include addis2-sidenav.html class="left" %}
+
 Nonfunctional Requirements
 ------------
 
