@@ -27,39 +27,45 @@ title: Home
         <h2><a href="/news">News</a>
           <a href="/news/rss.xml"><img class="rss-icon" src="/images/rss-small.png"></a></h2>
 
-        <ul class="no-bullet">
-          {% for post in site.posts limit:3 %}
-          <li>
-            <h5>
-              <small>{{ post.date | date_to_string }}</small><br/>
-              <a href="{{ post.url }}">
-                {{ post.title }}{% if forloop.index0 != 0 %} &raquo;{% endif %}
-              </a>
-            </h5>
-            {% if forloop.index0 == 0 %}
-            <p>{{ post.excerpt }}</p>
-            <p><a href="{{ post.url }}">Read More &raquo;</a></p>
+          <ul class="no-bullet">
+            {% for post in site.posts limit:3 %}
+            <li>
+              <h5>
+                <small>{{ post.date | date_to_string }}</small><br/>
+                <a href="{{ post.url }}">
+                  {{ post.title }}{% if forloop.index0 != 0 %} &raquo;{% endif %}
+                </a>
+              </h5>
+              {% if forloop.index0 == 0 %}
+              <p>{{ post.excerpt }}</p>
+              <p><a href="{{ post.url }}">Read More &raquo;</a></p>
+              {% endif %}
+            </li>
+            {% if forloop.index0 != 2 %}
+            <hr/>
             {% endif %}
-          </li>
-          {% if forloop.index0 != 2 %}
-          <hr/>
-          {% endif %}
-        {% endfor %}
-        </ul>
+            {% endfor %}
+          </ul>
+        </div>
       </div>
     </div>
   </div>
-</div>
 
-<div class="row" style="margin-top: 3rem;">
-	<div class="columns large-12" style="text-align: center;">
+  <div class="row" style="margin-top: 3rem;">
+   <div class="columns large-12" style="text-align: center;">
     <hr>
     <h4>Sponsors</h4>
-    <a href="http://www.imi.europa.eu/">
-    <img src="/images/projects/imi.png" alt="Innovative Medicines Initiative" style="margin: 10px;">
-    </a>
-    <a href="http://www.umcg.nl/">
-    <img src="/images/projects/umcg.jpg" alt="University Medical Center Groningen" style="margin: 10px;">
-    </a>
+    <ul class="small-block-grid-2">
+      <li>
+        <a href="http://www.imi.europa.eu/">
+          <img src="/images/projects/imi.png" alt="Innovative Medicines Initiative" style="margin: 10px;">
+        </a>
+      </li>
+      <li>
+        <a href="http://www.umcg.nl/">
+          <img src="/images/projects/umcg.jpg" alt="University Medical Center Groningen" style="margin: 10px;">
+        </a>
+      </li>
+    </ul>
   </div>
-</div>
+</div>  
