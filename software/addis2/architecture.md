@@ -2,6 +2,7 @@
 layout: content
 title: ADDIS 2 architecture 
 ---
+{% include addis2-sidenav.html class="left" %}
 
 Architecture
 ------------
