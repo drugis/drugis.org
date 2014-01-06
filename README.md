@@ -28,7 +28,7 @@ Build the `_site`:
 
     jekyll build
 
-If necessary, load /files using git-annex:
+If necessary, load /files using git-annex (TODO: HTTP remote from site itself):
 
     git annex init 'my workstation'
     git config remote.origin.annex-ignore true
