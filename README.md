@@ -1,7 +1,9 @@
 drugis.org
 ==========
 
-drugis.org website
+The [drugis.org](https://drugis.org/) website built using
+[Jekyll](http://jekyllrb.com/) and
+[git annex](https://git-annex.branchable.com/).
 
 Requirements
 ------------
