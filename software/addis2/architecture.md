@@ -2,14 +2,11 @@
 layout: content
 title: ADDIS 2 architecture 
 ---
-{% include addis2-sidenav.html class="left" %}
 
-Architecture
-------------
 Given that many of the [requirements](/software/addis2/requirements) imply loosely coupled and flexibly reusable components with well-defined public APIs (R1, V1, V2, V3, D1, D2, D3, E4, E7), we will assume that a service-based (and web-based) architecture is most appropriate. We distinguish the following components:
 
   - Web services that implement the different analyses (R1, D1, D2)
-  - ADDIS Core, a 'business intelligence' system for drug benefit-risk analysis (V1, D3, L1) (basically a 'workflow engine' in which different ways of going from a database of trials to analyses can be implemented)
+  - ADDIS-core, a 'business intelligence' system for drug benefit-risk analysis (V1, D3, L1) (basically a 'workflow engine' in which different ways of going from a database of trials to analyses can be implemented)
   - TrialVerse, a portal/database where researchers share structured RCT data (V3, D3, D4, E1)
   - TrialMine, a system for literature screening (E2)
   - ConceptMapper, a shared component where definitions (concepts) can be deposited, refined, and mapped (R2, E1, E2, E3)

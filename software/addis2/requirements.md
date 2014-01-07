@@ -1,15 +1,30 @@
 ---
 layout: content
-title: ADDIS 2 nonfunctional requirements
+title: ADDIS 2 requirements
 ---
 
-{% include addis2-sidenav.html class="left" %}
+Functional requirements
+-----------------------
 
-Nonfunctional Requirements
-------------
+Initially, the functionality available in ADDIS 1 is the template for the ADDIS 2 functional requirements (see the [ADDIS 1 retrospective](/software/addis1/retrospective)).
+Therefore, the initial functional requirements are:
 
-We identify the main goals and requirements of ADDIS 2 according to five key concerns: valorization, development, research, ecosystem, and learning.
+ * Evidence synthesis using network meta-analysis in a Bayesian (Markov chain Monte Carlo) framework.
+ * Multiple Criteria Decision Analysis (MCDA) methods to assess trade-offs between multiple outcomes.
+ * A structured database of clinical trials, in which especially the structure of trials is well captured. Measurements can be coupled to specific arms, outcomes, and time points in the trial.
+   Between-trial analysis is enabled by "mapping" the outcomes and interventions in each trial to globally defined entities.
+   The data is sufficiently structured to enable the EMA D80 summary of efficacy table to be filled in automatically.
+ * Semi-automated import of protocol and results from ClinicalTrials.gov.
+ * With an appropriately filled database, the system guides the creation of meta-analyses and benefit-risk analyses. This should allow treatments to be defined as individual drugs or combination treatments, distinguishing between different dose ranges if necessary.
 
+Feedback on ADDIS 1 has been gathered as a source of additional requirements.
+These are typically at a more fine-grained level of detail than the high-level requirements outlined above.
+In addition, as part of the [IMI GetReal project](/about/projects), functional requirements related to the prediction of relative effectiveness from randomized data will be defined.
+
+Non-functional requirements
+---------------------------
+
+We identify the main goals and non-functional requirements of the ADDIS 2 re-development effort according to five key concerns: valorization, development, research, ecosystem, and learning.
 
 ### Valorization
 The system should generate sufficient revenue to support its continued development and operation.
