@@ -12,3 +12,7 @@ permalink: /:year-:month-:day-:title.html
 scholar:
   style: ./_bibliography/apa.csl
   bibliography: publications
+
+authors:
+  gert:
+    display_name: Gert van Valkenhoef

@@ -1,7 +1,9 @@
 ---
 layout: default
 ---
-<!-- TODO http://www.lostdecadegames.com/blog-author-attribution-using-jekyll/ -->
+
+{% assign author = site.authors[page.author] %}
+
 <article>
   <header>
     <div class="row">
@@ -19,7 +21,7 @@ layout: default
     <div class="row">
       <div class="large-12 columns">
         <h3>{{page.title}}</h3>
-	<h6>{{ page.date | date_to_string }}</h6>
+	<h6>{{ page.date | date_to_string }} <small>&mdash; {{ author.display_name }}</small></h6>
 	{{content}}
       </div>
     </div>
