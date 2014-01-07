@@ -2,7 +2,7 @@
 layout: post
 title: "mcda.drugis.org launched"
 author: gert
-except: mcda.drugis.org is a web-based tool for MCDA preference elicitation, and the first ADDIS 2 component to be launched.
+excerpt: mcda.drugis.org is a web-based tool for MCDA preference elicitation, and the first ADDIS 2 component to be launched.
 categories: news
 ---
 
