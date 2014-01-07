@@ -32,7 +32,6 @@ title: The team
 
 ## Students
 
-- Joël Kuiper; PhD student, BioSHaRe liaison; team member since 2012-04
 - Bob Goeree; MSc student; team member since 2013-09
 - Lourens Elzinga; MSc student, research assistant; team member since 2013-09
 
