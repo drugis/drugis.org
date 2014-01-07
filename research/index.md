@@ -20,7 +20,9 @@ As we see it, such decisions require the following steps to be taken:
 
 All three steps are challenging, and are typically performed by different domain experts using an ad-hoc series of disconnected software tools.
 Although this is often a viable option, there are several problems with this approach.
-FIXME: reproducibility, transparency, efficiency. Steal from somewhere.
+First of all, because analyses are performed using a disconnected series of tools, the required information to accurately reproduce the analyses underlying a decision is often lacking.
+Secondly, trade-off decisions are often made informally, meaning that the subjective preferences underlying the decision are not made explicit or quantified, leading to a lack of transparency on how the evidence informed the final decision.
+Finally, the lack of integrated tools for the entire decision aiding process results in inefficiencies through duplication of effort and manual data entry and the transfer of results between tools.
 
 ### Example: ADDIS 1.x for drug regulation
 
