@@ -57,11 +57,12 @@ Using the following `post-receive` hook script:
     git checkout -f master
     git submodule update
     git annex merge
-            
+ 
     # build the site
-    jekyll build --destination _build || \
-      [[ mv -v _site _site-`date +%Y%m%dT%H%M%S` && mv -v _build _site ]]
-            
+    jekyll build --destination _build && \
+        mv -v _site _site-`date +%Y%m%dT%H%M%S` && \
+        mv -v _build _site
+ 
     # resource usage
     echo "Space taken by backups:"
     du -hs _site-*
