@@ -3,7 +3,7 @@
 <head>  
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<script src="/js/modernizr.js"></script> 
+	<script src="/js/modernizr.foundation.js"></script> 
 	<meta name="viewport" content="width=device-width">
 	<link rel="stylesheet" href="/css/main.css">
 	<link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
@@ -13,6 +13,12 @@
 	{% include menubar.html %}
 
 	<div class="wrapper">
+<!--[if lt IE 9]>
+<div class="alert-box warning round" style="padding: 10px;">
+You're using a very old version of Internet Explorer. Please upgrade to a modern browser to fully enjoy drugis.org!<br/>
+We recommend <a href="http://www.mozilla.org/en-US/firefox/new/">Mozilla Firefox</a> or <a href="http://google.com/chrome/">Google Chrome</a>.
+</div>
+<![endif]-->
 		{{ content }}
 		<div class="push"></div>
 	</div>
