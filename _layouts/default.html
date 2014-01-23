@@ -17,6 +17,13 @@
 	<title>drugis.org | {{ page.title }}</title>
 </head>
 <body>
+  <!--[if lt IE 9]>
+  <div class="alert-box warning" style="margin-bottom:0px; font-weight: normal">
+    Your browser is <b>out of date</b>.
+    It has known <b>security flaws</b> and may <b>not display all features of this and other websites</b>.
+    <a href="http://browser-update.org/update-browser.html#drugis.org">Learn how to update your browser</a>
+  </div>
+  <![endif]-->
 	{% include menubar.html %}
 
 	<div class="wrapper">
@@ -36,26 +43,11 @@
 	<script>
 	$(document).foundation({
 	  topbar : {
-
 	    mobile_show_parent_link: true
 	  }
 	});
 	</script>
 	<!--<![endif]-->
-
-	<!-- Brwoser out of date warning script - http://www.browser-update.org/ -->
-	<script type="text/javascript"> 
-		var $buoop = {}; 
-		$buoop.ol = window.onload; 
-		window.onload=function(){ 
-		 try {if ($buoop.ol) $buoop.ol();}catch (e) {} 
-		 var e = document.createElement("script"); 
-		 e.setAttribute("type", "text/javascript"); 
-		 e.setAttribute("src", "//browser-update.org/update.js"); 
-		 document.body.appendChild(e); 
-		} 
-	</script> 
-	
 <!-- End Footer -->
 </body>
 </html>
