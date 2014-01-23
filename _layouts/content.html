@@ -4,20 +4,20 @@ layout: default
 
 <header>
   <div class="row">
-    <div class="large-12 columns">
+    <div class="twelve large-12 columns">
       <h2>{{page.title}}</h2>
     </div>
   </div>
 </header>
-<ol class="breadcrumbs">
+<ul class="breadcrumbs">
   {% for p in page.ancestors %}
   <li><a href="{{ p.url }}">{{ p.title }}</a>
     {% endfor %}
-  <li class="active">{{ page.title }}</li>
-</ol>
+  <li class="current active">{{ page.title }}</li>
+</ul>
 <section class="content">
   <div class="row">
-    <div class="large-12 columns">
+    <div class="twelve large-12 columns">
       {{content}}
     </div>
   </div>

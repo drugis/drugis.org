@@ -4,7 +4,7 @@ title: The team
 ---
 
 <div class="row">
-  <div class="large-12 columns">
+  <div class="twelve large-12 columns">
     <h2>Core team</h2>
   </div>
 </div>
@@ -12,13 +12,13 @@ title: The team
 {% for member in site.data.members %}
   <div class="row">
     <hr>
-    <div class="large-8 columns">
+    <div class="eight large-8 columns">
       <h4>{{member.name}}</h4>
       <h5>{{member.role}}</h5>
       <p>{{member.bio | markdownify}}</p>
       <p>Find out more on his <a href="{{member.homepage-url}}" title="{{member.name}}">personal page</a>.
     </div>
-    <div class="large-3 columns">
+    <div class="three large-3 columns">
       <img class="screen-shot" src="/images/about/{{member.picture-url}}">
     </div>
   </div>
