@@ -7,7 +7,7 @@ layout: default
 <article>
   <header>
     <div class="row">
-      <div class="large-12 columns">
+      <div class="twelve large-12 columns">
 	<h2>News | <small> {{ page.title }} </small></h2>
       </div>
     </div>
@@ -15,11 +15,11 @@ layout: default
 <ol class="breadcrumbs">
   <li><a href="/">Home</a></li>
   <li><a href="/news">News</a></li>
-  <li class="active">{{ page.title }}</li>
+  <li class="current active">{{ page.title }}</li>
 </ol>
 <section class="content">
     <div class="row">
-      <div class="large-12 columns">
+      <div class="twelve large-12 columns">
         <h3>{{page.title}}</h3>
 	<h6>{{ page.date | date_to_string }} <small>&mdash; {{ author.display_name }}</small></h6>
 	{{content}}
