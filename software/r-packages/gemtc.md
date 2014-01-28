@@ -16,7 +16,7 @@ You need to have one of these packages and the MCMC software installed to be abl
 
 The manual and changelog are available on CRAN and the source code on GitHub:
 
- - [gemtc on CRAN](http://cran.r-project.org/web/packages/getmc/)
+ - [gemtc on CRAN](http://cran.r-project.org/web/packages/gemtc/)
  - [getmc source on GitHub](https://github.com/gertvv/getmc/)
 
 To install the getmc R package, use the following command in R:
