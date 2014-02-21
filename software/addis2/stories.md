@@ -262,7 +262,14 @@ Implementation checklist:
 
 User interface:
 
+ - https://trello-attachments.s3.amazonaws.com/5270ca8844d20c90510038c0/52dcec168d3d8b0d2c7bb48c/a6d62e17cd3daebeb11cf4c3dc0f70b6/trello-152413068.jpg
+
 API requirements:
+
+ - Outcomes are a REST resource at {CORE_API}/projects/{id}/outcomes
+    - supports query, create, get
+ - Variable definitions are a REST resource {TRIALVERSE_API}/namespaces/{ns_id}/variables
+    - supports query, get
 
 References: none.
 
@@ -275,7 +282,60 @@ Status:
 
 ### Story 6: add interventions
 
+Source: UMCG
+
+Tagline: As a user, I want to add intervention definitions to my project so that these can be used in analyses.
+
+Implementation checklist:
+
+ - Users can create interventions with a name and description/motivation
+ - Users can select a drug from the trialverse namespace to map the intervention to
+
+User interface:
+
+ - See [Story 6](#Story-6)
+
+API requirements:
+
+ - Interventions are a REST resource at {CORE_API}/projects/{id}/interventions
+    - supports query, create, get
+ - Drug definitions are a REST resource {TRIALVERSE_API}/namespaces/{id}/drugs
+    - supports query, get
+ 
+References: none.
+
+Complexity estimate: 2 points
+
+Status:
+
+ - 2014-01-22 preliminarily planned for 2014Q1
+ - 2014-02-18 planned for 2014Q1 iteration 2
+
 ### Story 7: modify project information
+
+Source: UMCG
+
+Tagline:
+
+Implementation checklist:
+
+User interface:
+
+ - https://trello-attachments.s3.amazonaws.com/5270ca8844d20c90510038c0/52dceb2abdf740875b9f5a2f/24925e4cbcd94c8537640e9d9bfcbfa7/trello887037007.jpg
+
+API requirements:
+
+ - Projects are a REST resource at {CORE_API}/projects/{id}
+    - supports update
+
+References: none.
+
+Complexity estimate: 1/2 points
+
+Status:
+
+ - 2014-02-22 preliminarily planned for 2014Q1
+ - 2014-02-18 planned for 2014Q1 iteration 2
 
 ## Theme 2: Single study benefit-risk analysis (SSBR)
 
@@ -307,19 +367,240 @@ References:
 
 ### Story 8: create SSBR analysis
 
+Source: UMCG
+
+Tagline: As a decision maker, I want to create a single study benefit-risk analysis so that I can perform an MCDA analysis based on a single study.
+
+Implementation checklist:
+
+- There is a button to create a single-study benefit-risk analysis, which triggers a dialog where the user can specify a name and description for the analysis.
+- After creation the user is redirected to an analysis view.
+
+User interface:
+
+- https://trello-attachments.s3.amazonaws.com/5270ca8844d20c90510038c0/52dcf612448d3551587ed2eb/b1fd127795f0bcbb228d587dcd1916e1/IMG_20140218_145707.jpg
+
+API requirements:
+
+- Analyses are a REST resource at {CORE_API}/projects/{id}/analyses
+  - supports query, create, get
+
+References: none.
+
+Complexity estimate: 2 points
+
+Status:
+
+- 2014-01-22 preliminarily planned for 2014Q1
+- 2014-02-18 planned for 2014Q1 iteration 2
+
 ### Story 9: select criteria
+
+Source: UMCG
+
+Tagline: As a decision maker, I want to select the criteria of interest so that I can perform an MCDA analysis.
+
+Implementation checklist:
+
+- A list of included criteria is presented on the analysis view
+- The user can add criteria, from the list of project outcomes (IFF owner of the project)
+- The user can remove criteria (IFF owner of the project)
+- The user is alerted if fewer than two criteria have been selected
+
+User interface:
+
+- http://ivaynberg.github.io/select2/ multiselect
+
+API requirements:
+
+- Bulleted list of API requirements.
+
+References: none.
+
+Complexity estimate: 1 point
+
+Status:
+
+- 2014-01-22 preliminarily planned for 2014Q1
+- 2014-02-18 planned for 2014Q1 iteration 2
 
 ### Story 10: select alternatives
 
+Source: UMCG
+
+Tagline: As a decision maker, I want to select the alternatives of interest so that I can perform an MCDA analysis.
+
+Implementation checklist:
+
+- A list of included alternatives is presented on the analysis view
+- The user can add alternatives, from the list of project interventions (IFF owner of the project)
+- The user can remove alternatives (IFF owner of the project)
+- The user is alerted if fewer than two alternatives have been selected
+
+User interface:
+
+- http://ivaynberg.github.io/select2/ multiselect
+
+API requirements:
+
+- Bulleted list of API requirements.
+
+References: none.
+
+Complexity estimate: 1/2 points
+
+Status:
+
+- 2014-01-22 preliminarily planned for 2014Q1
+- 2014-02-18 planned for 2014Q1 iteration 2
+
 ### Story 11: select study
+
+Source: UMCG
+
+Tagline: As a decision maker, I want to select a study so that I can perform an MCDA analysis based on that study's data.
+
+Implementation checklist:
+
+- The user can select a study (IFF owner of the project)
+- The user is alerted if they choose study that does not contain selected criteria/alternatives
+- The user is made aware of incompatible studies through an icon in the selection list
+
+User interface:
+
+- Simple selection like typeahead input
+
+API requirements:
+
+- Bulleted list of API requirements.
+
+References: 
+
+- Bulleted list of references to further information
+
+Complexity estimate: 1 point
+
+Status:
+
+- 2014-01-22 preliminarily planned for 2014Q1
+- 2014-02-18 planned for 2014Q1 iteration 2
 
 ### Story 12: create MCDA problem
 
+Source: UMCG
+
+Tagline: As a decision maker, I want to translate my selected criteria, alternatives, and selected study to an MCDA problem definition so that  I can perform an MCDA analysis.
+
+Implementation checklist:
+
+- The user can download the MCDA problem
+  - automatically match arms to interventions (main epoch defined as the epoch attached to the primary measurement moment)
+  - automatically match study outcomes to BR-criteria
+  - retrieve measurements (NB select primary measurement moment from study (specified in trialverse))
+  - generate and store mcda-web compatible JSON (beta-distributed dichotomous outcomes; normal-distributed continuous outcomes)
+
+User interface:
+
+- A link
+
+API requirements:
+
+- The MCDA problem is a REST resource at {CORE_API}/projects/{id}/analyses/{id}/problem
+
+References: 
+
+- JSON MCDA problem export in ADDIS 1
+
+Complexity estimate: 5
+
+Status:
+
+- 2014-01-22 preliminarily planned for 2014Q1
+
 ### Story 13: perform MCDA analysis
+
+Source: UMCG
+
+Tagline: As a decision maker, I want to provide my preferences and receive decision metrics so that I can perform an MCDA analysis.
+
+Implementation checklist:
+
+- The user is directed to an mcda-web interface where the MCDA problem is loaded
+- The user is able to save/load preference scenarios in the mcda-web interface
+- The user is unable to make further changes to the problem definition after the MCDA analysis has been started
+
+User interface:
+
+- Bulleted list of user interface expectations and/or links to mock-ups.
+
+API requirements:
+
+- The MCDA problem is a REST resource at {CORE_API}/projects/{id}/analyses/{id}/problem
+- Preference scenarios are a REST resource at {CORE_API}/projects/{id}/analyses/{id}/scenarios
+   - supports query, get, create, update
+
+References: none.
+
+Complexity estimate: 2 points
+
+Status:
+
+- 2014-01-22 preliminarily planned for 2014Q1
 
 ### Story 14: arm disambiguation
 
+Source: UMCG
+
+Tagline: As a decision maker, I want to select the specific arms to be included in the analysis so that the most appropriate arm is used.
+
+Implementation checklist:
+
+- Bulleted list of specific functional requirements
+- Allow user to override intervention to arm matching when this matching is ambiguous
+
+User interface:
+
+- Radio buttons or a dropdown
+
+API requirements:
+
+- Arm selections must be settable somewhere in {CORE_API}/projects/{id}/analyses/{id}
+
+References: 
+
+- Arm disambiguation in ADDIS 1.x meta-analysis wizards
+
+Complexity estimate: 1 point
+
+Status:
+
+- 2014-01-22 preliminarily planned for 2014Q1
+
 ### Story 15: copy locked analysis
+
+Source: UMCG
+
+Tagline: As a decision maker, I want to copy my locked analysis so that I can make further changes to the problem definition.
+
+Implementation checklist:
+
+- The user can click a "copy" or "clone" button to create a new analysis pre-populated with the same criteria, alternative, and study selections as the current one
+
+User interface:
+
+- A button and a confirmation step with clarification of what will happen
+
+API requirements:
+
+- Bulleted list of API requirements.
+
+References: none.
+
+Complexity estimate: 1 point
+
+Status:
+
+- 2014-01-22 preliminarily planned for 2014Q1
 
 ## Theme 3: Network meta-analysis
 
