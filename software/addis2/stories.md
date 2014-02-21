@@ -117,7 +117,8 @@ References:
 
 Source: UMCG
 
-Tagline: As a user, I want to be able to securely log in to my personal account so that (1) my work is properly attributed to me and (2) others are prevented from modifying my work without permission. Ideally, I do not want to create a new set of credentials to remember, I would rather log in using an account I already have.
+Tagline: As a user, I want to be able to securely log in to my personal account so that (1) my work is properly attributed to me and (2) others are prevented from modifying my work without permission.
+Ideally, I do not want to create a new set of credentials to remember, I would rather log in using an account I already have.
 
 Implementation checklist:
 
@@ -152,7 +153,8 @@ Status:
 
 Source: UMCG
 
-Tagline: As a user, I want a comprehensive overview of my other projects so that I can find and interact with them. In addition, I would like to be aware of other potentially interesting projects.
+Tagline: As a user, I want a comprehensive overview of my other projects so that I can find and interact with them.
+In addition, I would like to be aware of other potentially interesting projects.
 
 Implementation checklist:
 
@@ -161,7 +163,8 @@ Implementation checklist:
 
 User interface:
 
- - Two simple lists separated by headings will suffice initially. It is assumed that we will come back to this when the system becomes more fully functional.
+ - Two simple lists separated by headings will suffice initially.
+   It is assumed that we will come back to this when the system becomes more fully functional.
 
 API requirements:
 
@@ -343,7 +346,8 @@ Source: UMCG / re-implementation of ADDIS 1.x features
 
 Purpose:
 
-Policy makers may want to assess the implications of a single large trial for the benefit-risk balance of a number of alternative interventions. Using a single study minimizes the number of intervening analyses that need to be done, as the performance distributions for each of the interventions (alternatives) and outcomes (criteria) can be estimated directly from the trial's results.
+Policy makers may want to assess the implications of a single large trial for the benefit-risk balance of a number of alternative interventions.
+Using a single study minimizes the number of intervening analyses that need to be done, as the performance distributions for each of the interventions (alternatives) and outcomes (criteria) can be estimated directly from the trial's results.
 
 Assumptions:
 
@@ -607,7 +611,10 @@ Source: UMCG / re-implementation of ADDIS 1.x features
 
 Purpose:
 
-Decisions regarding alternative treatment options should ideally take into account all available evidence. Meta-analysis and especially network meta-analysis is an important tool to achieve this. It enables the simultaneous comparison of any number of interventions studies in any number of clinical trials. Automated network meta-analysis is widely seen as a key feature of ADDIS 1.x.
+Decisions regarding alternative treatment options should ideally take into account all available evidence.
+Meta-analysis and especially network meta-analysis is an important tool to achieve this.
+It enables the simultaneous comparison of any number of interventions studies in any number of clinical trials.
+Automated network meta-analysis is widely seen as a key feature of ADDIS 1.x.
 
 Assumptions:
 
@@ -631,7 +638,8 @@ Source: UMCG / re-implementation of ADDIS 1.x features
 
 Purpose:
 
-Network meta-analysis is an important statistical method that is increasingly being used for evidence synthesis in systematic reviews. A user-friendly interface for network meta-analysis is therefore valuable independent of the ADDIS project proper, so it makes sense to provide it as an independent component.
+Network meta-analysis is an important statistical method that is increasingly being used for evidence synthesis in systematic reviews.
+A user-friendly interface for network meta-analysis is therefore valuable independent of the ADDIS project proper, so it makes sense to provide it as an independent component.
 
 Assumptions:
 
@@ -649,7 +657,9 @@ Source: UMCG / re-implementation of ADDIS 1.x features
 
 Purpose:
 
-Policy makers want to assess the benefit-risk balance of a number of alternative interventions, for example to decide whether or not a new medicine should be allowed on the market, or to provide recommendations on the first-line therapy for a specific condition. Such decisions should take into account all available evidence, which typically requires a network meta-analysis. Thus network meta-analysis should inform the MCDA model.
+Policy makers want to assess the benefit-risk balance of a number of alternative interventions, for example to decide whether or not a new medicine should be allowed on the market, or to provide recommendations on the first-line therapy for a specific condition.
+Such decisions should take into account all available evidence, which typically requires a network meta-analysis.
+Thus network meta-analysis should inform the MCDA model.
 
 Assumptions:
 
@@ -677,9 +687,13 @@ Source: GetReal DoW D4.4
 
 Purpose:
 
-To predict RE and absolute benefits and harms in patients and populations that differ in terms of risk factors and co-morbidities, adherence or uptake of therapy. This may include the simulation of rare or less common diseases, drug with companion diagnostic, tumours with genetic marker, and primary antineoplastic targeted agents.
+To predict RE and absolute benefits and harms in patients and populations that differ in terms of risk factors and co-morbidities, adherence or uptake of therapy.
+This may include the simulation of rare or less common diseases, drug with companion diagnostic, tumours with genetic marker, and primary antineoplastic targeted agents.
 
-The model will be driven by transition times from one state to the next, which are described by transition-specific hazard functions. An individual-level simulation model based on discrete health states is envisaged, but different model structures or designs that may be appropriate for specific case study disease areas will be tested. For each state hazard functions and its parameters are specified and transition times simulated from a piecewise constant approximation of the hazard function. Transitions between states depend on baseline characteristics and on the history of previous events. 
+The model will be driven by transition times from one state to the next, which are described by transition-specific hazard functions.
+An individual-level simulation model based on discrete health states is envisaged, but different model structures or designs that may be appropriate for specific case study disease areas will be tested.
+For each state hazard functions and its parameters are specified and transition times simulated from a piecewise constant approximation of the hazard function.
+Transitions between states depend on baseline characteristics and on the history of previous events. 
 
 It should be possible to take certain parameters from the results of network meta-analyses.
 
@@ -699,7 +713,10 @@ Source: GetReal DoW D4.4
 
 Purpose:
 
-Simulations are likely to be driven by risk equations that represent disease progression and how this is altered by different therapies. The model will be driven by transition times from one state to the next, which are described by transition-specific hazard functions. Such transitions are mutually exclusive outcomes, which corresponds to competing risks between multiple outcomes in the clinical trials. Thus, the parameters of these models will be informed by network meta-analyses of competing risk outcomes.
+Simulations are likely to be driven by risk equations that represent disease progression and how this is altered by different therapies.
+The model will be driven by transition times from one state to the next, which are described by transition-specific hazard functions.
+Such transitions are mutually exclusive outcomes, which corresponds to competing risks between multiple outcomes in the clinical trials.
+Thus, the parameters of these models will be informed by network meta-analyses of competing risk outcomes.
 
 Assumptions:
 
@@ -757,7 +774,10 @@ Source: GetReal DoW D4.13
 
 Purpose:
 
-Often data on different trials will be entered by various parties for varying reasons. Therefore, it may not a priori be obvious that they measure the same or similar concepts, and it may be necessary to "harmonize" the concepts before the trials can be jointly analyzed. To this end, users should be able to indicate when two outcomes or interventions are instances of the same higher-level concept. This should support existing terminologies such as SNOMED-CT, ICD-10, and ATC.
+Often data on different trials will be entered by various parties for varying reasons.
+Therefore, it may not a priori be obvious that they measure the same or similar concepts, and it may be necessary to "harmonize" the concepts before the trials can be jointly analyzed.
+To this end, users should be able to indicate when two outcomes or interventions are instances of the same higher-level concept.
+This should support existing terminologies such as SNOMED-CT, ICD-10, and ATC.
 
 Assumptions: TODO.
 
