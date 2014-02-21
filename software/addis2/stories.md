@@ -555,7 +555,6 @@ Tagline: As a decision maker, I want to select the specific arms to be included 
 
 Implementation checklist:
 
-- Bulleted list of specific functional requirements
 - Allow user to override intervention to arm matching when this matching is ambiguous
 
 User interface:
