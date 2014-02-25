@@ -42,7 +42,7 @@ Theme template:
 
     ## Theme X: short title
 
-    Source: source of requirement (e.g. UMCG, AmGen)
+    Source: source of requirement; both the document from which it is derived and the project participant(s) (e.g. GetReal DoW, UMCG, AmGen)
 
     Purpose:
 
@@ -60,7 +60,7 @@ Story template:
 
     ### Story Y: short title
 
-    Source: source of requirement (e.g UMCG, AmGen)
+    Source: source of requirement; the project participant(s) (e.g UMCG, AmGen)
 
     Tagline: As a ___, I want to ___ so that ___.
 
@@ -462,7 +462,7 @@ Status:
 
 Source: UMCG
 
-Tagline: As a decision maker, I want to select a study so that I can perform an MCD analysis based on that study's data.
+Tagline: As a decision maker, I want to select a study so that I can perform an MCDA analysis based on that study's data.
 
 Implementation checklist:
 
