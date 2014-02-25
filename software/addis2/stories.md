@@ -15,7 +15,7 @@ Within this iterative process, we distinguish two layers of iteration:
 
 User stories describe coherent and self-contained pieces of user-visible functionality. 
 Within this definition, we aim for user stories to be as small as possible in terms of implementation complexity, so that we can plan for multiple stories to be implemented each (two-week) iteration.
-Moreover, user stories should ideally be as independent of eachother as is reasonable, so that they can be implemented in any order based on prioritization.
+Moreover, user stories should ideally be as independent of each other as is reasonable, so that they can be implemented in any order based on prioritization.
 User stories should have a clear description of their functional requirements and where appropriate should also define their user interface and application programming interface (API) requirements, as well as the assumptions that were made when writing the user story.
 Finally, when user stories are considered for implementation in the next release, the developers estimate their complexity in abstract units called "story points".
 Over the course of development, the team learns about their "velocity": the number of story points that can be implemented per iteration.
@@ -24,8 +24,8 @@ This allows a forecast of the number of story points that can be implemented in 
 Themes are a higher level description of a set of related functionalities that together allow users to complete a specific task or collection of related tasks to their satisfaction. 
 Although a theme may start out as just a description, it will need to be broken down into specific user stories before it can be implemented.
 This should be done before the theme enters the planning horizon (i.e. when we expect to start working on the theme in the current or next release).
-On the other hand specifying the stories too early may require significant rework down the road as the system and the user expectations start to take shape.
-The partitioning into user stories can often be done in multiple ways, and it may turn out that a non-obvious way of doing so can significantly reduce implementation complexity.
+Note that specifying the stories too early may incur rework costs down the road as the system and the user expectations start to take shape.
+Partitioning a theme into user stories can often be done in multiple ways, where the intuitive way might actually result in high implementation complexity.
 Therefore, defining the user stories is an iterative process between developers and the other stakeholders.
 
 This document is formatted in plain text using the [Markdown](http://daringfireball.net/projects/markdown/syntax) syntax.
@@ -36,17 +36,17 @@ Please follow these guidelines when contributing to themes and stories:
 - Separate paragraphs by a (single) empty line.
 - Number themes and stories in order of creation.
   If you are unsure what the number should be, leaving it out is better than guessing.
-- Preview your changes in the rendered HTML before committing them.
+- Preview your changes in rendered HTML before committing them.
 
 Theme template:
 
     ## Theme X: short title
 
-    Source: source of requirement
+    Source: source of requirement (e.g. UMCG, AmGen)
 
     Purpose:
 
-    Short description of 
+    Short description of the theme's purpose
 
     Assumptions:
 
@@ -60,7 +60,7 @@ Story template:
 
     ### Story Y: short title
 
-    Source: source of requirement
+    Source: source of requirement (e.g UMCG, AmGen)
 
     Tagline: As a ___, I want to ___ so that ___.
 
@@ -93,7 +93,7 @@ Source: UMCG / re-implementation of ADDIS 1.x features
 
 Purpose:
 
-Typically, any project (systematic review, decision analysis, etc.) will include several analyses, for example to capture a set of related analyses under a single umbrella.
+Typically, any project (systematic review, decision analysis, etc.) will include several related analyses, capturing them under a single umbrella.
 To frame the analyses that he/she is planning to do, a user must define the "universe of discourse" - this includes the clinical trials under consideration and the relevant outcomes and interventions being studied.
 This relates directly to PICO: population (accounted for in trial selection), interventions / control, outcomes.
 
@@ -153,7 +153,7 @@ Status:
 
 Source: UMCG
 
-Tagline: As a user, I want a comprehensive overview of my other projects so that I can find and interact with them.
+Tagline: As a user, I want a comprehensive overview of my projects so that I can find and interact with them.
 In addition, I would like to be aware of other potentially interesting projects.
 
 Implementation checklist:
@@ -198,14 +198,12 @@ Implementation checklist:
 
 User interface:
 
- - A big, visible button on the projects overview triggers an overlay where the required information can be entered in a simple form.
+ - A button on the projects overview triggers an overlay where the required information can be entered in a simple form.
 
 API requirements:
 
  - Projects are a REST resource at {CORE_API}/projects/{id}
     - supports create
- - TrialVerse namespaces are a REST resource at {TRIALVERSE_API}/namespaces/{id}
-    - supports query
 
 References: none.
 
@@ -226,7 +224,7 @@ Tagline: As a user, I want an overview of my project so that I have a place wher
 Implementation checklist:
 
  - From the project overview allow selection of a specific project to view
- - On the view, show the following elements:
+ - On the project view, show the following elements:
     - project name and description
     - trialverse namespace (name/description + url)
     - defined outcomes + option to create more
@@ -261,7 +259,7 @@ Tagline: As a user, I want to add outcome definitions to my project so that thes
 Implementation checklist:
 
  - Users can create outcomes with a name and description/motivation
- - Users can select a variable from the trialverse namespace to map the outcome to
+ - Users can select a semantic outcome from the trialverse namespace to map the outcome to
 
 User interface:
 
@@ -271,8 +269,10 @@ API requirements:
 
  - Outcomes are a REST resource at {CORE_API}/projects/{id}/outcomes
     - supports query, create, get
- - Variable definitions are a REST resource {TRIALVERSE_API}/namespaces/{ns_id}/variables
+ - Semantic outcomes are a REST resource {TRIALVERSE_API}/namespaces/{ns_id}/variables
     - supports query, get
+ - TrialVerse namespaces are a REST resource at {TRIALVERSE_API}/namespaces/{id}
+    - supports query
 
 References: none.
 
@@ -417,7 +417,7 @@ User interface:
 
 API requirements:
 
-- Bulleted list of API requirements.
+- TODO
 
 References: none.
 
@@ -447,7 +447,7 @@ User interface:
 
 API requirements:
 
-- Bulleted list of API requirements.
+- TODO
 
 References: none.
 
@@ -462,7 +462,7 @@ Status:
 
 Source: UMCG
 
-Tagline: As a decision maker, I want to select a study so that I can perform an MCDA analysis based on that study's data.
+Tagline: As a decision maker, I want to select a study so that I can perform an MCD analysis based on that study's data.
 
 Implementation checklist:
 
@@ -476,11 +476,11 @@ User interface:
 
 API requirements:
 
-- Bulleted list of API requirements.
+- TODO
 
 References: 
 
-- Bulleted list of references to further information
+- TODO
 
 Complexity estimate: 1 point
 
@@ -535,7 +535,7 @@ Implementation checklist:
 
 User interface:
 
-- Bulleted list of user interface expectations and/or links to mock-ups.
+- TODO
 
 API requirements:
 
@@ -595,7 +595,7 @@ User interface:
 
 API requirements:
 
-- Bulleted list of API requirements.
+- TODO
 
 References: none.
 
