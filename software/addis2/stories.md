@@ -113,7 +113,7 @@ References:
 
  - [The TrialVerse and ConceptMapper prototypes](https://github.com/drugis/trialverse/)
 
-### Story 1: basic user login / account management
+### Story 1: [DONE] basic user login / account management
 
 Source: UMCG
 
@@ -149,7 +149,7 @@ Status:
  - 2014-01-30 planned 2014Q1 iteration 1
  - 2014-02-18 completed 2014Q1 iteration 1
 
-### Story 2: projects overview screen
+### Story 2: [DONE] projects overview screen
 
 Source: UMCG
 
@@ -182,7 +182,7 @@ Status:
  - 2014-01-30 planned 2014Q1 iteration 1
  - 2014-02-18 completed 2014Q1 iteration 1
 
-### Story 3: create project
+### Story 3: [DONE] create project
 
 Source: UMCG
 
