@@ -632,6 +632,186 @@ References:
 
  - van Valkenhoef, G., Tervonen, T., Zwinkels, T., de Brock, B., & Hillege, H. (2013). ADDIS: a decision support system for evidence-based medicine. Decision Support Systems, 55, 459–475.
 
+### Story 22: create network meta-analysis
+
+Source: UMCG
+
+Tagline: As a decision maker, I want to create a network meta-analysis, so that I can derive consistent estimates of the relative effects of the interventions of interest.
+
+Implementation checklist:
+
+ - There is a button to create a network meta-analysis
+ - After creation the user is redirected to an analysis view
+   * Display the selected outcome (none by default)
+   * Display the included interventions (all interventions defined in project by default)
+   * Display the included studies and arms (all in project by default)
+   * Display the network graph (dynamically updated)
+   * Button to create an analysis (only visible IFF owner, only enabled IFF network is connected and has at least two interventions and mapping of arms to interventions is not ambiguous)
+
+User interface: TODO.
+
+API requirements:
+
+- Analyses are a REST resource at {CORE_API}/projects/{id}/analyses
+  - supports query, create, get
+- Project outcomes, interventions, studies are available as REST resources
+
+References: none.
+
+Complexity estimate: 5 points
+
+Status:
+
+- 2014-01-22 preliminarily planned for 2014Q1
+
+### Story 23: select outcome
+
+Source: UMCG
+
+Tagline: As a decision maker / analyst, I want to select an outcome, so that I can perform a network meta-analysis on that outcome.
+
+Implementation checklist:
+
+- The user can select an outcome from among the defined project outcomes
+- The selected outcome is stored in the analysis
+- Studies / arms that do not have data for that outcome are automatically excluded (grayed out)
+
+User interface: TODO.
+
+API requirements:
+
+- Analyses are a REST resource at {CORE_API}/projects/{id}/analyses
+  - supports query, create, get
+  - enables the selected outcome to be get/set
+- Project outcomes are available as REST resources
+
+References: none.
+
+Complexity estimate: 1/2 points
+
+Status:
+
+- 2014-01-22 preliminarily planned for 2014Q1
+
+### Story 24: exclude interventions
+
+Source: UMCG
+
+Tagline: As a decision maker / analyst, I want to exclude certain interventions from analysis, so that I can analyze the appropriate interventions and/or ensure the network is connected and/or ensure the included intervention definitions are mutually exclusive.
+
+Implementation checklist:
+
+- The user can exclude interventions
+- The included and excluded interventions are stored in the analysis
+- Studies / arms that do not have data for at least one of intervention are automatically excluded (grayed out)
+
+User interface: TODO.
+
+API requirements:
+
+- Analyses are a REST resource at {CORE_API}/projects/{id}/analyses
+  - supports query, create, get
+  - the included interventions can be get/set
+- Project outcomes are available as REST resources
+
+References: none.
+
+Complexity estimate: 1 points
+
+Status:
+
+- 2014-01-22 preliminarily planned for 2014Q1
+
+### Story 25: exclude studies
+
+Source: UMCG
+
+Tagline: As a decision maker / analyst, I want to exclude certain studies from analysis, so that I can analyze only the appropriate studies and/or perform sensitivity analyses.
+
+Implementation checklist:
+
+- The user can exclude studies 
+- The included and excluded studies are stored in the analysis
+
+User interface: TODO.
+
+API requirements:
+
+- Analyses are a REST resource at {CORE_API}/projects/{id}/analyses
+  - supports query, create, get
+  - the included studies can be get/set
+- Project studies are available as REST resources
+
+References: none.
+
+Complexity estimate: 1 points
+
+Status:
+
+- 2014-01-22 specified
+
+### Story 26: exclude arms
+
+Source: UMCG
+
+Tagline: As a decision maker / analyst, I want to exclude certain arms from analysis, so that I can analyze only the appropriate arms and/or perform sensitivity analyses.
+
+Implementation checklist:
+
+- The user can exclude arms
+- The included and excluded arms are stored in the analysis
+
+User interface: TODO.
+
+API requirements:
+
+- Analyses are a REST resource at {CORE_API}/projects/{id}/analyses
+  - supports query, create, get
+  - the included arms can be get/set
+- Project studies and arms are available as REST resources
+
+References: none.
+
+Complexity estimate: 1 points
+
+Status:
+
+- 2014-01-22 specified
+
+### Story 27: create network meta-analysis problem
+
+Source: UMCG
+
+Tagline: As a decision maker / analyst, I want to generate a network meta-analysis problem definitions for the defined outcome, interventions, studies, and arms so that I can perform network meta-analysis on this data set in ADDIS or in R.
+
+Implementation checklist:
+
+- The user can download the NMA problem
+  - automatically match arms to interventions (main epoch defined as the epoch attached to the primary measurement moment)
+  - automatically match study outcomes to the selected outcomes
+  - retrieve measurements (NB select primary measurement moment from study (specified in trialverse))
+  - generate and store gemtc-web compatible JSON
+
+User interface: TODO.
+
+API requirements: TODO.
+
+References: none.
+
+Complexity estimate: 3 points
+
+Status:
+
+- 2014-01-22 preliminarily planned for 2014Q1
+
+### Story 28: perform network meta-analysis
+
+TODO (redirect to gemtc-web).
+
+### Story 29: arm disambiguation
+
+TODO.
+
 ## Theme 4: GeMTC web interface
 
 Source: UMCG / re-implementation of ADDIS 1.x features
@@ -650,6 +830,155 @@ References:
  - The GeMTC R package: http://drugis.org/software/r-packages/gemtc
 
  - van Valkenhoef, G., Tervonen, T., de Brock, B., & Hillege, H. (2012). Algorithmic Parameterization of Mixed Treatment Comparisons. Statistics and Computing, 22(5), 1099–1111.
+
+### Story 16: problem overview
+
+Source: UMCG / re-implementation of ADDIS 1.x features
+
+Tagline: As an analyst / decision maker, I want to get a comprehensive overview of the evidence synthesis problem / analysis dataset so that I can understand the specifics of the analysis.
+
+Implementation checklist:
+
+- Show outcome
+- Show interventions
+- Show studies, arms, and data
+- Show a graph of the evidence network
+- Show a list of generated models (name + technical characteristics + primary-ness)
+- The user can click a button to create additional models (IFF owner)
+
+User interface: TODO.
+
+API requirements: TODO.
+
+References: TODO.
+
+Complexity estimate: 3 points
+
+Status:
+
+- 2012-01-20 specified
+
+### Story 17: specify model parameters 
+
+Source: UMCG / re-implementation of ADDIS 1.x features
+
+Tagline: As an analyst / decision maker, I want to specify models so that I can formulate questions about the dataset.
+
+Implementation checklist:
+
+- The user can choose the type of model (consistency, node-splitting, ANOHE)
+   * For node-splitting models, the user can select the comparison to be split
+- The user can choose the linear model (fixed effect or random effects)
+- The user can specify the MCMC parameters: adaptation iterations, inference iterations, thinning (with sensible defaults provided)
+
+User interface: TODO.
+
+API requirements: TODO.
+
+References: TODO.
+
+Complexity estimate: 1 points
+
+Status:
+
+- 2012-01-20 specified
+
+### Story 18: estimate model
+
+Source: UMCG / re-implementation of ADDIS 1.x features
+
+Tagline: As an analyst / decision maker, I want to estimate models so that I can answer questions about the dataset.
+
+Implementation checklist:
+
+- Send data and model parameters to R (using Patavi), and receive results back
+- Summarize and visualize results (visualizations assumed to be rendered by R to reduce story complexity)
+   * Forest plots of relative effects
+   * Rank probability plots
+   * Table of all pair-wise relative effects
+   * Convergence diagnostics (gelman-rubin statistic and plots)
+
+User interface: TODO.
+
+API requirements: TODO.
+
+References:
+
+- See ADDIS 1.x and the GeMTC R package for how to present the results.
+- See the GeMTC R package for data requirements and results format.
+
+Complexity estimate: 3 points
+
+Status:
+
+- 2012-01-20 specified
+
+### Story 19: select primary model
+
+Source: UMCG / re-implementation of ADDIS 1.x features
+
+Tagline: As an analyst / decision maker, I want to mark (at most) one of the models I've created as primary, to indicate my judgment as to what is the most appropriate model, and to be able to use its results in further analyses.
+
+Implementation checklist:
+
+- The user can select one of the (consistency) models as the primary model (IFF owner)
+
+User interface: TODO.
+
+API requirements: TODO.
+
+References: TODO.
+
+Complexity estimate: 1/2 points
+
+Status:
+
+- 2012-01-20 specified
+
+### Story 20: cache model results
+
+Source: UMCG / re-implementation of ADDIS 1.x features
+
+Tagline: As a user, I want the results of previously estimated models to be cached, so that they are immediately available.
+
+Implementation checklist:
+
+- Cache results server-side and make them available though a REST repository
+
+User interface: none.
+
+API requirements: TODO.
+
+References: TODO.
+
+Complexity estimate: 1 points
+
+Status:
+
+- 2012-01-20 specified
+
+### Story 21: customize priors
+
+Source: UMCG / re-implementation of ADDIS 1.x features
+
+Tagline: As an analyst, I want to customize the prior distributions used by GeMTC so that I can ensure they correspond to my prior beliefs and/or I can ensure that they are consistent between analyses and/or I can study their impact on the results.
+
+Implementation checklist:
+
+- A reasonable range of different priors can be selected
+  * Assumes these have already been implemented in GeMTC R package; see [GeMTC issue #16](https://github.com/gertvv/gemtc/issues/16)
+
+User interface: none.
+
+API requirements: TODO.
+
+References: TODO.
+
+Complexity estimate: 1 points
+
+Status:
+
+- 2012-01-20 specified
 
 ## Theme 5: meta-analysis based benefit-risk analysis (MABR)
 
@@ -680,6 +1009,27 @@ References:
  - van Valkenhoef, G., Tervonen, T., Zhao, J., de Brock, B., Hillege, H., & Postmus, D. (2012). Multi-criteria benefit-risk assessment using network meta-analysis. Journal of Clinical Epidemiology, 65(4), 394–403.
 
  - https://mcda.drugis.org/
+
+### Story 30: create MABR analysis
+
+TODO.
+
+### Story 31: select criteria
+
+TODO.
+
+### Story 32: select alternatives
+
+TODO.
+
+### Story 33: create MABR problem
+
+TODO.
+
+### Story 34: perform MABR analysis
+
+TODO (mcda-web).
+
 
 ## Theme 6: patient-level disease progression modeling
 
@@ -740,7 +1090,7 @@ References: TODO.
 
 ## Theme 9: Enter new clinical trial
 
-Source: UMCG / re-implementation of ADDIS 1.x features
+Source: GetReal DoW D4.13 ; UMCG / re-implementation of ADDIS 1.x features
 
 Purpose: TODO.
 
@@ -760,7 +1110,7 @@ References: TODO.
 
 ## Theme 11: Edit clinical trial data
 
-Source: UMCG / re-implementation of ADDIS 1.x features
+Source: GetReal DoW D4.13 ; UMCG / re-implementation of ADDIS 1.x features
 
 Purpose: TODO.
 
@@ -806,6 +1156,8 @@ Assumptions: TODO.
 References: TODO.
 
 ## Theme 17: Mark duplicates of clinical trials
+
+Source: UMCG
 
 <script type="text/javascript">
 (function() {
