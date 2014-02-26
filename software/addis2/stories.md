@@ -296,7 +296,7 @@ Implementation checklist:
 
 User interface:
 
- - See [Story 6](#Story-6)
+ - See [Story 5](#Story-5)
 
 API requirements:
 
