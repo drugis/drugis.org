@@ -234,7 +234,7 @@ Implementation checklist:
 
 User interface:
 
- - https://trello-attachments.s3.amazonaws.com/5270ca8844d20c90510038c0/52dce97f651c136f5bfe862e/1686aeea76dc82213e8daf82a829c830/IMG_20140218_145644.jpg.jpeg
+![UI mockup](https://trello-attachments.s3.amazonaws.com/5270ca8844d20c90510038c0/52dce97f651c136f5bfe862e/333280a570c0421a782ccc99df1bac46/Home.png)
 
 API requirements:
  
