@@ -5,18 +5,63 @@ title: MSc projects
 
 ### Open MSc projects
 
- - [User interfaces for detecting heterogeneity in meta-analysis](#heterogeneity)
  - [Data import](#import)
+ - [Reconstructing time-to-event (survival) data from Kaplan-Meier curves: a constraint satisfaction problem](#survival-csp)
+ - [User interfaces for detecting heterogeneity in meta-analysis](#heterogeneity)
  - [User interfaces for exploration and visualization of trials](#ui-trials)
  - [Low-level serialization of Bayesian Hierarchical Models](#bhm-dsl)
+ - [Clinicians' understanding of preference elicitation questions](#preferences)
 
 ### In progress MSc projects
 
- - [Clinicians' understanding of preference elicitation questions](#preferences)
  - [Cost-effectiveness analysis](#cea)
  - [Convergence diagnostics for MCDA / SMAA](#smaa-convergence)
 
 ## MSc projects
+
+<a name="import"></a>
+### Data import
+
+(Multiple MSc projects possible.)
+
+ADDIS currently expects all relevant meta-data about a clinical trial to be entered prior to the entry of any measurement data. Primarily, this consists of the variables that have been measured, the times at which they have been measured, and the (sub-) populations for which they have been measured. This defines a three-dimensional table-like structure. The user is then expected to (manually) input a measurement for each cell. The measurement consists of specific statistical summaries, such as (count, sample size) or (mean, standard deviation, sample size). Some or all of this information may be missing. Thus, we first specify what should be there, and then enter as much data as we can find.
+
+However, quite often one starts out with some semi-structured data (such as an entry on ClinicalTrials.gov or a table in a report) with partially or completely missing meta-data. Thus, we would like to extend ADDIS so that such data can be imported and annotated in a flexible way. The thesis work could address some or all of the following topics:
+
+ * Analysis of the current ClinicalTrials.gov import functionality and its shortcomings. Re-design of the import process to allow more flexible handling of missing meta-data and user-driven disambiguation of the data (e.g. categorical vs. multiple time-point measurements which can not be distinguished in the ClinicalTrials.gov data model).
+
+ * Import of semi-structured (e.g. HTML) data tables, with user-driven annotation of meta-data.
+
+ * Conversion of unstructured (i.e. image-based) data tables to structured data tables.
+
+ * Discovery of data tables in legacy documents (e.g. PDF or scanned reports).
+
+ * Other relevant topics not specified above.
+
+Note that for most of the above there is relevant previous work in the scientific literature, which will need to be evaluated prior to implementation.
+
+<a name="survival-csp"></a>
+### Reconstructing time-to-event (survival) data from Kaplan-Meier curves: a constraint satisfaction problem
+
+Time-to-event data are arguably the most important outcomes of clinical studies.
+The prototypical time-to-event outcome is mortality: does treatment actually extend the lifespan of patients?
+Such data are usually reported in several formats: the total number of events over the duration of the study, a hazard ratio (and confidence interval) that summarizes the differences of the instantaneous risk of death in each treatment group over the duration of the study, and a Kaplan-Meier curve that shows the proportion of patients alive at each point in time of the study:
+
+![Kaplan-Meier curve](http://www.ganfyd.org/images/c/cd/Kaplan-Meier_example.png)
+
+Meta-analysis of time-to-event data is important to summarize the evidence from multiple studies and on multiple interventions.
+Such meta-analyses are often performed based on the total number of events and/or the summary hazard ratio [[e.g. Woods et al. 2010]](http://dx.doi.org/10.1186/1471-2288-10-54), but this assumes that the hazard ratio is constant for the duration of the study.
+This assumption may not be warranted, and better models can be fitted when individual patient data is available [[e.g. Jansen 2011]](http://dx.doi.org/10.1186/1471-2288-11-61).
+However, individual patient data is often hard or impossible to obtain, and recent work has shown that it can instead be reconstructed from the Kaplan-Meier curve, to considerable accuracy [[Guyot et al. 2012]](http://dx.doi.org/10.1186/1471-2288-12-9).
+
+The reconstruction method has correctly worked out the mathematical constraints that define how the individual patient data should be reconstructed.
+However, the implementation leaves several things to be desired.
+Exact information, such as the total number of events, or the total number of patients, is not treated as a hard constraint, while approximate information extracted from the Kaplan-Meier curve is treated as if it were exact.
+Moreover, the code is completely procedural and very difficult to adapt.
+
+This master thesis project will improve the state of the art in the following ways:
+ 1. Reformulate the method of Guyot et al. as a constraint satisfaction problem, making sure that hard constraints are always met.
+ 2. Making use of the more declarative and generalizable CSP formulation, extend the method to simultaneously analyze multiple survival curves. This may arise when Kaplan-Meier curves are available for multiple mutually exclusive outcomes, and/or aggregates of other outcomes.
 
 <a name="heterogeneity"></a>
 ### User interfaces for detecting heterogeneity in meta-analysis
@@ -47,27 +92,6 @@ The project could start with a number of data sets from the literature that
 are known to exhibit one or more forms of bias and confounding, and assess
 whether or not these are identified by users in the current system. Then,
 proposals to improve the situation should be generated and tested.
-
-<a name="import"></a>
-### Data import
-
-(Multiple MSc projects possible.)
-
-ADDIS currently expects all relevant meta-data about a clinical trial to be entered prior to the entry of any measurement data. Primarily, this consists of the variables that have been measured, the times at which they have been measured, and the (sub-) populations for which they have been measured. This defines a three-dimensional table-like structure. The user is then expected to (manually) input a measurement for each cell. The measurement consists of specific statistical summaries, such as (count, sample size) or (mean, standard deviation, sample size). Some or all of this information may be missing. Thus, we first specify what should be there, and then enter as much data as we can find.
-
-However, quite often one starts out with some semi-structured data (such as an entry on ClinicalTrials.gov or a table in a report) with partially or completely missing meta-data. Thus, we would like to extend ADDIS so that such data can be imported and annotated in a flexible way. The thesis work could address some or all of the following topics:
-
- * Analysis of the current ClinicalTrials.gov import functionality and its shortcomings. Re-design of the import process to allow more flexible handling of missing meta-data and user-driven disambiguation of the data (e.g. categorical vs. multiple time-point measurements which can not be distinguished in the ClinicalTrials.gov data model).
-
- * Import of semi-structured (e.g. HTML) data tables, with user-driven annotation of meta-data.
-
- * Conversion of unstructured (i.e. image-based) data tables to structured data tables.
-
- * Discovery of data tables in legacy documents (e.g. PDF or scanned reports).
-
- * Other relevant topics not specified above.
-
-Note that for most of the above there is relevant previous work in the scientific literature, which will need to be evaluated prior to implementation.
 
 <a name="ui-trials"></a>
 ### User interfaces for exploration and visualization of trials
@@ -113,8 +137,6 @@ The project should result in:
 
 <a name="preferences"></a>
 ### Clinicians' understanding of preference elicitation questions
-
-**In progress**
 
 Decisions in health care policy are often based on uncertain evidence that
 covers multiple criteria, such as efficacy, side effects, and costs. Multiple
