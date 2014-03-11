@@ -3,7 +3,7 @@ layout: content
 title: Projects
 ---
 
-Our current work on [ADDIS 2](/software/addis2) is part of the [IMI GetReal](http://www.imi.europa.eu/content/7th-call-2012) project.
+Our current work on [ADDIS 2](/software/addis2) is part of the [IMI GetReal](http://www.imi-getreal.eu/) project.
 We're collaborating with [BioShaRe](https://www.bioshare.eu/) in a joint PhD project on automatic verification of claims made in full-text scientific articles.
 The [ADDIS 1](/software/addis1) project was funded by TI Pharma's [Escher](http://escher-projects.org/) project.
 
@@ -20,7 +20,7 @@ uncertainty. Currently, data packages which aim to minimise uncertainty on safet
 significant uncertainty in assessments of real world effectiveness of new medicines. This results in further
 research commitments required post-authorisation, and wide variability in access to medicines between countries.
 
-The GetReal consortium aims to improve the efficiency of the medicine development process by better
+The [GetReal](http://www.imi-getreal.eu/) consortium aims to improve the efficiency of the medicine development process by better
 incorporating real-life clinical data into drug development and to enrich decision-making by regulatory
 authorities and HTA bodies.
 GetReal is a public-private partnership between key European stakeholders and leading research groups.
