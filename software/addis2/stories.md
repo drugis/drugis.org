@@ -215,7 +215,7 @@ Status:
  - 2014-01-30 planned 2014Q1 iteration 1
  - 2014-02-18 completed 2014Q1 iteration 1
 
-### Story 4: view project
+### Story 4: [DONE] view project
 
 Source: UMCG
 
@@ -249,8 +249,9 @@ Status:
 
  - 2014-01-22 preliminarily planned for 2014Q1
  - 2014-02-18 planned 2014Q1 iteration 2
+ - 2014-02-28 completed 2014Q1 iteration 1
 
-### Story 5: add outcomes
+### Story 5: [DONE] add outcomes
 
 Source: UMCG
 
@@ -282,8 +283,10 @@ Status:
 
  - 2014-01-22 preliminarily planned for 2014Q1
  - 2014-02-18 planned for 2014Q1 iteration 2
+ - 2014-02-28 planned for 2014Q1 iteration 3
+ - 2014-03-14 completed 2014Q1 iteration 3
 
-### Story 6: add interventions
+### Story 6: [DONE] add interventions
 
 Source: UMCG
 
@@ -313,6 +316,8 @@ Status:
 
  - 2014-01-22 preliminarily planned for 2014Q1
  - 2014-02-18 planned for 2014Q1 iteration 2
+ - 2014-02-28 planned for 2014Q1 iteration 3
+ - 2014-03-14 completed 2014Q1 iteration 3
 
 ### Story 7: modify project information
 
@@ -339,6 +344,8 @@ Status:
 
  - 2014-02-22 preliminarily planned for 2014Q1
  - 2014-02-18 planned for 2014Q1 iteration 2
+ - 2014-02-28 planned for 2014Q1 iteration 3
+ - 2014-03-14 postponed
 
 ## Theme 2: Single study benefit-risk analysis (SSBR)
 
@@ -369,7 +376,7 @@ References:
 
  - https://mcda.drugis.org/
 
-### Story 8: create SSBR analysis
+### Story 8: [DONE] create SSBR analysis
 
 Source: UMCG
 
@@ -397,6 +404,8 @@ Status:
 
 - 2014-01-22 preliminarily planned for 2014Q1
 - 2014-02-18 planned for 2014Q1 iteration 2
+- 2014-02-28 planned for 2014Q1 iteration 3
+- 2014-03-14 completed 2014Q1 iteration 3
 
 ### Story 9: select criteria
 
