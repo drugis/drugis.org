@@ -407,7 +407,7 @@ Status:
 - 2014-02-28 planned for 2014Q1 iteration 3
 - 2014-03-14 completed 2014Q1 iteration 3
 
-### Story 9: select criteria
+### Story 9: [DONE] select criteria
 
 Source: UMCG
 
@@ -437,7 +437,7 @@ Status:
 - 2014-01-22 preliminarily planned for 2014Q1
 - 2014-02-18 planned for 2014Q1 iteration 2
 
-### Story 10: select alternatives
+### Story 10: [DONE] select alternatives
 
 Source: UMCG
 
@@ -467,7 +467,7 @@ Status:
 - 2014-01-22 preliminarily planned for 2014Q1
 - 2014-02-18 planned for 2014Q1 iteration 2
 
-### Story 11: select study
+### Story 11: [DONE] select study
 
 Source: UMCG
 
@@ -498,7 +498,7 @@ Status:
 - 2014-01-22 preliminarily planned for 2014Q1
 - 2014-02-18 planned for 2014Q1 iteration 2
 
-### Story 12: create MCDA problem
+### Story 12: [DONE] create MCDA problem
 
 Source: UMCG
 
