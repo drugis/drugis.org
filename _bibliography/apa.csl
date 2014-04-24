@@ -119,8 +119,8 @@
     </choose>
 
     <choose>
-      <if variable="abstractFile">
-        <text variable="abstractFile" prefix="&lt;a href=&quot;" suffix="&quot;&gt;[abstract]&lt;/a&gt; "/>
+      <if variable="abstractfile">
+        <text variable="abstractfile" prefix="&lt;a href=&quot;" suffix="&quot;&gt;[abstract]&lt;/a&gt; "/>
       </if>
     </choose>
 
