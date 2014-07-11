@@ -40,7 +40,7 @@ Since the business model has not determined, we focus on concerns that are likel
 System development should be efficient, agile, and sustainable.
 
   - D1 Analyses are often computationally intensive; they should run quickly and the system should scale to support many such computations in parallel if needed 
-  - D2 There should be exibility in choosing the right technologies, platforms, and frameworks to implement specific functionality (e.g. statistical computing using R and user interfaces using HTML + JavaScript)
+  - D2 There should be flexibility in choosing the right technologies, platforms, and frameworks to implement specific functionality (e.g. statistical computing using R and user interfaces using HTML + JavaScript)
   - D3 The system should be maintainable and hence divided up in loosely coupled components with well-defined APIs
   - D4 To ensure our public APIs are functioning in an optimal manner, our own software should use those APIs 
   - D5 The integrity of data should be closely guarded and all data should have clear provenance and versioning information
@@ -60,7 +60,7 @@ For the ADDIS concept to work, it is critical that structured clinical trials da
 
   - E1 Create a single collaborative portal for data extraction and sharing (open access / source)
   - E2 Enhance the efficiency of systematic review by 'closing the information chain' (i.e. capturing the entire process from literature screening to analysis)
-  - E3 Enable the exible re-use of data by enabling the definition, re-definition and mapping of meta-data (it should be possible to integrate data extracted by independent teams by mapping the meta-data)
+  - E3 Enable the flexible re-use of data by enabling the definition, re-definition and mapping of meta-data (it should be possible to integrate data extracted by independent teams by mapping the meta-data)
   - E4 Enable automated (third party) data extraction systems (bots) to contribute
   - E5 The system(s) should be easy to use and hassle-free to use (e.g. single sign-on)
   - E6 All data and analyses can be traced back to their ultimate source
