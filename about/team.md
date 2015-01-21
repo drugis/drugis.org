@@ -37,6 +37,7 @@ title: The team
 ## Previous contributors
 
 - Bob Goeree; MSc student & intern (2013-09 — 2014-09)
+- Tjerk Heringa (2014-04 — 2014-06)
 - Joël Kuiper; developer (2012-04 — 2013-10)
 - Wouter Reckman; developer (2012-04 — 2012-09)
 - Margreth Venaely Kileo; MSc thesis project (2011-02 — 2011-08)
