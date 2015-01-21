@@ -14,7 +14,6 @@ title: MSc projects
 
 ### In progress MSc projects
 
- - [Cost-effectiveness analysis](#cea)
  - [Convergence diagnostics for MCDA / SMAA](#smaa-convergence)
 
 ## MSc projects

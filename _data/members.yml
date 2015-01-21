@@ -20,7 +20,7 @@
     since: "2013-12"
     homepage-url: http://www.linkedin.com/in/connorstroomberg
   - name: "Joël Kuiper"
-    bio: "Joël joined the ADDIS team in March 2012 after spending some time as a software developer in private enterprise. He is currently doing his PhD in a joint venture between BioSHaRE and Epidemiology. His project is focused on *reproducible research*."
-    role: "PhD student"
+    bio: "Joël joined the ADDIS team in March 2012 after spending some time as a software developer in private enterprise."
+    role: "Developer"
     picture-url: "joel.jpg"
     homepage-url: http://joelkuiper.eu/
