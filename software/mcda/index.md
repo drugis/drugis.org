@@ -8,6 +8,9 @@ title: MCDA web interface
 Our multiple criteria decision analysis (MCDA) web interface is a user interface for preference elicitation in MCDA models.
 The backend uses our [R packages](/software/r-packages/) to perform the computations.
 
+The MCDA web interface was initially funded by TI Pharma project Escher and integrated in ADDIS 2 with funding from IMI GetReal.
+Further development and the creation of training materials is supported by IMI PROTECT.
+
 Current status
 --------------
 
