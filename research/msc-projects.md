@@ -105,7 +105,7 @@ The project will be based on a heterogeneous set of loosely related trials. Seve
 <a name="bhm-dsl"></a>
 ### Low-level serialization of Bayesian Hierarchical Models
 
-Markov Chain Monte Carlo (MCMC) methods enable the general purpose estimation of Bayesian Hierarchical Models. Their implementation in widely available software has revolutionized the practice of statistics, and popularized the Bayesian approach to statistics. Many alternative implementations of MCMC are available, such as WinBUGS, OpenBUGS, JAGS, STAN, Scythe, PyMCMC, YADAS, etc. All of them have specific strengths and weaknesses, with some being much more efficient at estimating certain models than others. Moreover, in some cases Approximate Bayesian Computation (ABC) offers a powerful and more computationally efficient alternative to MCMC methods. 
+Markov Chain Monte Carlo (MCMC) methods enable the general purpose estimation of Bayesian Hierarchical Models. Their implementation in widely available software has revolutionized the practice of statistics, and popularized the Bayesian approach to statistics. Many alternative implementations of MCMC are available, such as WinBUGS, OpenBUGS, JAGS, STAN, Scythe, PyMCMC, YADAS, etc. All of them have specific strengths and weaknesses, with some being much more efficient at estimating certain models than others. Moreover, in some cases Approximate Bayesian Computation (ABC) offers a powerful and more computationally efficient alternative to MCMC methods.
 
 In current MCMC software, two approaches to model specification can be distinguished. Several software packages offer a higher-level model specification language that allows a single specification to be applied to different data sets. This approach is taken by the BUGS family of MCMC software (WinBUGS, OpenBUGS, JAGS) as well as STAN. Other MCMC packages offer a library for a specific programming language, and as such model specification consists of calling this library directly. In addition, some MCMC packages implement a variety of sampling algorithms and often include a knowledge system to select the most appropriate algorithm given the structure of the model to be estimated. Other packages implement only a single algorithm or expect the user to select the most appropriate one.
 
@@ -178,25 +178,6 @@ An initial set of pilot experiments could be conducted with employees or
 medical students at the UMCG. A later set of experiments would ideally be
 performed with actual decision makers, e.g. from regulatory or reimbursement
 authorities.
-
-<a name="cea"></a>
-### Cost-effectiveness analysis
-
-**In progress**
-
-ADDIS currently supports regulatory decision making by first synthesizing the available evidence using network meta-analysis, and then feeding this data into a multi-criteria decision model for benefit-risk assessment. Typically, the regulatory setting treats the data "as is". By contrast, in the health technology assesment setting, it is standard practice to extrapolate the short-term effects observed in clinical trials to more long term health (benefit/harm) and cost outcomes. Thus, HTA often involves additional modeling and assumptions to assess the long-term effects of the intervention. The goal of this project is to incorporate such modelling in the ADDIS framework.
-
-The [TIDI](http://dx.doi.org/10.1016/j.jval.2010.12.002) software (see links below) is a tool for cost-effectiveness analysis based on network meta-analysis. However, using this tool requires reprogramming their Excel spread sheet for the specific problem. The methods developed for TIDI could be implemented in ADDIS to eliminate the need for programming. This will require:
-
- * Analysis of the [TIDI](http://dx.doi.org/10.1016/j.jval.2010.12.002) software to identify requirements, key functionality, and potential shortcomings. Especially watch out for implicit assumptions that may not generalize.
-
- * Implementation of the appropriate HTA methods in R.
-
- * Creating a wrapper around the R implementation to expose it as a web service.
-
- * Implementation of a HTML/CSS/JavaScript user interface that communicates with the web service.
-
-Any network meta-analysis functionality is explicitly out of scope of this project, it may be assumed that the outputs of any requisite meta-analyses are provided as-is. The existing "ADDIS 2" module for benefit-risk analysis can be used as a rough guide to implementation of all of the above.
 
 <a name="smaa-convergence"></a>
 ### Convergence diagnostics for MCDA / SMAA

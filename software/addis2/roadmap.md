@@ -22,36 +22,37 @@ These include:
  - [DONE] Development of a 'visual identity' for both the drugis.org website and web applications
  - [DONE] User management and security, and implementation of server-side storage of preferences in mcda-web
 
-Phase 2: analysis feature parity 
+Phase 2: analysis feature parity
 --------------------------------
 
-#### Status: planning (deliverable: mar 2014 / jun 2014)
+#### Status: in progress
 
 In this phase we aim to duplicate the core analysis features of ADDIS 1.x in the web-based framework. The main deliverables include:
 
- - User interface for network meta-analysis based on the gemtc R package and Patavi
+ - [DONE] Basic user interface for network meta-analysis based on the gemtc R package and Patavi
+ - Complete user interface for network meta-analysis
  - Development of the ADDIS-core component:
-    - Definition of interventions and outcomes of interest using ConceptMapper
-    - Construction of network meta-analysis datasets given a fixed set of trials from TrialVerse (&leq; 1,000)
+    - [DONE] Definition of interventions and outcomes of interest
+    - [DONE] Construction of network meta-analysis datasets given a fixed set of trials from TrialVerse (&leq; 1,000)
     - Construction of MCDA problems given several network meta-analyses
-    - Construction of MCDA problems given a single trial
+    - [DONE] Construction of MCDA problems given a single trial
 
-Phase 3: data management and search 
+Phase 3: data management and search
 -----------------------------------
 
-#### Status: scoping (deliverable: dec 2014)
+#### Status: in progress
 
  - Study management
-   - View study
-   - manual input study
+   - [DONE] View study
+   - [IN PROGRESS] manual input study
    - create mappings (conceptmapper)
-   - edit study
-  - clinicaltrials.gov import
+   - [IN PROGRESS] edit study
+   - [IN PROGRESS] clinicaltrials.gov import
  - Versioning
-   - needs exploration
-   - applies to both studies and mappings
-   - DAtomic (suggestion Joel)
-   - ontological (i.e. between-study concepts) versioning **out of scope**
+   - [DONE] exploration of options
+   - [DONE] prototype
+   - user interface
+   - production-ready backend
  - Review/Search
    - query/search dataset
    - deduplication and annotations for review
@@ -59,11 +60,9 @@ Phase 3: data management and search
 
 Open questions are:
 
- - How do we manage versions across the TrialVerse/ConceptMapper boundary?
  - How do we support "branching", i.e. multiple different extractions of the same study? This will inevitably happen when the number of users increases.
- - Do we aim to import all studies from ClinicalTrials.gov? This is not a requirement, but would probably generate considerable interest within GetReal and provide sufficient data to properly test the review/search functionality.
 
-Phase 4: GetReal analyses 
+Phase 4: GetReal analyses
 -------------------------
 
 #### Status: awaiting input from other teams (deliverable: mar 2016)

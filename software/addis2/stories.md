@@ -277,7 +277,7 @@ API requirements:
 
 References: none.
 
-Complexity estimate: 2 points
+Complexity estimate: 3 points
 
 Status:
 
@@ -325,7 +325,12 @@ Source: UMCG
 
 Tagline:
 
+As a user I want to modify the name and description of my projects, for example to fix typoes.
+
 Implementation checklist:
+ - Users can edit the name and description of their projects
+ - Users cannot modify the namespace
+ - Users cannot modify others' projects.
 
 User interface:
 
@@ -334,7 +339,7 @@ User interface:
 API requirements:
 
  - Projects are a REST resource at {CORE_API}/projects/{id}
-    - supports update
+    - supports update (but not of namespace)
 
 References: none.
 
@@ -395,7 +400,12 @@ API requirements:
 
 - Analyses are a REST resource at {CORE_API}/projects/{id}/analyses
   - supports query, create, get
-
+Get returns an analysis:
+{
+  name:
+  description:
+}
+  
 References: none.
 
 Complexity estimate: 2 points
@@ -426,11 +436,15 @@ User interface:
 
 API requirements:
 
-- TODO
+- {CORE_API}/projects/{id}/analyses/{aid}/criteria
+  - supports query, create, delete
+  
+Query returns a list of selected outcome URLs, example:
+[{outcomeUrl: 'http://addis.drugis.org/projects/1/outcomes/2'}, {outcomeUrl: 'http://addis.drugis.org/projects/1/outcomes/3'}]
 
 References: none.
 
-Complexity estimate: 1 point
+Complexity estimate: 2 point
 
 Status:
 
@@ -456,7 +470,8 @@ User interface:
 
 API requirements:
 
-- TODO
+- {CORE_API}/projects/{id}/analyses/{aid}/alternatives
+  - supports query, create, delete
 
 References: none.
 
@@ -476,7 +491,7 @@ Tagline: As a decision maker, I want to select a study so that I can perform an 
 Implementation checklist:
 
 - The user can select a study (IFF owner of the project)
-- The user is alerted if they choose study that does not contain selected criteria/alternatives
+- The user is alerted if they choose a study that does not contain selected criteria/alternatives
 - The user is made aware of incompatible studies through an icon in the selection list
 
 User interface:
@@ -484,14 +499,22 @@ User interface:
 - Simple selection like typeahead input
 
 API requirements:
+- {CORE_API}/projects/{id}/analyses/{aid}
+  - supports update (of analysis, specifically study field),
+- {TRIALVERSE_API}/namespaces/{nid}/studies
+  - supports query
+- {TRIALVERSE_API}/namespaces/{nid}/studies/{sid}/outcomes
+  - supports query
 
-- TODO
+Similar to the criteria selection within an analysis.
+
+Implementation note: links between studies and outcomes are in the triplestore
 
 References: 
 
-- TODO
+https://github.com/drugis/trialverse/tree/feature/triplestore
 
-Complexity estimate: 1 point
+Complexity estimate: 2 point
 
 Status:
 
