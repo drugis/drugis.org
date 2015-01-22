@@ -4,7 +4,6 @@ title: Projects
 ---
 
 Our current work on [ADDIS 2](/software/addis2) is part of the [IMI GetReal](http://www.imi-getreal.eu/) project.
-We're collaborating with [BioShaRe](https://www.bioshare.eu/) in a joint PhD project on automatic verification of claims made in full-text scientific articles.
 The [ADDIS 1](/software/addis1) project was funded by TI Pharma's [Escher](http://escher-projects.org/) project.
 
 ### GetReal (IMI, 2013 - 2016) ![GetReal](/images/projects/getreal.png)
