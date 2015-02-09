@@ -105,67 +105,6 @@
     </names>
   </macro>
   <macro name="access">
-    <!-- custom links -->
-    <choose>
-      <if variable="eprint">
-        <text variable="eprint" prefix="&lt;a href=&quot;" suffix="&quot;&gt;[eprint]&lt;/a&gt; "/>
-      </if>
-    </choose>
-
-    <choose>
-      <if variable="preprint">
-        <text variable="preprint" prefix="&lt;a href=&quot;" suffix="&quot;&gt;[preprint]&lt;/a&gt; "/>
-      </if>
-    </choose>
-
-    <choose>
-      <if variable="abstractfile">
-        <text variable="abstractfile" prefix="&lt;a href=&quot;" suffix="&quot;&gt;[abstract]&lt;/a&gt; "/>
-      </if>
-    </choose>
-
-    <choose>
-      <if variable="slides">
-        <text variable="slides" prefix="&lt;a href=&quot;" suffix="&quot;&gt;[slides]&lt;/a&gt; "/>
-      </if>
-    </choose>
-
-    <choose>
-      <if variable="handout">
-        <text variable="handout" prefix="&lt;a href=&quot;" suffix="&quot;&gt;[handout]&lt;/a&gt; "/>
-      </if>
-    </choose>
-
-    <choose>
-      <if variable="poster">
-        <text variable="poster" prefix="&lt;a href=&quot;" suffix="&quot;&gt;[poster]&lt;/a&gt; "/>
-      </if>
-    </choose>
-
-    <choose>
-      <if variable="webpage">
-        <text variable="webpage" prefix="&lt;a href=&quot;" suffix="&quot;&gt;[webpage]&lt;/a&gt; "/>
-      </if>
-    </choose>
-
-    <choose>
-      <if variable="video">
-        <text variable="video" prefix="&lt;a href=&quot;" suffix="&quot;&gt;[video]&lt;/a&gt; "/>
-      </if>
-    </choose>
-
-    <choose>
-      <if variable="download">
-        <text variable="download" prefix="&lt;a href=&quot;" suffix="&quot;&gt;[preprint]&lt;/a&gt; "/>
-      </if>
-    </choose>
-
-    <choose>
-      <if variable="dataset">
-        <text variable="dataset" prefix="&lt;a href=&quot;" suffix="&quot;&gt;[dataset]&lt;/a&gt; "/>
-      </if>
-    </choose>
-
     <choose>
       <if type="thesis">
         <choose>
@@ -187,11 +126,6 @@
         </choose>
       </if>
       <else>
-        <choose>
-          <if variable="DOI">
-            <text variable="DOI" prefix="&lt;a href=&quot;http://dx.doi.org/" suffix="&quot;&gt;[doi]&lt;/a&gt; "/>
-          </if>
-          <else>
             <choose>
               <if type="webpage">
                 <group delimiter=" ">
@@ -211,8 +145,6 @@
                 </group>
               </else>
             </choose>
-          </else>
-        </choose>
       </else>
     </choose>
   </macro>
