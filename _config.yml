@@ -1,6 +1,6 @@
 name: drugis.org - home of the ADDIS project
 markdown: redcarpet
-pygments: true
+highlighter: pygments
 url: http://drugis.org
 rss_path: /news
 rss_name: rss.xml
@@ -12,7 +12,10 @@ permalink: /:year-:month-:day-:title.html
 scholar:
   style: ./_bibliography/apa.csl
   bibliography: publications
+  bibliography_template: bibentry
 
 authors:
   gert:
     display_name: Gert van Valkenhoef
+  daan:
+    display_name: Daan Reid

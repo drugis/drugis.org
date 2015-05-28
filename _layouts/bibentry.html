@@ -1,0 +1,33 @@
+---
+---
+{{reference}}
+{% if entry.eprint %}
+  <a href="{{entry.eprint}}">[eprint]</a>
+{% endif %}
+{% if entry.preprint %}
+  <a href="{{entry.preprint}}">[preprint]</a>
+{% endif %}
+{% if entry.abstractfile %}
+  <a href="{{entry.abstractfile}}">[abstract]</a>
+{% endif %}
+{% if entry.slides %}
+  <a href="{{entry.slides}}">[slides]</a>
+{% endif %}
+{% if entry.handout %}
+  <a href="{{entry.handout}}">[handout]</a>
+{% endif %}
+{% if entry.poster %}
+  <a href="{{entry.poster}}">[poster]</a>
+{% endif %}
+{% if entry.webpage %}
+  <a href="{{entry.webpage}}">[webpage]</a>
+{% endif %}
+{% if entry.video %}
+  <a href="{{entry.video}}">[video]</a>
+{% endif %}
+{% if entry.dataset %}
+  <a href="{{entry.dataset}}">[dataset]</a>
+{% endif %}
+{% if entry.doi %}
+  <a href="http://dx.doi.org/{{entry.doi}}">[doi]</a>
+{% endif %}
