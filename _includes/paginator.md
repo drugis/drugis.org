@@ -10,7 +10,7 @@
   {% if page == paginator.page %}
   <li class="current"><a href="">{{ page }}</a></li>
   {% elsif page == 1 %}
-  <li><a href="{{ 'news/index.html' | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a></li>
+  <li><a href="{{ '/news/index.html' | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a></li>
   {% else %}
   <li><a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a></li>
   {% endif %}
