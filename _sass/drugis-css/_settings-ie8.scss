@@ -1,0 +1,25 @@
+// http://colorschemedesigner.com/#4e32Po0pBw0w0
+
+$code-color: #333;
+
+$body-font-family: "Droid Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+$body-font-weight: normal;
+$header-font-weight: 500;
+
+// We use these as default colors throughout
+$drugis-color: #CC3333;
+$primary-color: #452F8C;
+$secondary-color: #e7e7e7;
+$alert-color: #E66464;
+$success-color: #29A329;
+$warning-color: lighten(#f08a24, 5%);
+
+$paragraph-margin-bottom: rem-calc(20) !default;
+$paragraph-font-size: 1rem !default;
+
+// set these as they are used by addis scss and not imported by foundation 3 by default
+$crumb-bg: scale-color($secondary-color, $lightness: 55%) !default;
+$crumb-function-factor: -10% !default;
+$crumb-border-color: scale-color($crumb-bg, $lightness: $crumb-function-factor) !default;
+$info-color: #a0d3e8 !default;      // cornflower
+$table-row-font-size: rem-calc(14) !default;
