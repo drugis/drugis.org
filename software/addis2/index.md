@@ -15,7 +15,7 @@ Efficiency can be improved by facilitating easier and more meaningful sharing of
 Documentation
 -------------
 
-After one year of development, the ADDIS 2 project is now (January 2015) becoming useable as an analytical tool.
+After two year of development, the ADDIS 2 project is now (January 2016) useable as an analytical tool.
 
 Our framework of thinking is captured by the following documents:
 
@@ -30,10 +30,11 @@ Changes to the documentation can be tracked on GitHub: [drugis/drugis.org](https
 Current status
 --------------
 
-The live version of ADDIS 2 currently has components for viewing several pre-imported datasets, creating a personal project based on one of those datasets, and performing analyses within this project. Supported analysis types are multiple criteria decision (benefit-risk) analysis and network meta-analysis.
+The live version of ADDIS 2 currently has components for creating datasets, and inputting studies within these datasets.
+Further components allow creation of personal projects based on one of those datasets, and performing analyses within this project. Supported analysis types are multiple criteria decision (benefit-risk) analysis (based on either single studies or network meta-analyses), network meta-analysis and network meta-regression.
 The current stable version of ADDIS 2 is available at [addis.drugis.org](https://addis.drugis.org). The in-development version, often with more features, is available at [addis-test.drugis.org](https://addis-test.drugis.org).
 
-<img class="screen-shot" src="/images/software/addis2.png" alt="mcda.drugis.org">
+<img class="screen-shot" src="/images/software/addis2.png" alt="addis.drugis.org">
 
 You currently need a Google account to sign in, although we plan to switch to [ORCID](http://orcid.org/ "Open Researcher and Contributor ID") once their authentication-only API becomes available.
 
