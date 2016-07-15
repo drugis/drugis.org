@@ -10,7 +10,7 @@ We support the automated discovery and (meta-)analysis of trial data, as well as
 
 ### Current status
 
-The latest version of ADDIS 1.x is [ADDIS 1.16.6](/software/addis1/addis1.16), released on 2015-03-26.
+The latest version of ADDIS 1.x is [ADDIS 1.16.7](/software/addis1/addis1.16), released on 2016-07-15.
 
 From April 2009 until October 2012, we released a new major version of ADDIS approximately every 3 months.
 The last major release of ADDIS 1.x was [ADDIS 1.16](/software/addis1/addis1.16), released on 2012-10-04.
@@ -84,3 +84,4 @@ Source code is available from the [drugis.org organization on GitHub](https://gi
       - ADDIS v1.16.4, released 2013-07-18.
       - ADDIS v1.16.5, released 2013-09-20.
       - ADDIS v1.16.6, released 2015-03-26.
+      - ADDIS v1.16.7, released 2016-07-15.
