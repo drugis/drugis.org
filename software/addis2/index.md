@@ -15,32 +15,28 @@ Efficiency can be improved by facilitating easier and more meaningful sharing of
 Documentation
 -------------
 
-After two year of development, the ADDIS 2 project is now (January 2016) useable as an analytical tool.
+The [user manual for ADDIS](https://addis.drugis.org/manual.html) provides a detailed overview of the functionality in ADDIS, as well as  the statistical methods.
 
 Our framework of thinking is captured by the following documents:
 
  - [ADDIS 2 requirements](/software/addis2/requirements)
- - [ADDIS 2 architecture](/software/addis2/architecture)
- - [ADDIS 2 roadmap](/software/addis2/roadmap)
+ - [ADDIS 2 architecture](/software/addis2/architecture) (outdated)
 
-Especially the longer-term plans carry a significant degree of uncertainty.
-We expect to keep updating and revising these documents as the work proceeds.
-Changes to the documentation can be tracked on GitHub: [drugis/drugis.org](https://github.com/drugis/drugis.org/).
 
 Current status
 --------------
 
-The live version of ADDIS 2 currently has components for creating datasets, and inputting studies within these datasets.
-Further components allow creation of personal projects based on one of those datasets, and performing analyses within this project. Supported analysis types are multiple criteria decision (benefit-risk) analysis (based on either single studies or network meta-analyses), network meta-analysis and network meta-regression.
-The current stable version of ADDIS 2 is available at [addis.drugis.org](https://addis.drugis.org). The in-development version, often with more features, is available at [addis-test.drugis.org](https://addis-test.drugis.org).
+As of October 2016, ADDIS 2 is mostly feature complete, and we are working on improving stability and usability. Funding from IMI GetReal terminates end of 2016, and we are exploring several options to continue the project.
+
+The current stable version of ADDIS 2 is available at [addis.drugis.org](https://addis.drugis.org).
 
 <img class="screen-shot" src="/images/software/addis2.png" alt="addis.drugis.org">
 
-You currently need a Google account to sign in, although we plan to switch to [ORCID](http://orcid.org/ "Open Researcher and Contributor ID") once their authentication-only API becomes available.
+You need a Google account to sign in.
 
 Source code
 -----------
 
-The source code for the ADDIS 2 software is available on GitHub, on [our organization page](https://github.com/drugis/). In addition, source code for the R packages is available from [Gert van Valkenhoef](https://github.com/gertvv/) and for Patavi from [Joël Kuiper](https://github.com/joelkuiper/).
+The source code for the ADDIS 2 software is available on GitHub, on [our organization page](https://github.com/drugis/). In addition, source code for the R packages is available from [Gert van Valkenhoef](https://github.com/gertvv/).
 
 {% include github.html class="right" %}
