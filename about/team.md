@@ -36,6 +36,7 @@ title: The team
 
 ## Previous contributors
 
+- Connor Stroomberg; developer (2013-12 — 2016-08)
 - Joël Kuiper; developer (2012-04 — 2015-07)
 - Bob Goeree; MSc student & intern (2013-09 — 2014-09)
 - Tjerk Heringa (2014-04 — 2014-06)
