@@ -28,6 +28,7 @@ title: The team
 ## Evangelists
 
 - Hans Hillege; medical advisor & EMA liaison
+- Erik Buskens; HTA advisor
 - Bert de Brock; advisor
 
 ## Students
