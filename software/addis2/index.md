@@ -4,8 +4,7 @@ title: ADDIS 2
 ---
 
 Aggregate Data Drug Information System (ADDIS) is an evidence-based decision support system for [health care policy decision making](/research) that concerns alternative treatment options.
-ADDIS 2 is currently under heavy development and far from feature complete.
-Our goal is for ADDIS 2 to become a platform on which researchers can collaborate to perform systematic reviews, data extraction, evidence synthesis and decision analysis.
+ADDIS 2 has been under continuous development since 2014, and is largely feature complete, though we are always working to improve the platform and add features on request.
 
 <img src="/images/software/addis2/addis-graphic.png" alt="The ADDIS concept">
 
