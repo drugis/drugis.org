@@ -4,7 +4,7 @@ title: GeMTC web interface
 ---
 
 GeMTC is a graphical user interface for (network) meta-analysis and meta-regression.
-It includes methods for the assessment of heterogeneity, inconsistency, and publication bias, as well as various methods for sensitivity analysis.
+Users can upload evidence tables in either CSV or JSON format, and run various network models on their data. The software includes methods for the assessment of heterogeneity, inconsistency, and publication bias, as well as various methods for sensitivity analysis.
 The backend uses our [R packages](/software/r-packages/) to perform the computations.
 
 <img src="/images/software/gemtc/gemtc.png" class="screen-shot">

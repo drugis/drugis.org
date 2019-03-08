@@ -25,7 +25,7 @@ Our framework of thinking is captured by the following documents:
 Current status
 --------------
 
-As of October 2016, ADDIS 2 is mostly feature complete, and we are working on improving stability and usability. Funding from IMI GetReal terminates end of 2016, and we are exploring several options to continue the project.
+As of March 2016, ADDIS 2 is feature complete, and most work is directed at serving clients' and users requests. The project is funded by IMI GetReal Initiative.
 
 The current stable version of ADDIS 2 is available at [addis.drugis.org](https://addis.drugis.org).
 You need a Google account to sign in.

@@ -52,4 +52,3 @@ We look at this both to identify opportunities to improve the existing process a
  * How to retrieve as much information as possible about clinical studies from "legacy" information sources.
 The information should be machine understandable in the sense that it can be used directly by our decision support software.
 The retrieval should require as little user intervention as possible.
-
