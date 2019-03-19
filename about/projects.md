@@ -3,11 +3,18 @@ layout: content
 title: Projects
 ---
 
-Our current work on [ADDIS 2](/software/addis2) is part of the [GetReal Initiative](http://www.imi-getreal.eu/) project.
+Our current work on [ADDIS 2](/software/addis2) is part of the [GetReal Initiative](http://www.imi-getreal.eu/GetReal-Initiative) project.
+The initial creation of [ADDIS 2](/software/addis2) was funded by [IMI GetReal](http://www.imi-getreal.eu).
 The [ADDIS 1](/software/addis1) project was funded by TI Pharma's [Escher](http://escher-projects.org/) project.
 Additional funding for the further development of the [MCDA user interface](/software/mcda) was received from the [IMI PROTECT](http://www.imi-protect.eu/) project.
 
-### GetReal (IMI, 2013 - 2020) ![GetReal](/images/projects/getreal.png)
+### GetReal Initiative (IMI, 2018-2020) ![GetReal](/images/projects/getreal.png)
+
+Launched in June 2018, the GetReal Initiative is a two-year project of the Innovative Medicines Initiative (IMI), a EU public-private consortium consisting of pharmaceutical companies, academia, HTA agencies and regulators, patient organisations and SMEs.
+
+The GetReal Initiative brings together partners from the original IMI GetReal project with the ultimate goal to sustainably drive the adoption of tools, methodologies and best practices from IMI GetReal and increase the quality of real-world evidence (RWE) generation in medicines development and regulatory/HTA processes across Europe.
+
+### GetReal (IMI, 2013 - 2017) ![GetReal](/images/projects/getreal.png)
 
 _Incorporating real-life clinical data into drug development_
 
