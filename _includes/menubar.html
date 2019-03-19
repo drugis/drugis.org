@@ -1,44 +1,43 @@
-  <!-- Navigation -->
-  
-  <nav class="top-bar" data-topbar>
-    <ul class="title-area">
-      <!-- Title Area -->
-      <li class="name">
-        <h1>
-          <a href="/">
-            drugis.org
-          </a>
-        </h1>
+<!-- Navigation -->
+<nav class="top-bar" data-topbar>
+  <ul class="title-area">
+    <!-- Title Area -->
+    <li class="name">
+      <h1>
+        <a href="/">
+          drugis.org
+        </a>
+      </h1>
+    </li>
+    <li class="toggle-topbar menu-icon"><a href="#"><span>menu</span></a></li>
+  </ul>
+
+  <section class="top-bar-section">
+    <!-- Right Nav Section -->
+    <ul class="right">
+      <li class="divider"></li>
+      <li class="has-dropdown">
+        <a href="/research">Research</a>
+        <ul class="dropdown">
+          <li><a href="/research/publications">Publications</a></li>
+          <li><a href="/research/msc-projects">MSc projects</a></li>
+        </ul>
       </li>
-      <li class="toggle-topbar menu-icon"><a href="#"><span>menu</span></a></li>
-    </ul>
-    
-    <section class="top-bar-section">
-      <!-- Right Nav Section -->
-      <ul class="right">
-        <li class="divider"></li>
-        <li class="has-dropdown">
-          <a href="/research">Research</a>
-          <ul class="dropdown">
-            <li><a href="/research/publications">Publications</a></li>
-            <li><a href="/research/msc-projects">MSc projects</a></li>
-          </ul>
-        </li>
-        <li class="divider"></li>
-        <li class="has-dropdown">
-          <a href="/software">Software</a>
-          <ul class="dropdown">
-            <li><a href="/software/addis2">ADDIS 2</a></li>
-            <li><a href="/software/gemtc">GeMTC</a></li>
-            <li><a href="/software/mcda">MCDA</a></li>
-            <li><a href="/software/r-packages">R packages</a></li>
-            <li><a href="/software/addis1">ADDIS 1</a></li>
-          </ul>
-        </li>
-        <li class="divider"></li>
-        <li class="has-dropdown">
-         <a href="/about">About</a>
-         <ul class="dropdown">
+      <li class="divider"></li>
+      <li class="has-dropdown">
+        <a href="/software">Software</a>
+        <ul class="dropdown">
+          <li><a href="/software/addis2">ADDIS 2</a></li>
+          <li><a href="/software/gemtc">GeMTC</a></li>
+          <li><a href="/software/mcda">MCDA</a></li>
+          <li><a href="/software/r-packages">R packages</a></li>
+          <li><a href="/software/addis1">ADDIS 1</a></li>
+        </ul>
+      </li>
+      <li class="divider"></li>
+      <li class="has-dropdown">
+        <a href="/about">About</a>
+        <ul class="dropdown">
           <li><a href="/about/projects">Projects</a></li>
           <li><a href="/about/team">Team</a></li>
         </ul>
@@ -54,5 +53,25 @@
     </ul>
   </section>
 </nav>
+
+<!-- Matomo -->
+<script type="text/javascript">
+  var _paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(["setDocumentTitle", document.domain + "/" + document.title]);
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u = "https://analytics.drugis.org/";
+    _paq.push(['setTrackerUrl', u + 'matomo.php']);
+    _paq.push(['setSiteId', '7']);
+    var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
+    g.type = 'text/javascript'; g.async = true; g.defer = true; g.src = u + 'matomo.js'; s.parentNode.insertBefore(g, s);
+  })();
+</script>
+<noscript>
+  <p><img src="https://analytics.drugis.org/matomo.php?idsite=7&amp;rec=1" style="border:0;" alt="" /></p>
+</noscript>
+<!-- End Matomo Code -->
 
 <!-- End Top Bar -->
