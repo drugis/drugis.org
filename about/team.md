@@ -32,7 +32,9 @@ title: The team
 
 ## Students
 
-- Currently none (see [MSc projects](/research/msc-projects) for opportunities)
+- Aida Baxhaku - working on data import.
+
+See [MSc projects](/research/msc-projects) for opportunities.
 
 ## Previous contributors
 
