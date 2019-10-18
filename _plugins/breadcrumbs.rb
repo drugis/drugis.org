@@ -11,14 +11,17 @@ module Jekyll
       a = []
       url = self.url
       while url != "/index.html"
-        pt = url.split("/")
-        if pt[-1] != "index.html"
+        path = url.split("/")
+        if path.length == 0
+          path = [url]
+        end
+        if path[-1] != "index.html"
           # to to directory index
-          pt[-1] = "index.html"
-          url = pt.join("/")
+          path[-1] = "index.html"
+          url = path.join("/")
         else
           # one level up
-          url = pt[0..-3].join("/") + "/index.html"
+          url = path[0..-3].join("/") + "/index.html"
         end
         a << get_page_from_url(url)
       end
