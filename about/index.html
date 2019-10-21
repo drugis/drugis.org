@@ -1,113 +1,181 @@
 ---
 layout: content
-title: About us 
+title: About us
 ---
+<div class="grid-container">
+  <div class="grid-x">
+    <div class="cell">
+      <h4>Mission</h4>
+    </div>
+    <div class="cell">
+      {% include mission.html %}
+    </div>
+    <div class="cell">
+      <h4>Motivation</h4>
+    </div>
+    <div class="cell">
+      <p>
+        Decisions concerning the favourable and unfavourable effects of medicines often rely entirely on the expert
+        judgment of those responsible.
+        Reliance on such subjective assessment hides the reasoning behind the decision and causes the process to be
+        insufficiently transparent and traceable.
+        We aim to build a decision support system that combines proven statistical methods and quantitative decision
+        modeling with a structured database of evidence from clinical research.
+        Such a system enhances the transparency of decisions by clearly separating the (objective) evidence from the
+        (subjective) trade-off judgments inherent in the decision.
+      </p>
+    </div>
+    <div class="cell">
+      <p>
+        Health policy decisions regarding alternative treatment options are often informed by systematic reviews of
+        clinical trials.
+        Typically only the end product of systematic reviewing (a report summarizing the evidence), is made widely
+        available.
+        However, access to the intermediate results of literature searching, publication screening, and data extraction
+        could greatly enhance the efficiency of future reviews.
+        Given the increasing scope of systematic reviews, this uneccessary duplication of effort must be eliminated.
+        This requires a change in the current culture of data protectionism, and suitable software that enables
+        convenient
+        and useful sharing of the intermediate results.
+      </p>
+    </div>
+    <div class="cell">
+      <h4>Approach</h4>
+    </div>
+    <div class="cell">
+      <p>
+        Our previous <a href="/software/addis1">ADDIS 1.x</a> prototype showed the usefulness of a benefit-risk decision
+        support system for local use.
+        It enables network meta-analysis and multiple criteria decision analysis based on a structured database of
+        clinical trials data.
+        We have now re-implemented the system as a web platform to ease collaboration.
+        The shareable study data repository also increases the efficiency of any further systematic reviews on subjects
+        that already have an ADDIS data set.
+      </p>
+    </div>
+    <div class="cell">
+      <h4>The Problem</h4>
+    </div>
+    <div class="cell callout" style="background: #f2f2f2">
+      <div class="grid-x grid-margin-x">
+        <div class="cell large-6">
+          <img class="screen-shot" style="background: white; padding:5px;" src="/images/problem.png">
+        </div>
+        <div class="cell large-6">
+          <h4 style="margin-top: 1rem">Legend</h4>
+          <ol>
+            <li>Query of multiple databases, yielding results in different formats</li>
+            <li>Title/abstract screening; enter results in spreadsheet or database</li>
+            <li>De-duplication of included abstracts, retrieve full texts</li>
+            <li>Full text screening, identify duplicate publications of same trial</li>
+            <li>Manual data extraction; enter results in meta-analysis software</li>
+            <li>Statistical analysis / evidence synthesis</li>
+            <li>Reporting of evidence synthesis results; potential publication</li>
+            <li>Enter relevant evidence into cost-effectiveness model</li>
+            <li>Cost-effectiveness analysis</li>
+            <li>Reporting of cost-effectiveness analysis for decision maker or publication</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+    <div class="cell">
+      <p>
+        Health policy decision making is often informed by a systematic review, followed by a statistical analysis and
+        decision modeling.
+        These steps are performed using an ad-hoc series of disconnected software tools.
+        The rapidly expanding scope of health policy decision making and volume available data increases the costs of
+        systematic reviews, which had already reached the thousands of person-hours over a decade ago.
+      </p>
+    </div>
+    <div class="cell">
+      <p>
+        Systematic reviews are thus costly to perform, there is very little return on investment for sharing data and
+        meta-data collected in the process, and sharing data early on has the associated risks of scooping and perhaps
+        unwanted scrutiny.
+        Moreover, sharing is difficult because the data and meta-data are fragmented between a number of different tools
+        that use different and incompatible formats.
+        This has led to a culture where researchers are reluctant to share their intermediate results, and work is often
+        duplicated between different systematic reviews.
+      </p>
+    </div>
+    <div class="cell">
+      <h4>The Solution</h4>
+    </div>
+    <div class="cell callout" style="background: #f2f2f2">
+      <div class="grid-x grid-margin-x">
+        <div class="cell large-6">
+          <img class="screen-shot" style="background: white; padding:5px;" src="/images/solution.png">
+        </div>
+        <div class="cell large-6">
+          <h4 style="margin-top: 1rem">Legend</h4>
+          <ol>
+            <li>Automatic query of multiple databases returning linked data</li>
+            <li>Assisted title/abstract screening</li>
+            <li>N/A (abstracts are automatically de-duplicated)</li>
+            <li>Assisted full text screening, identify duplicate publications of same trial</li>
+            <li>Assisted data extraction</li>
+            <li>Statistical analysis / evidence synthesis</li>
+            <li>Reporting of evidence synthesis results; potential publication</li>
+            <li>Automatic transfer of evidence to cost-effectiveness model</li>
+            <li>Cost-effectiveness analysis</li>
+            <li>Reporting of cost-effectiveness analysis; potential publication</li>
+          </ol>
+        </div>
+      </div>
+    </div>
 
-<h3>Mission</h3>
-
-{% include mission.html %}
-
-<h3>Motivation</h3>
-<p>
-Decisions concerning the favourable and unfavourable effects of medicines often rely entirely on the expert judgment of those responsible.
-Reliance on such subjective assessment hides the reasoning behind the decision and causes the process to be insufficiently transparent and traceable.
-We aim to build a decision support system that combines proven statistical methods and quantitative decision modeling with a structured database of evidence from clinical research.
-Such a system enhances the transparency of decisions by clearly separating the (objective) evidence from the (subjective) trade-off judgments inherent in the decision.
-</p>
-
-<p>
-Health policy decisions regarding alternative treatment options are often informed by systematic reviews of clinical trials.
-Typically only the end product of systematic reviewing (a report summarizing the evidence), is made widely available.
-However, access to the intermediate results of literature searching, publication screening, and data extraction could greatly enhance the efficiency of future reviews.
-Given the increasing scope of systematic reviews, this uneccessary duplication of effort must be eliminated.
-This requires a change in the current culture of data protectionism, and suitable software that enables convenient and useful sharing of the intermediate results.
-</p>
-
-<h3>Approach</h3>
-<p>
-Our previous <a href="/software/addis1">ADDIS 1.x</a> prototype showed the usefulness of a benefit-risk decision support system for local use.
-It enables network meta-analysis and multiple criteria decision analysis based on a structured database of clinical trials data.
-We have now re-implemented the system as a web platform to ease collaboration.
-The shareable study data repository also increases the efficiency of any further systematic reviews on subjects that already have an ADDIS data set.
-</p>
-
-<h3>The Problem</h3>
-<div class="row panel" style="margin-bottom: 1rem;">
-  <div class="six large-6 columns">
-    <img class="screen-shot" style="background: white; padding:5px;" src="/images/problem.png">
-  </div>
-  <div class="six large-6 columns">
-    <h4 style="margin-top: 1rem">Legend</h4>
-    <ol>
-    <li>Query of multiple databases, yielding results in different formats</li>
-    <li>Title/abstract screening; enter results in spreadsheet or database</li>
-    <li>De-duplication of included abstracts, retrieve full texts</li>
-    <li>Full text screening, identify duplicate publications of same trial</li>
-    <li>Manual data extraction; enter results in meta-analysis software</li>
-    <li>Statistical analysis / evidence synthesis</li>
-    <li>Reporting of evidence synthesis results; potential publication</li>
-    <li>Enter relevant evidence into cost-effectiveness model</li>
-    <li>Cost-effectiveness analysis</li>
-    <li>Reporting of cost-effectiveness analysis for decision maker or publication</li>
-    </ol>
+    <div class="cell">
+      <p>
+        The process can be made more efficient and reproducible by an integrated software toolchain that captures the
+        entire workflow.
+        Such a system would provide several incentives that make sharing of intermediate results more attractive.
+        First, it would remove the technical barriers to sharing data by capturing all intermediate results in a single
+        repository, and sharing of data could be the default setting.
+        Second, it would simply provide a better tool chain for systematic review and decision support by automating the
+        transfer of data between steps and assisting labour intensive steps such as literature screening.
+        Finally, the investment of performing a systematic review can be reduced by re-using what others have shared.
+        This would decrease the time-to-publication or time-to-decision and enhance the cost-effectiveness of
+        evidence-based decision making.
+      </p>
+    </div>
+    <div class="cell">
+      <h4>Conclusion</h4>
+    </div>
+    <div class="cell">
+      <p>
+        Systematic reviewing is currently a laborious process that is mainly performed "offline" using an ad-hoc
+        collection of disconnected tools.
+        This makes the sharing and re-use of intermediate results nearly impossible, leading to duplication of effort
+        and
+        an adversarial research environment.
+        Existing information technologies could be leveraged to build a more integrated system to support systematic
+        reviewing and preserve intermediate results.
+        Such a system can create a virtuous cycle in which previously shared results make sharing an ever more
+        attractive
+        option.
+        Eventually, this will decrease the cost of systematic reviewing drastically, which in turn enables
+        evidence-based
+        decision making to be applied more often and more rigorously.
+      </p>
+    </div>
+    <div class="cell">
+      <h4>Our Commitment: Open Development</h4>
+    </div>
+    <div class="cell">
+      <p>
+        We are committed to develop our software 'in the open'.
+        This means that we publish our software as early as possible and as often as possible, enabling others to use
+        and
+        critique our software and development process.
+        On this website, we will keep you up to date on the current status of our software and new releases.
+        Furthermore, all source code is made publicly available, under an Open Source license, allowing deep peer-review
+        of our software.
+        Our liberal software licensing also allows others to create spin-off programs from our source code, as long as
+        they likewise make their source code available.
+      </p>
+    </div>
+    <div class="cell">
+      {% include github.html class="right" %}
+    </div>
   </div>
 </div>
-
-<p>Health policy decision making is often informed by a systematic review, followed by a statistical analysis and decision modeling.
-These steps are performed using an ad-hoc series of disconnected software tools.
-The rapidly expanding scope of health policy decision making and volume available data increases the costs of systematic reviews, which had already reached the thousands of person-hours over a decade ago.</p>
-<p>Systematic reviews are thus costly to perform, there is very little return on investment for sharing data and meta-data collected in the process, and sharing data early on has the associated risks of scooping and perhaps unwanted scrutiny.
-Moreover, sharing is difficult because the data and meta-data are fragmented between a number of different tools that use different and incompatible formats.
-This has led to a culture where researchers are reluctant to share their intermediate results, and work is often duplicated between different systematic reviews.</p>
-
-<h3>The Solution</h3>
-<div class="row panel" style="margin-bottom: 1rem;">
-  <div class="six large-6 columns">
-    <img class="screen-shot" style="background: white; padding:5px;" src="/images/solution.png">
-  </div>
-  <div class="six large-6 columns">
-    <h4 style="margin-top: 1rem">Legend</h4>
-    <ol>
-      <li>Automatic query of multiple databases returning linked data</li>
-      <li>Assisted title/abstract screening</li>
-      <li>N/A (abstracts are automatically de-duplicated)</li>
-      <li>Assisted full text screening, identify duplicate publications of same trial</li>
-      <li>Assisted data extraction</li>
-      <li>Statistical analysis / evidence synthesis</li>
-      <li>Reporting of evidence synthesis results; potential publication</li>
-      <li>Automatic transfer of evidence to cost-effectiveness model</li>
-      <li>Cost-effectiveness analysis</li>
-      <li>Reporting of cost-effectiveness analysis; potential publication</li>
-    </ol>
-  </div>
-</div>
-
-<p>
-The process can be made more efficient and reproducible by an integrated software toolchain that captures the entire workflow.
-Such a system would provide several incentives that make sharing of intermediate results more attractive.
-First, it would remove the technical barriers to sharing data by capturing all intermediate results in a single repository, and sharing of data could be the default setting.
-Second, it would simply provide a better tool chain for systematic review and decision support by automating the transfer of data between steps and assisting labour intensive steps such as literature screening.
-Finally, the investment of performing a systematic review can be reduced by re-using what others have shared.
-This would decrease the time-to-publication or time-to-decision and enhance the cost-effectiveness of evidence-based decision making.
-</p>
-
-<h3>Conclusion</h3>
-
-<p>
-Systematic reviewing is currently a laborious process that is mainly performed "offline" using an ad-hoc collection of disconnected tools.
-This makes the sharing and re-use of intermediate results nearly impossible, leading to duplication of effort and an adversarial research environment.
-Existing information technologies could be leveraged to build a more integrated system to support systematic reviewing and preserve intermediate results.
-Such a system can create a virtuous cycle in which previously shared results make sharing an ever more attractive option.
-Eventually, this will decrease the cost of systematic reviewing drastically, which in turn enables evidence-based decision making to be applied more often and more rigorously.
-</p>
-
-<h3>Our Commitment: Open Development</h3>
-<p>
-We are committed to develop our software 'in the open'.
-This means that we publish our software as early as possible and as often as possible, enabling others to use and critique our software and development process.
-On this website, we will keep you up to date on the current status of our software and new releases.
-Furthermore, all source code is made publicly available, under an Open Source license, allowing deep peer-review of our software.
-Our liberal software licensing also allows others to create spin-off programs from our source code, as long as they likewise make their source code available.
-</p>
-
-{% include github.html class="right" %}

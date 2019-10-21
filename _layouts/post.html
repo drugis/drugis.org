@@ -6,24 +6,28 @@ layout: default
 
 <article>
   <header>
-    <div class="row">
-      <div class="twelve large-12 columns">
-	<h2>News | <small> {{ page.title }} </small></h2>
+    <div class="grid-container">
+      <div class="grid-x">
+        <div class="cell">
+          <h2>News | <span style="font-size: 37px">{{ page.title }}</span></h2>
+        </div>
       </div>
     </div>
   </header>
-<ol class="breadcrumbs">
-  <li><a href="/">Home</a></li>
-  <li><a href="/news">News</a></li>
-  <li class="current active">{{ page.title }}</li>
-</ol>
-<section class="content">
-    <div class="row">
-      <div class="twelve large-12 columns">
-        <h3>{{page.title}}</h3>
-	<h6>{{ page.date | date_to_string }} <small>&mdash; {{ author.display_name }}</small></h6>
-	{{content}}
+  <ol class="breadcrumbs">
+    <li><a href="/">Home</a></li>
+    <li><a href="/news">News</a></li>
+    <li class="current active">{{ page.title }}</li>
+  </ol>
+  <div class="grid-container">
+    <section class="content">
+      <div class="grid-x">
+        <div class="cell">
+          <h3>{{page.title}}</h3>
+          <h6>{{ page.date | date_to_string }} <small>&mdash; {{ author.display_name }}</small></h6>
+          {{content}}
+        </div>
       </div>
-    </div>
+  </div>
   </section>
 </article>

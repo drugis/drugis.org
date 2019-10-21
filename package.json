@@ -1,0 +1,11 @@
+{
+  "name": "drugis.org",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:drugis/drugis.org.git",
+  "author": "drugis.org team",
+  "dependencies": {
+    "foundation-sites": "~6.5.0-rc.2",
+    "jquery": "^3.4.1"
+  }
+}

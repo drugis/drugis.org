@@ -1,7 +1,62 @@
 ---
+# this ensures Jekyll reads the file to be transformed into CSS later
+# only Main files contain this front matter, not partials.
 ---
+$drugis-color: #CC3333;
+$foundation-palette: (
+  primary: #452F8C,
+  secondary: #e7e7e7,
+  success:  #29A329,
+  warning: lighten(#f08a24, 5%),
+  alert: #E66464
+);
 
-@import "drugis-sass/settings";
-@import "drugis-sass/foundation";
-@import "drugis-sass/drugis";
-@import "syntax";
+@import "drugis-css/settings";
+@import "../node_modules/foundation-sites/scss/foundation";
+@include foundation-global-styles;
+@include foundation-xy-grid-classes;
+@include foundation-typography;
+@include foundation-button;
+@include foundation-forms;
+@include foundation-breadcrumbs;
+@include foundation-button-group;
+@include foundation-close-button;
+@include foundation-menu;
+@include foundation-menu-icon;
+@include foundation-callout;
+@include foundation-drilldown-menu;
+@include foundation-dropdown;
+@include foundation-dropdown-menu;
+@include foundation-responsive-embed;
+@include foundation-label;
+@include foundation-media-object;
+@include foundation-off-canvas;
+@include foundation-orbit;
+@include foundation-pagination;
+@include foundation-progress-bar;
+@include foundation-slider;
+@include foundation-sticky;
+@include foundation-reveal;
+@include foundation-switch;
+@include foundation-table;
+@include foundation-tabs;
+@include foundation-thumbnail;
+@include foundation-title-bar;
+@include foundation-tooltip;
+@include foundation-top-bar;
+@include foundation-visibility-classes;
+@include foundation-flex-classes;
+@import "drugis-css/drugis";
+
+.menu {
+  font-size: 13px;
+}
+
+.grid-container {
+  max-width: 62.5rem
+}
+
+.news-date {
+  color: #8a8a8a;
+  font-size: 10px;
+}

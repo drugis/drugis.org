@@ -24,7 +24,7 @@ Clone the git repository:
 Make sure the SASS submodule is present:
 
     git submodule init
-    git submodule update
+    git submodule update --remote --recursive
 
 Build the `_site`:
 

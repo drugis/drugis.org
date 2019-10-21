@@ -8,7 +8,7 @@
 
   {% for page in (1..paginator.total_pages) %}
   {% if page == paginator.page %}
-  <li class="current"><a href="">{{ page }}</a></li>
+  <li class="current"><a href="" style="color: inherit"><b>{{ page }}</b></a></li>
   {% elsif page == 1 %}
   <li><a href="{{ '/news/index.html' | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a></li>
   {% else %}

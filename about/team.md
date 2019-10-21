@@ -3,22 +3,26 @@ layout: content
 title: The team
 ---
 
-<div class="row">
-  <div class="twelve large-12 columns">
-    <h2>Core team</h2>
+<div class="grid-x">
+  <div class="cell">
+    <h3>Core team</h3>
   </div>
 </div>
 
 {% for member in site.data.members %}
-  <div class="row">
-    <hr>
-    <div class="eight large-8 columns">
+  <div class="grid-x grid-margin-x">
+    <div class="cell">
+      <hr>
+    </div>
+    <div class="cell large-8">
       <h4>{{member.name}}</h4>
       <h5>{{member.role}}</h5>
       <p>{{member.bio | markdownify}}</p>
-      <p>Find out more on his <a href="{{member.homepage-url}}" title="{{member.name}}">personal page</a>.
+      <p>
+      Find out more on his <a href="{{member.homepage-url}}" title="{{member.name}}">personal page</a>.
+      </p>
     </div>
-    <div class="three large-3 columns">
+    <div class="cell large-offset-1 large-2">
       <img class="screen-shot" src="/images/about/{{member.picture-url}}">
     </div>
   </div>
