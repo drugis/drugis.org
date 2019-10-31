@@ -1,10 +1,10 @@
 ---
 layout: content
-title: ADDIS 2
+title: ADDIS
 ---
 
 Aggregate Data Drug Information System (ADDIS) is an evidence-based decision support system for [health care policy decision making](/research) that concerns alternative treatment options.
-ADDIS 2 has been under continuous development since 2014, and is largely feature complete, though we are always working to improve the platform and add features on request.
+ADDIS has been under continuous development since 2014, and is largely feature complete, though we are always working to improve the platform and add features on request.
 
 <img src="/images/software/addis2/addis-graphic.png" alt="The ADDIS concept">
 
@@ -18,16 +18,15 @@ The [user manual for ADDIS](https://addis.drugis.org/manual.html) provides a det
 
 Our framework of thinking is captured by the following documents:
 
- - [ADDIS 2 requirements](/software/addis2/requirements)
- - [ADDIS 2 architecture](/software/addis2/architecture) (outdated)
+ - [ADDIS requirements](/software/addis/requirements)
 
 
 Current status
 --------------
 
-As of March 2016, ADDIS 2 is feature complete, and most work is directed at serving clients' and users requests. The project is funded by IMI GetReal Initiative.
+As of March 2016, ADDIS is feature complete, and most work is directed at serving clients' and users requests. The project is funded by IMI GetReal Initiative.
 
-The current stable version of ADDIS 2 is available at [addis.drugis.org](https://addis.drugis.org).
+The current stable version of ADDIS is available at [addis.drugis.org](https://addis.drugis.org).
 You need a Google account to sign in.
 
 <img class="screen-shot" src="/images/software/addis2.png" alt="addis.drugis.org">
@@ -35,6 +34,6 @@ You need a Google account to sign in.
 Source code
 -----------
 
-The source code for the ADDIS 2 software is available on GitHub, on [our organization page](https://github.com/drugis/). In addition, source code for the R packages is available from [Gert van Valkenhoef](https://github.com/gertvv/).
+The source code for the ADDIS software is available on GitHub, on [our organization page](https://github.com/drugis/). In addition, source code for the R packages is available from [Gert van Valkenhoef](https://github.com/gertvv/).
 
 {% include github.html class="right" %}

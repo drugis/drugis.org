@@ -3,30 +3,119 @@ layout: default
 title: Home
 ---
 
-<section id="hero">
+<header>
   <div class="grid-container">
     <div class="grid-x">
-      <div class="cell small-12 medium-6 six large-6">
-        <h1>drugis.org</h1><br>
-        <h4>drug information systems</h4>
+      <div class="cell">
+        <h2>
+          DRUG INFORMATION SYSTEMS
+        </h2>
       </div>
-      <div class="medium-6 six large-6 cell hide-for-small">
-        <img class="wordblob" src="/images/banner.png" style="width: 737px;">
+      <div class="cell">
+        <h4 style="color: white">Transparent and efficient health care decision making</h4>
       </div>
     </div>
   </div>
-</section>
+</header>
 
 <section class="content">
   <div class="grid-container">
     <div class="grid-x">
-      <div class="cell twelve large-12">
+
+      <div class="cell">
+        <div class="grid-x grid-margin-x">
+
+          <div class="cell large-4 callout">
+            <div style="text-align: center;">
+              <h3>ADDIS</h3>
+              <a href="https://addis.drugis.org">addis.drugis.org</a>
+            </div>
+            <div>
+              <hr />
+            </div>
+            <div style="height: 120px;">
+              <ul>
+                <li>Evidence-based decision support system</li>
+                <li>Integrates <a href="/software/mcda">MCDA</a> and <a href="/software/gemtc">GeMTC</a></li>
+                <li>Study-oriented repository</li>
+              </ul>
+            </div>
+            <div>
+              <hr />
+            </div>
+            <div style="text-align: center;">
+              <a href="/software/addis" class="secondary button">Read more</a>
+              <a href="https://github.com/drugis/addis-core" class="button secondary {{include.class}}">
+                GitHub
+              </a>
+            </div>
+          </div>
+
+          <div class="cell large-4 callout">
+            <div style="text-align: center;">
+              <h3>MCDA</h3>
+              <a href="https://mcda.drugis.org">mcda.drugis.org</a>
+            </div>
+            <div>
+              <hr />
+            </div>
+            <div style="height: 120px">
+              <ul>
+                <li>Multiple criteria decision analysis</li>
+                <li>Deterministic and stochastic</li>
+              </ul>
+            </div>
+            <div>
+              <hr />
+            </div>
+            <div style="text-align: center;">
+              <a href="/software/mcda" class="secondary button">Read more</a>
+              <a href="https://github.com/drugis/mcda-elicitation-web" class="button secondary {{include.class}}">
+                GitHub
+              </a>
+            </div>
+          </div>
+
+          <div class="cell large-4 callout">
+            <div style="text-align: center;">
+              <h3>GeMTC</h3>
+              <a href="https://gemtc.drugis.org">gemtc.drugis.org</a>
+            </div>
+            <div>
+              <hr />
+            </div>
+            <div style="height: 120px">
+              <ul>
+                <li>Evidence synthesis</li>
+                <li>Network meta-analysis</li>
+                <li>Network meta-regression</li>
+              </ul>
+            </div>
+            <div>
+              <hr />
+            </div>
+            <div style="text-align: center;">
+              <a href="/software/gemtc" class="secondary button">Read more</a>
+              <a href="https://github.com/drugis/gemtc-web" class="button secondary {{include.class}}">
+                GitHub
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="cell" style="text-align: center;">
+        <hr />
+      </div>
+
+      <div class="cell">
         <div class="grid-x">
 
           <div class="cell large-7 small-12">
             <h2>Mission</h2>
             {% include mission.html %}
-            <p><a href="/about" class="right secondary button">About us →</a></p>
+            <p><a href="/about" class="right secondary button">Read more</a></p>
           </div>
 
           <div class="cell large-4 large-offset-1 small-12">
@@ -61,7 +150,7 @@ title: Home
     </div>
 
     <div class="grid-x" style="margin-top: 3rem;">
-      <div class="cell twelve large-12" style="text-align: center;">
+      <div class="cell" style="text-align: center;">
         <hr>
         <h4>Sponsors</h4>
       </div>

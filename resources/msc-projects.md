@@ -1,21 +1,17 @@
 ---
 layout: content
-title: MSc projects
+title: Opportunities for MSc students
 ---
 
-### Open MSc projects
+We offer MSc students the opportunity to collaborate with us on various MSc projects. Examples of topics that we are interested in include:
 
  - [Data import](#import)
  - [Reconstructing time-to-event (survival) data from Kaplan-Meier curves: a constraint satisfaction problem](#survival-csp)
  - [User interfaces for detecting heterogeneity in meta-analysis](#heterogeneity)
  - [Low-level serialization of Bayesian Hierarchical Models](#bhm-dsl)
 
-## MSc projects
-
 <a name="import"></a>
 ### Data import
-
-(Multiple MSc projects possible.)
 
 ADDIS currently expects all relevant meta-data about a clinical trial to be entered prior to the entry of any measurement data. Primarily, this consists of the variables that have been measured, the times at which they have been measured, and the (sub-) populations for which they have been measured. This defines a three-dimensional table-like structure. The user is then expected to (manually) input a measurement for each cell. The measurement consists of specific statistical summaries, such as (count, sample size) or (mean, standard deviation, sample size). Some or all of this information may be missing. Thus, we first specify what should be there, and then enter as much data as we can find.
 

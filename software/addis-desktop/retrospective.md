@@ -1,15 +1,15 @@
 ---
 layout: content
-title: ADDIS 1.x Retrospective
+title: ADDIS Desktop Retrospective
 date: 2013-09-19
 ---
 
-*Note*: this document was composed on 2013-03-19 to evaluate the "ADDIS 1.x" project.
+*Note*: this document was composed on 2013-03-19 to evaluate the "ADDIS Desktop" project.
 First, it enumerates the major features of the system.
-Then, it identifies the major design decisions that have driven the development of ADDIS 1.x and their positive and negative consequences.
+Then, it identifies the major design decisions that have driven the development of ADDIS Desktop and their positive and negative consequences.
 Finally, it speculates on directions for future research and development on ADDIS 2.
 
-ADDIS 1.x Overview
+ADDIS Desktop Overview
 ------------------
 
 The Aggregate Data Drug Information System (ADDIS) was developed as a prototype
@@ -56,12 +56,12 @@ implemented, driven by a case study in anti-depressants:
  * With an appropriately filled database, wizards guide the creation of
    meta-analyses and benefit-risk analyses. Especially the process of creating
    meta-analyses has become increasingly refined over the development of ADDIS
-   1.x, allowing either different drugs or different doses of the same drug to
+   Desktop, allowing either different drugs or different doses of the same drug to
    be compared to each other, or a combination thereof. Effectively, we found
    that the definition of a "treatment" for the purposes of meta-analysis needed
    to be decoupled from the notion of "drug".
 
-ADDIS 1.x is a cross platform desktop application developed in Java. The
+ADDIS Desktop is a cross platform desktop application developed in Java. The
 database is implemented as an XML file with a well-defined XML Schema.
 Compatibility of XML files between ADDIS releases is supported using XSLT. The
 graphical user interface has been developed using the Swing framework and
@@ -70,7 +70,7 @@ Model-View-Controller pattern. The network meta-analysis functionality is
 implemented in a separate component (GeMTC) which also has an independent GUI.
 The SMAA components were taken from the JSMAA software.
 
-ADDIS 1.x Design Decisions
+ADDIS Desktop Design Decisions
 --------------------------
 
  * A cross-platform Java desktop application.

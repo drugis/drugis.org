@@ -1,11 +1,11 @@
 ---
 layout: content
-title: Projects
+title: Funding
 ---
 
-Our current work on [ADDIS 2](/software/addis2) is part of the [GetReal Initiative](http://www.imi-getreal.eu/GetReal-Initiative) project.
-The initial creation of [ADDIS 2](/software/addis2) was funded by [IMI GetReal](http://www.imi-getreal.eu).
-The [ADDIS 1](/software/addis1) project was funded by TI Pharma's [Escher](http://escher-projects.org/) project.
+Our current work on [ADDIS](/software/addis) is part of the [GetReal Initiative](http://www.imi-getreal.eu/GetReal-Initiative) project.
+The initial creation of [ADDIS](/software/addis) was funded by [IMI GetReal](http://www.imi-getreal.eu).
+The [ADDIS Desktop](/software/addis-desktop) project was funded by TI Pharma's [Escher](http://escher-projects.org/) project.
 Additional funding for the further development of the [MCDA user interface](/software/mcda) was received from the [IMI PROTECT](http://www.imi-protect.eu/) project.
 
 ### GetReal Initiative (IMI, 2018-2020) ![GetReal](/images/projects/getreal.png)
@@ -38,7 +38,7 @@ International Alliance of Patients' Organizations (IAPO) that covers patient org
 GetReal creates impact by developing a set of tools, decision frameworks, methods and insights to include
 real clinical data in drug development.
 
-The [ADDIS 2](/software/addis2) project is part of work package 4, _promoting best practice in evidence synthesis and predictive modelling of relative effectiveness_.
+The [ADDIS](/software/addis) project is part of work package 4, _promoting best practice in evidence synthesis and predictive modelling of relative effectiveness_.
 Methodological issues to be addressed focus on the combination of data from the mix of
 randomised and observational studies that are typically available at the launch of a new
 medicine.
@@ -49,7 +49,7 @@ predictive modelling of pharmaceutical therapies.
 
 _Science-driven drug regulation_
 
-Our work on [ADDIS 1.x](/software/addis1) was funded by the Dutch Top Institute Pharma, specifically through the Escher Project workpackage 3.2. The goal of the Escher project was to "engergize pharmaceutical R&D by identifying, evaluating and removing regulatory barriers to bring effacious and safe medicines to patients in an efficient and timely fashion."
+Our work on [ADDIS Desktop](/software/addis-desktop) was funded by the Dutch Top Institute Pharma, specifically through the Escher Project workpackage 3.2. The goal of the Escher project was to "engergize pharmaceutical R&D by identifying, evaluating and removing regulatory barriers to bring effacious and safe medicines to patients in an efficient and timely fashion."
 
 In workpackage 3.2, we created evidence-based drug information repositories in which drug efficacy and safety questions can be answered in an efficient, transparent and accountable way. Comparisons within and across medicinal products can now be made in a more automated and, hence, more efficient way.
 

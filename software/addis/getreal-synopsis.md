@@ -14,8 +14,8 @@ The long-term goal of ADDIS is to eliminate the need for (repeatedly) performing
 
 The Aggregate Data Drug Information System (ADDIS) was developed during the Escher project to enable evidence-based decision support for marketing authorization decisions.
 It enables automated network meta-analysis and multiple criteria decisions analysis on a structured database of clinical trials.
-"ADDIS 1.x", as we now call this version of the software, is a stand-alone desktop application that you can download and install from [drugis.org](http://drugis.org/software/addis1).
-ADDIS 1.x has been evaluated, see the [ADDIS 1.x retrospective](http://drugis.org/software/addis1/retrospective), from which we concluded that altough the system is methodologically strong, the current architecture is not future-proof in the following ways:
+"ADDIS Desktop", as we now call this version of the software, is a stand-alone desktop application that you can download and install from [drugis.org](http://drugis.org/software/addis-desktop).
+ADDIS Desktop has been evaluated, see the [ADDIS Desktop retrospective](http://drugis.org/software/addis-desktop/retrospective), from which we concluded that altough the system is methodologically strong, the current architecture is not future-proof in the following ways:
 
 - Sharing datasets is difficult because of the stand-alone nature of the software, and datasets can not easily be merged.
 - Reusing existing statistical code is highly desirable but not possible, forcing us to re-implement existing statistical code.
@@ -39,16 +39,16 @@ The second goal will help promote the outputs of the GetReal project in several 
 
 Due M12.
 
-Several activities are planned to inform the requirements and technical specification of "ADDIS 2".
+Several activities are planned to inform the requirements and technical specification of "ADDIS".
 These activities have been ongoing since the GetReal description of work was formulated, and will continue while the software development is already ongoing (since Dec 2013).
-The current specification is available on the [ADDIS 2 page](http://drugis.org/software/addis2/) on drugis.org.
+The current specification is available on the [ADDIS page](http://drugis.org/software/addis/) on drugis.org.
 
 ### Review of existing software
 
 We will identify key software in a few areas of interest and do an in-depth analysis of their capabilities and how those relate to ADDIS (as a competitor, inspiration, or re-usable component).
 We are looking for software in these broad categories:
 
-- ADDIS 1.x as a source of requirements (see [retrospective](http://drugis.org/software/addis1/retrospective) and [ADDIS 2 user stories](http://drugis.org/software/addis2/stories))
+- ADDIS Desktop as a source of requirements (see [retrospective](http://drugis.org/software/addis-desktop/retrospective) and [ADDIS user stories](http://drugis.org/software/addis/stories))
 - Existing graphical user interfaces for (complex) meta-analysis as a source of requirements. Examples could be Cochrane RevMan, comprehensive meta-analysis, etc.
 - Existing graphical user interfaces for predictive modeling as a source of requirements.
 - Existing statistical packages for (network) meta-analysis for potential re-use, preferably R packages, open source. Currently gemtc is used. R code from Ioannina needs to be evaluated.
@@ -96,13 +96,13 @@ The following actions were agreed upon: (1) Gert to produce potential data flow 
 
 Misc. notes:
 
- - From all-hands meeting it emerged that the "Lu & Ades" inconsistency model is no longer considered state of the art. ADDIS 2 will not use this model (and it is not available in gemtc).
+ - From all-hands meeting it emerged that the "Lu & Ades" inconsistency model is no longer considered state of the art. ADDIS will not use this model (and it is not available in gemtc).
 
 ## D4.13: initial development
 
 Due M21.
 
-We will develop ADDIS 2 in an iterative manner, with quarterly publicly visible releases.
+We will develop ADDIS in an iterative manner, with quarterly publicly visible releases.
 The basic functionality for GetReal should be in place by M21, for in-depth user testing.
 However, we expect project participants to also provide feedback on the quarterly releases.
 
@@ -115,12 +115,12 @@ In addition to the software, the final deliverable will consist of user document
 
 ## Documentation
 
-- General documentation of ADDIS 2
-  - [ADDIS 2 home page](/software/addis2/)
-  - [ADDIS 2 requirements overview](/software/addis2/requirements)
-  - [ADDIS 2 architecture overview](/software/addis2/architecture)
-  - [ADDIS 2 roadmap](/software/addis2/roadmap)
-  - [ADDIS 2 user stories](/software/addis2/stories) - fine-grained requirements
+- General documentation of ADDIS
+  - [ADDIS home page](/software/addis/)
+  - [ADDIS requirements overview](/software/addis/requirements)
+  - [ADDIS architecture overview](/software/addis/architecture)
+  - [ADDIS roadmap](/software/addis/roadmap)
+  - [ADDIS user stories](/software/addis/stories) - fine-grained requirements
   - [ADDIS in GetReal proposal](/files/20130121-addis-getreal-proposal.pdf) (PDF)   drafted for Matthias Egger 2013-01-21
   - [Kick-off meeting slides](/files/valkenhoef-pres-getrealkickoff2014.pdf) (PDF)   2014-01-29
   - Data management (TrialVerse / ConceptMapper)
@@ -131,13 +131,13 @@ In addition to the software, the final deliverable will consist of user document
   - [Current ConceptMapper setup](https://github.com/drugis/trialverse/blob/feature/  triplestore/triplestore/README.md)
   - TODO: plans for dealing with PDF; [Spa](https://github.com/joelkuiper/spa)
   - TODO: links to useful sources of information / papers / source code
-  - ADDIS 2 source code
-  - [ADDIS 2 core](https://github.com/drugis/addis-core)
-  - [ADDIS 2 MCDA](https://github.com/drugis/mcda-elicitation-web)
+  - ADDIS source code
+  - [ADDIS core](https://github.com/drugis/addis-core)
+  - [ADDIS MCDA](https://github.com/drugis/mcda-elicitation-web)
   - [TrialVerse prototype](https://github.com/drugis/trialverse)
-  - [ADDIS 2 prototype](https://github.com/drugis/addis2) - no longer updated
-  - [ADDIS 2 dockerfiles](https://github.com/drugis/dockerfiles) - for server deployment
-  - [ADDIS 2 CSS](https://github.com/drugis/drugis-css) - style sheets used by all   components
+  - [ADDIS prototype](https://github.com/drugis/addis) - no longer updated
+  - [ADDIS dockerfiles](https://github.com/drugis/dockerfiles) - for server deployment
+  - [ADDIS CSS](https://github.com/drugis/drugis-css) - style sheets used by all   components
   - Statistical analysis / R packages
   - The [Patavi](https://github.com/joelkuiper/patavi) web service wrapper for R
   - GeMTC [CRAN](http://cran.r-project.org/package=gemtc); [source](https://github.com/  gertvv/gemtc)

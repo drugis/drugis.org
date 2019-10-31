@@ -38,7 +38,7 @@ title: The team
 
 - Aida Baxhaku - working on data import.
 
-See [MSc projects](/research/msc-projects) for opportunities.
+See [MSc projects](/resources/msc-projects) for opportunities.
 
 ## Previous contributors
 
