@@ -1,6 +1,6 @@
 ---
 layout: content
-title: Opportunities for MSc students
+title: MSc students
 ---
 
 We offer MSc students the opportunity to collaborate with us on various MSc projects. Examples of topics that we are interested in include:

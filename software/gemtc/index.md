@@ -9,14 +9,15 @@ The backend uses our [R packages](/software/r-packages/) to perform the computat
 
 <img src="/images/software/gemtc/gemtc.png" class="screen-shot">
 
-The GeMTC web interface was funded by IMI GetReal, and is included in ADDIS 2.
+The GeMTC web interface was funded by IMI GetReal, and is included in [ADDIS](/software/addis).
 
 Current status
 --------------
 
-At the time of writing, GeMTC is a mature tool, and a full [user manual](https://gemtc.drugis.org/manual.html) is available from within the software.
+At the time of writing, GeMTC is a mature tool, and a full [user manual](https://gemtc.drugis.org/manual.html) is available from within the software. A closed-source version implementing business-focused features such as user access management is under active development. Please [contact us](/contact) for more details on pricing and availability.
+
 Visit [gemtc.drugis.org](https://gemtc.drugis.org/) to give it a try.
-You can log in using your Google account.
+You can log in using a Google account.
 
 Source code
 -----------
