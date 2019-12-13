@@ -21,14 +21,12 @@ We have also developed procedures (besides the existing ones for Linux and docke
 
 A summary of features and bug fixes:
 
-ADDIS
------
+### ADDIS
 
 - User can now archive a dataset
 - Minor bugfixes
 
-MCDA
-----
+### MCDA
 
 - Manual input redesign:
   - A data source is no longer automatically created when adding a criterion
@@ -57,7 +55,6 @@ MCDA
 - User can now adjust the width of columns in the effects table (Firefox and Chrome)
 - Bugfixes
 
-GeMTC
------
+### GeMTC
 
 - Minor bugfixes
