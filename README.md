@@ -57,8 +57,10 @@ Using the following `post-receive` hook script:
     unset GIT_DIR
     cd ..   
     git checkout -f master
-    git submodule update
+    git submodule update --remote --recursive
     git annex merge
+    yarn
+    cp -r node_modules/foundation-sites/scss/* _sass
  
     # build the site
     jekyll build --destination _build && \
