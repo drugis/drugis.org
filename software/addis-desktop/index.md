@@ -22,7 +22,7 @@ See the [ADDIS Desktop retrospective](/software/addis-desktop/retrospective) for
 
 ### Citing ADDIS Desktop
 
-If you use ADDIS in your work and you would to cite us, please cite the following reference:
+If you use ADDIS in your work and you would like to cite us, please cite the following reference:
 
  - {% reference addis-dss %}
 
