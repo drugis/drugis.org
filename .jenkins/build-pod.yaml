@@ -1,0 +1,26 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: jenkins-agent
+spec:
+  containers:
+    - name: jekyll
+      image: molgenis/jekyll:1.1.0
+      imagePullPolicy: IfNotPresent
+      command:
+      - cat
+      tty: true
+      resources:
+        requests:
+          cpu: 1
+          memory: 4Gi
+    - name: node
+      image: "molgenis/node-fermium:1.0.1"
+      command: 
+      - cat
+      tty: true
+      resources:
+        requests: 
+          cpu: 1
+          memory: 1Gi
+  restartPolicy: Never
