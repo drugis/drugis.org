@@ -1,21 +1,18 @@
-drugis.org
-==========
+# drugis.org
 
 The [drugis.org](https://drugis.org/) website built using
 [Jekyll](http://jekyllrb.com/) and
 [git annex](https://git-annex.branchable.com/).
 
-Requirements
-------------
+## Requirements
 
- - ruby
- - jekyll (gem install jekyll)
- - jekyll scholar (gem install jekyll-scholar)
- - jekyll sass (gem install jekyll-sass)
- - git-annex (sudo apt-get install git-annex)
+- ruby
+- jekyll (gem install jekyll)
+- jekyll scholar (gem install jekyll-scholar)
+- jekyll sass (gem install jekyll-sass)
+- git-annex (sudo apt-get install git-annex)
 
-Building
---------
+## Building
 
 Clone the git repository:
 
@@ -39,8 +36,17 @@ If necessary, load /files using git-annex (TODO: HTTP remote from site itself):
 
 Now serve it using nginx (see the sample nginx.conf).
 
-Deploying
----------
+## Building in Docker
+
+To build inside a docker container, use the following command:
+
+    docker run -v $PWD/_site:/var/drugisorg/_site addis/drugisorg
+
+After this, the site will be built into the \_site folder. Do be aware that the owner of this folder will probably be root, depending on how the user and group IDs are set in the host system. You can use the following command to fix this:
+
+    sudo chown -R $USER:$USER _site
+
+## Deploying
 
 On drugis.org we have a clone of the drugis.org repository with git-annex and
 git-submodule initialized, add the remote as follows:
@@ -55,18 +61,18 @@ pushing to master, which rebuilds and deploys the site:
 Using the following `post-receive` hook script:
 
     unset GIT_DIR
-    cd ..   
+    cd ..
     git checkout -f master
     git submodule update --remote --recursive
     git annex merge
     yarn
     cp -r node_modules/foundation-sites/scss/* _sass
- 
+
     # build the site
     jekyll build --destination _build && \
         mv -v _site _site-`date +%Y%m%dT%H%M%S` && \
         mv -v _build _site
- 
+
     # resource usage
     echo "Space taken by backups:"
     du -hs _site-*
