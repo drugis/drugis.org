@@ -5,15 +5,15 @@ metadata:
 spec:
   containers:
     - name: jekyll
-      image: molgenis/jekyll:1.1.0
+      image: molgenis/jekyll:1.1.1
       imagePullPolicy: IfNotPresent
       command:
       - cat
       tty: true
       resources:
         requests:
-          cpu: 1
-          memory: 4Gi
+          cpu: "1"
+          memory: "1Gi"
     - name: node
       image: "molgenis/node-fermium:1.0.1"
       command: 
@@ -21,6 +21,6 @@ spec:
       tty: true
       resources:
         requests: 
-          cpu: 1
-          memory: 1Gi
+          cpu: "1"
+          memory: "1Gi"
   restartPolicy: Never
