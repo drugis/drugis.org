@@ -13,7 +13,7 @@ pipeline {
     stages {
         stage('Retrieve build secrets') {
             steps {
-                container('vault-drugis') {
+                container('vault') {
                     script {
                         sh "mkdir ${JENKINS_AGENT_WORKDIR}/.rancher"
                         sh(script: "vault read -field=value secret/ops/jenkins/rancher/cli2.json > ${JENKINS_AGENT_WORKDIR}/.rancher/cli2.json")
