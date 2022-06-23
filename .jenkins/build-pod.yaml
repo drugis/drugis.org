@@ -5,7 +5,7 @@ metadata:
 spec:
   containers:
     - name: jekyll
-      image: molgenis/jekyll:1.1.1
+      image: molgenis/jekyll:1.1.2
       imagePullPolicy: IfNotPresent
       command:
       - cat
