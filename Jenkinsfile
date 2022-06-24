@@ -1,8 +1,8 @@
-def siteDocker
 pipeline {
     agent {
         kubernetes {
-            inheritFrom 'site-gen'
+            inheritFrom "shared"
+            yamlFile ".jenkins/build-pod.yaml"
         }
     }
     environment {
@@ -13,7 +13,7 @@ pipeline {
     stages {
         stage('Retrieve build secrets') {
             steps {
-                container('drugis-vault') {
+                container('vault') {
                     script {
                         sh "mkdir ${JENKINS_AGENT_WORKDIR}/.rancher"
                         sh(script: "vault read -field=value secret/ops/jenkins/rancher/cli2.json > ${JENKINS_AGENT_WORKDIR}/.rancher/cli2.json")
@@ -23,9 +23,11 @@ pipeline {
                         env.DOCKERHUB_AUTH = sh(script: 'vault read -field=value secret/gcc/token/dockerhub', returnStdout: true)
                     }
                 }
-                container('jekyll') {
+                container (name: 'kaniko', shell: '/busybox/sh') {
                     sh "mkdir -p ${DOCKER_CONFIG}"
                     sh "set +x && echo '{\"auths\": {\"registry.molgenis.org\": {\"auth\": \"${NEXUS_AUTH}\"}, \"https://index.docker.io/v1/\": {\"auth\": \"${DOCKERHUB_AUTH}\"}}}' > ${DOCKER_CONFIG}/config.json"
+                }
+                container('jekyll') {
                     sh "git submodule init"
                     sh "git submodule update --remote --recursive"
                 }
@@ -48,13 +50,15 @@ pipeline {
                         }
                         container('jekyll') {
                             script {
+                                sh 'ln -sf node_modules/foundation-sites/scss/util/ _sass/drugis-css/util'
                                 sh "echo version: ${TAG} > _version.yml"
                                 sh 'chown -R jekyll:jekyll $(pwd)'
                                 sh 'jekyll doctor'
                                 sh 'jekyll build --config _version.yml,_config.yml'
-                                sh "docker build . -t ${LOCAL_REPOSITORY}:${TAG} --pull --no-cache --force-rm"
-                                sh "docker push ${LOCAL_REPOSITORY}:${TAG}"
                             }
+                        }
+                        container (name: 'kaniko', shell: '/busybox/sh') {
+                            sh "#!/busybox/sh\n/kaniko/executor --context ${WORKSPACE} --destination ${LOCAL_REPOSITORY}:${TAG}"
                         }
                     }
                 }
@@ -86,13 +90,15 @@ pipeline {
                         }
                         container('jekyll') {
                             script {
+                                sh 'ln -sf node_modules/foundation-sites/scss/util/ _sass/drugis-css/util'
                                 sh "echo version: ${TAG} > _version.yml"
                                 sh 'chown -R jekyll:jekyll $(pwd)'
                                 sh 'jekyll doctor'
                                 sh 'jekyll build --config _version.yml,_config.yml'
-                                sh "docker build . -t ${LOCAL_REPOSITORY}:latest -t ${LOCAL_REPOSITORY}:${TAG} --pull --no-cache --force-rm"
-                                sh "docker push ${LOCAL_REPOSITORY}"
                             }
+                        }
+                        container (name: 'kaniko', shell: '/busybox/sh') {
+                            sh "#!/busybox/sh\n/kaniko/executor --context ${WORKSPACE} --destination ${LOCAL_REPOSITORY}:${TAG} --destination ${LOCAL_REPOSITORY}:latest"
                         }
                     }
                 }
